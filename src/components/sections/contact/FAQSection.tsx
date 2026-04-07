@@ -89,8 +89,8 @@ export function FAQSection() {
 
   return (
     <section
-      className="section-padding"
-      style={{ background: 'var(--bg-secondary)' }}
+      className="section-light-theme section-padding"
+      style={{ background: '#F8F6F1' }}
     >
       <div className="container-max">
         <ScrollReveal>
@@ -105,8 +105,9 @@ export function FAQSection() {
           <div
             className="max-w-3xl mx-auto rounded-[var(--radius-xl)] overflow-hidden"
             style={{
-              background: 'var(--bg-card)',
-              border: '1px solid var(--border-subtle)',
+              background: '#FFFFFF',
+              border: '1px solid rgba(0,0,0,0.07)',
+              boxShadow: '0 1px 4px rgba(0,0,0,0.06), 0 4px 20px rgba(0,0,0,0.08)',
             }}
           >
             <div className="px-6 sm:px-8">

@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react'
-import React, { useState } from 'react'
+import type { ReactNode, CSSProperties } from 'react'
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -17,14 +17,14 @@ const subjectOptions = [
   'Other',
 ] as const
 
-const inputBase: React.CSSProperties = {
+const inputBase: CSSProperties = {
   width: '100%',
-  background: 'var(--bg-elevated)',
-  border: '1px solid var(--border-subtle)',
+  background: '#F8F6F1',
+  border: '1px solid rgba(0,0,0,0.1)',
   borderRadius: 'var(--radius-md)',
   padding: '0.75rem 1rem',
   fontSize: '0.9375rem',
-  color: 'var(--text-primary)',
+  color: '#0D1120',
   outline: 'none',
   transition: 'border-color var(--transition-base)',
   fontFamily: 'inherit',
@@ -132,18 +132,19 @@ export function ContactForm() {
 
   return (
     <section
-      className="section-padding"
-      style={{ background: 'var(--bg-primary)' }}
+      className="section-light-theme section-padding"
+      style={{ background: '#FFFFFF' }}
     >
       <div className="container-max">
         <div className="max-w-2xl mx-auto">
           <ScrollReveal direction="up">
             <div
               style={{
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-subtle)',
+                background: '#FFFFFF',
+                border: '1px solid rgba(0,0,0,0.07)',
                 borderRadius: 'var(--radius-xl)',
                 overflow: 'hidden',
+                boxShadow: '0 1px 4px rgba(0,0,0,0.06), 0 4px 20px rgba(0,0,0,0.08)',
               }}
             >
               {/* Card header */}
@@ -319,7 +320,7 @@ export function ContactForm() {
                               <option
                                 key={opt}
                                 value={opt}
-                                style={{ background: 'var(--bg-elevated)', color: 'var(--text-primary)' }}
+                                style={{ background: '#F8F6F1', color: '#0D1120' }}
                               >
                                 {opt}
                               </option>

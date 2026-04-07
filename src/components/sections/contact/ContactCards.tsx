@@ -55,8 +55,8 @@ const cards: ContactCard[] = [
 export function ContactCards() {
   return (
     <section
-      className="section-padding"
-      style={{ background: 'var(--bg-secondary)' }}
+      className="section-light-theme section-padding"
+      style={{ background: '#F8F6F1' }}
     >
       <div className="container-max">
 
@@ -67,11 +67,13 @@ export function ContactCards() {
               <div
                 className="rounded-[var(--radius-xl)] p-8 flex flex-col gap-5 h-full"
                 style={{
-                  background: 'var(--bg-card)',
+                  background: '#FFFFFF',
+                  boxShadow: card.featured
+                    ? 'var(--shadow-glow)'
+                    : '0 1px 4px rgba(0,0,0,0.06), 0 4px 20px rgba(0,0,0,0.08)',
                   border: card.featured
                     ? '1px solid var(--border-gold)'
                     : '1px solid var(--border-subtle)',
-                  boxShadow: card.featured ? 'var(--shadow-glow)' : undefined,
                   position: 'relative',
                 }}
               >
@@ -143,8 +145,9 @@ export function ContactCards() {
           <div
             className="rounded-[var(--radius-lg)] p-6"
             style={{
-              background: 'var(--bg-card)',
+              background: '#FFFFFF',
               border: '1px solid var(--border-subtle)',
+              boxShadow: '0 1px 4px rgba(0,0,0,0.06)',
             }}
           >
             <div className="flex items-start gap-4">
