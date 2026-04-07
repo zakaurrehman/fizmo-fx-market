@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { Mail, Phone, MessageCircle, Share2, Globe, Camera, TrendingUp } from 'lucide-react'
+import { Mail, Phone, MessageCircle, Share2, Globe, Camera } from 'lucide-react'
+import { Logo } from '@/components/ui/Logo'
 // Social icon aliases
 const Twitter = Share2
 const Linkedin = Globe
@@ -21,12 +22,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <TrendingUp className="w-5 h-5 text-[var(--gold-500)]" />
-              <span className="font-display font-bold text-lg text-[var(--text-primary)]">
-                FIZMO <span className="text-[var(--gold-500)]">FX</span>
-              </span>
-              <span className="text-[10px] font-mono tracking-widest text-[var(--text-muted)] uppercase">MARKETS</span>
+            <Link to="/" className="inline-flex mb-4">
+              <Logo variant="dark" height={30} />
             </Link>
             <p className="text-[var(--text-muted)] text-sm leading-relaxed mb-6">
               Your Edge in Global Markets. Trade smarter with ultra-tight spreads and instant execution.

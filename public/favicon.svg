@@ -1,8 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- Dark background circle -->
-  <circle cx="16" cy="16" r="16" fill="#080B14"/>
-  <!-- Gold border ring -->
-  <circle cx="16" cy="16" r="15" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
-  <!-- Bold F letter -->
-  <text x="9" y="22" font-family="Arial" font-weight="700" font-size="18" fill="#C9A84C">F</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0D1120"/>
+  <defs>
+    <linearGradient id="ga" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5DC7A"/>
+      <stop offset="60%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#8A6210"/>
+    </linearGradient>
+    <linearGradient id="gb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4B455" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#6B4C10" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="gh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- 4 skewed bars centred in 64x64 -->
+  <g transform="translate(9, 8) skewX(-7)">
+    <rect x="0"  y="16" width="9" height="28" rx="1.5" fill="url(#gb)"/>
+    <rect x="13" y="2"  width="9" height="42" rx="1.5" fill="url(#ga)"/>
+    <rect x="13" y="2"  width="3" height="42" rx="1"   fill="url(#gh)"/>
+    <rect x="26" y="8"  width="9" height="36" rx="1.5" fill="url(#ga)"/>
+    <rect x="26" y="8"  width="3" height="36" rx="1"   fill="url(#gh)"/>
+    <rect x="39" y="24" width="9" height="20" rx="1.5" fill="url(#gb)"/>
+  </g>
 </svg>

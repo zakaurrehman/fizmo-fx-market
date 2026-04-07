@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { ChevronDown, Menu, X, TrendingUp } from 'lucide-react'
+import { ChevronDown, Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import { Logo } from '@/components/ui/Logo'
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -54,15 +55,8 @@ export function Navbar() {
         <div className="container-max">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-1 shrink-0" onClick={() => setMobileOpen(false)}>
-              <TrendingUp className="w-6 h-6 text-[var(--gold-500)]" />
-              <span className="font-display font-bold text-xl text-[var(--text-primary)]">
-                FIZMO
-                <span className="text-[var(--gold-500)]"> FX</span>
-              </span>
-              <span className="hidden sm:block text-[10px] font-mono tracking-[0.15em] text-[var(--text-muted)] uppercase ml-1 mt-0.5 self-end">
-                MARKETS
-              </span>
+            <Link to="/" className="flex items-center shrink-0" onClick={() => setMobileOpen(false)}>
+              <Logo variant="dark" height={34} />
             </Link>
 
             {/* Desktop Nav */}
