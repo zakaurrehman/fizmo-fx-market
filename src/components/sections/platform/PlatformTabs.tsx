@@ -191,7 +191,10 @@ export function PlatformTabs() {
   const [activeTab, setActiveTab] = useState<TabId>('desktop')
 
   return (
-    <section className="section-padding bg-[var(--bg-primary)]">
+    <section
+      className="section-light-theme section-padding"
+      style={{ background: '#FFFFFF' }}
+    >
       <div className="container-max">
         <SectionHeader
           eyebrow="Available On"
@@ -208,8 +211,9 @@ export function PlatformTabs() {
         <div
           className="inline-flex rounded-[var(--radius-md)] p-1 mb-10 w-full sm:w-auto"
           style={{
-            background: 'var(--bg-secondary)',
-            border: '1px solid var(--border-subtle)',
+            background: '#FFFFFF',
+            border: '1px solid rgba(0,0,0,0.08)',
+            borderBottom: '1px solid rgba(0,0,0,0.08)',
           }}
           role="tablist"
           aria-label="Platform options"
@@ -228,12 +232,11 @@ export function PlatformTabs() {
                   background: isActive
                     ? 'linear-gradient(135deg, rgba(201,168,76,0.18), rgba(201,168,76,0.08))'
                     : 'transparent',
-                  color: isActive
-                    ? 'var(--text-gold)'
-                    : 'var(--text-muted)',
+                  color: isActive ? 'var(--text-gold)' : '#6B7280',
                   border: isActive
                     ? '1px solid var(--border-gold)'
                     : '1px solid transparent',
+                  borderBottom: isActive ? '2px solid var(--border-gold)' : '1px solid transparent',
                 }}
               >
                 {tab.icon}
@@ -247,8 +250,8 @@ export function PlatformTabs() {
         <div
           className="rounded-[var(--radius-xl)] p-8 md:p-12"
           style={{
-            background: 'var(--bg-secondary)',
-            border: '1px solid var(--border-subtle)',
+            background: '#FFFFFF',
+            border: '1px solid rgba(0,0,0,0.07)',
           }}
         >
           <AnimatePresence mode="wait">

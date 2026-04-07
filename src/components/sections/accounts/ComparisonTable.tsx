@@ -97,7 +97,10 @@ const tableRows: TableRow[] = [
 
 export function ComparisonTable() {
   return (
-    <section className="section-padding bg-[var(--bg-primary)]">
+    <section
+      className="section-light-theme section-padding"
+      style={{ background: '#FFFFFF' }}
+    >
       <div className="container-max">
         <SectionHeader
           eyebrow="Side by Side"
@@ -113,17 +116,13 @@ export function ComparisonTable() {
         <ScrollReveal direction="up" delay={0.1}>
           <div className="overflow-x-auto rounded-[var(--radius-lg)] border border-[var(--border-subtle)]">
             <table className="w-full min-w-[640px] border-collapse">
-              {/* Header */}
+              {/* Header — keep dark */}
               <thead>
-                <tr
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(201,168,76,0.18) 0%, rgba(201,168,76,0.08) 100%)',
-                  }}
-                >
-                  <th className="text-left px-6 py-4 font-display font-semibold text-[var(--text-primary)] text-sm tracking-wide border-b border-[var(--border-gold)]">
+                <tr style={{ background: '#0D1120' }}>
+                  <th className="text-left px-6 py-4 font-display font-semibold text-white text-sm tracking-wide border-b border-[var(--border-gold)]">
                     Feature
                   </th>
-                  <th className="px-6 py-4 font-display font-semibold text-[var(--text-secondary)] text-sm tracking-wide border-b border-[var(--border-subtle)] text-center">
+                  <th className="px-6 py-4 font-display font-semibold text-white text-sm tracking-wide border-b border-[rgba(255,255,255,0.1)] text-center">
                     Standard
                   </th>
                   <th
@@ -135,7 +134,7 @@ export function ComparisonTable() {
                   >
                     Pro
                   </th>
-                  <th className="px-6 py-4 font-display font-semibold text-[var(--text-secondary)] text-sm tracking-wide border-b border-[var(--border-subtle)] text-center">
+                  <th className="px-6 py-4 font-display font-semibold text-white text-sm tracking-wide border-b border-[rgba(255,255,255,0.1)] text-center">
                     ECN
                   </th>
                 </tr>
@@ -145,8 +144,8 @@ export function ComparisonTable() {
               <tbody>
                 {tableRows.map((row, index) => {
                   const isOdd = index % 2 === 0
-                  const oddBg = 'rgba(8,11,20,0.6)'
-                  const evenBg = 'rgba(13,17,32,0.4)'
+                  const oddBg = '#FFFFFF'
+                  const evenBg = '#F8F6F1'
 
                   return (
                     <tr
@@ -170,9 +169,7 @@ export function ComparisonTable() {
                         style={{
                           color: 'var(--gold-300)',
                           borderBottomColor: 'rgba(201,168,76,0.15)',
-                          background: isOdd
-                            ? 'rgba(201,168,76,0.06)'
-                            : 'rgba(201,168,76,0.04)',
+                          background: 'rgba(201,168,76,0.06)',
                         }}
                       >
                         {row.pro}

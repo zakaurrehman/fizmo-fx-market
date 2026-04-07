@@ -175,7 +175,11 @@ function AccountCard({ account, index }: AccountCardProps) {
 
 export function AccountsComparison() {
   return (
-    <section id="accounts-comparison" className="section-padding bg-[var(--bg-secondary)]">
+    <section
+      id="accounts-comparison"
+      className="section-light-theme section-padding"
+      style={{ background: '#F8F6F1' }}
+    >
       <div className="container-max">
         <SectionHeader
           eyebrow="Account Types"

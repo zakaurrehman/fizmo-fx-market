@@ -50,7 +50,7 @@ function getCategoryStyle(category: string) {
 
 export function CommoditiesTab() {
   return (
-    <div className="flex flex-col lg:flex-row gap-10 xl:gap-16">
+    <div className="section-light-theme flex flex-col lg:flex-row gap-10 xl:gap-16">
       {/* Left — 40% */}
       <motion.div
         initial={{ opacity: 0, x: -30 }}
@@ -99,14 +99,9 @@ export function CommoditiesTab() {
         className="lg:w-[60%] overflow-x-auto"
       >
         <div className="rounded-[var(--radius-lg)] overflow-hidden border border-[var(--border-subtle)] min-w-[480px]">
-          <table className="w-full border-collapse">
+          <table className="light-table w-full border-collapse">
             <thead>
-              <tr
-                style={{
-                  background:
-                    'linear-gradient(135deg, rgba(201,168,76,0.15), rgba(201,168,76,0.06))',
-                }}
-              >
+              <tr style={{ background: '#0D1120' }}>
                 {['Symbol', 'Name', 'Category', 'Spread From', 'Leverage'].map(
                   (col) => (
                     <th
@@ -128,16 +123,13 @@ export function CommoditiesTab() {
                     key={row.symbol}
                     className="transition-colors duration-150 hover:bg-[rgba(201,168,76,0.05)]"
                     style={{
-                      background:
-                        index % 2 === 0
-                          ? 'rgba(8,11,20,0.5)'
-                          : 'rgba(13,17,32,0.4)',
+                      background: index % 2 === 0 ? '#FFFFFF' : '#F8F6F1',
                     }}
                   >
                     <td className="px-4 py-3 border-b border-[var(--border-subtle)]">
                       <span
                         className="font-mono font-bold text-sm"
-                        style={{ color: 'var(--gold-300)' }}
+                        style={{ color: '#8A6A1E' }}
                       >
                         {row.symbol}
                       </span>

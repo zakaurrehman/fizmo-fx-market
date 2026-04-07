@@ -29,9 +29,10 @@ const comparisonRows: ComparisonRow[] = [
 interface CellProps {
   value: CellValue
   isHighlighted?: boolean
+  isMuted?: boolean
 }
 
-function Cell({ value, isHighlighted = false }: CellProps) {
+function Cell({ value, isHighlighted = false, isMuted = false }: CellProps) {
   if (typeof value === 'boolean') {
     return value ? (
       <Check
@@ -51,7 +52,13 @@ function Cell({ value, isHighlighted = false }: CellProps) {
   return (
     <span
       className="font-mono text-sm"
-      style={{ color: isHighlighted ? 'var(--gold-300)' : 'var(--text-secondary)' }}
+      style={{
+        color: isHighlighted
+          ? '#0D1120'
+          : isMuted
+          ? '#9CA3AF'
+          : 'var(--text-secondary)',
+      }}
     >
       {value}
     </span>
@@ -60,7 +67,10 @@ function Cell({ value, isHighlighted = false }: CellProps) {
 
 export function MT5vsmt4Table() {
   return (
-    <section className="section-padding bg-[var(--bg-primary)]">
+    <section
+      className="section-light-theme section-padding"
+      style={{ background: '#FFFFFF' }}
+    >
       <div className="container-max">
         <SectionHeader
           eyebrow="Platform Comparison"
@@ -76,18 +86,13 @@ export function MT5vsmt4Table() {
         <ScrollReveal direction="up" delay={0.1}>
           <div className="overflow-x-auto rounded-[var(--radius-lg)] border border-[var(--border-subtle)]">
             <table className="w-full min-w-[560px] border-collapse">
-              {/* Header */}
+              {/* Header — keep dark */}
               <thead>
-                <tr
-                  style={{
-                    background:
-                      'linear-gradient(135deg, rgba(201,168,76,0.15), rgba(201,168,76,0.06))',
-                  }}
-                >
-                  <th className="text-left px-6 py-4 font-display font-semibold text-[var(--text-primary)] text-sm tracking-wide border-b border-[var(--border-gold)]">
+                <tr style={{ background: '#0D1120' }}>
+                  <th className="text-left px-6 py-4 font-display font-semibold text-white text-sm tracking-wide border-b border-[var(--border-gold)]">
                     Feature
                   </th>
-                  <th className="px-6 py-4 font-display font-semibold text-[var(--text-muted)] text-sm tracking-wide border-b border-[var(--border-subtle)] text-center">
+                  <th className="px-6 py-4 font-display font-semibold text-[#9CA3AF] text-sm tracking-wide border-b border-[rgba(255,255,255,0.1)] text-center">
                     MT4
                   </th>
                   <th
@@ -106,13 +111,11 @@ export function MT5vsmt4Table() {
               <tbody>
                 {comparisonRows.map((row, index) => {
                   const isOdd = index % 2 === 0
-                  const oddBg = 'rgba(8,11,20,0.6)'
-                  const evenBg = 'rgba(13,17,32,0.4)'
 
                   return (
                     <tr
                       key={row.feature}
-                      style={{ background: isOdd ? oddBg : evenBg }}
+                      style={{ background: isOdd ? '#FFFFFF' : '#F8F6F1' }}
                       className="transition-colors duration-150 hover:bg-[rgba(201,168,76,0.03)]"
                     >
                       {/* Feature */}
@@ -122,20 +125,18 @@ export function MT5vsmt4Table() {
 
                       {/* MT4 — muted */}
                       <td className="px-6 py-3.5 border-b border-[var(--border-subtle)] text-center">
-                        <Cell value={row.mt4} isHighlighted={false} />
+                        <Cell value={row.mt4} isHighlighted={false} isMuted={true} />
                       </td>
 
-                      {/* MT5 — gold tint */}
+                      {/* MT5 — dark text + subtle gold tint */}
                       <td
                         className="px-6 py-3.5 border-b text-center"
                         style={{
                           borderBottomColor: 'rgba(201,168,76,0.15)',
-                          background: isOdd
-                            ? 'rgba(201,168,76,0.07)'
-                            : 'rgba(201,168,76,0.04)',
+                          background: 'rgba(201,168,76,0.04)',
                         }}
                       >
-                        <Cell value={row.mt5} isHighlighted={true} />
+                        <Cell value={row.mt5} isHighlighted={true} isMuted={false} />
                       </td>
                     </tr>
                   )
@@ -145,14 +146,14 @@ export function MT5vsmt4Table() {
           </div>
         </ScrollReveal>
 
-        {/* Callout below table */}
+        {/* Callout below table — white card with gold border */}
         <ScrollReveal direction="up" delay={0.25}>
           <div
             className="mt-12 rounded-[var(--radius-xl)] p-8 md:p-12 text-center"
             style={{
-              background:
-                'linear-gradient(135deg, rgba(201,168,76,0.1) 0%, rgba(28,35,64,0.5) 100%)',
+              background: '#FFFFFF',
               border: '1px solid var(--border-gold)',
+              boxShadow: '0 4px 24px rgba(201,168,76,0.08)',
             }}
           >
             <h3 className="font-display font-bold text-[var(--text-primary)] text-xl md:text-2xl mb-3">

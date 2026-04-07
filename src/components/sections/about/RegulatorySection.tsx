@@ -21,8 +21,8 @@ const infoRows: InfoRow[] = [
 export function RegulatorySection() {
   return (
     <section
-      className="section-padding"
-      style={{ background: 'var(--bg-primary)' }}
+      className="section-light-theme section-padding"
+      style={{ background: '#FFFFFF' }}
     >
       <div className="container-max">
         {/* Section heading */}
@@ -67,9 +67,9 @@ export function RegulatorySection() {
             style={{
               maxWidth: '48rem',
               margin: '0 auto 2rem',
-              background: 'var(--bg-elevated)',
+              background: '#FFFFFF',
               border: '1px solid var(--border-gold)',
-              boxShadow: 'var(--shadow-glow)',
+              boxShadow: '0 4px 24px rgba(201,168,76,0.08)',
               borderRadius: 'var(--radius-xl)',
               padding: '2.5rem',
             }}
@@ -114,13 +114,13 @@ export function RegulatorySection() {
                 >
                   <span
                     className="font-mono text-xs font-medium uppercase tracking-wide"
-                    style={{ color: 'var(--text-muted)', paddingTop: '0.125rem' }}
+                    style={{ color: '#9CA3AF', paddingTop: '0.125rem' }}
                   >
                     {row.label}
                   </span>
                   <span
                     className="font-body font-medium"
-                    style={{ fontSize: '0.9375rem', color: 'var(--text-primary)' }}
+                    style={{ fontSize: '0.9375rem', color: '#0D1120' }}
                   >
                     {row.value}
                   </span>
@@ -130,14 +130,14 @@ export function RegulatorySection() {
           </div>
         </ScrollReveal>
 
-        {/* Risk warning card */}
+        {/* Risk warning card — warm yellow tint */}
         <ScrollReveal delay={0.2}>
           <div
             style={{
               maxWidth: '48rem',
               margin: '0 auto',
-              background: 'rgba(201,168,76,0.05)',
-              border: '1px solid rgba(201,168,76,0.2)',
+              background: '#FFF8E7',
+              border: '1px solid rgba(168,134,42,0.3)',
               borderRadius: 'var(--radius-lg)',
               padding: '1.5rem',
             }}

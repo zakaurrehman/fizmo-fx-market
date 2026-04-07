@@ -25,8 +25,7 @@ function TestimonialCard({
             fontSize: '6rem',
             lineHeight: 1,
             fontFamily: 'Georgia, serif',
-            color: 'var(--gold-500)',
-            opacity: 0.2,
+            color: 'rgba(168,134,42,0.15)',
             pointerEvents: 'none',
             userSelect: 'none',
           }}
@@ -38,7 +37,7 @@ function TestimonialCard({
         <div
           style={{
             fontSize: '1rem',
-            color: 'var(--gold-500)',
+            color: '#C9A84C',
             marginBottom: '1rem',
             letterSpacing: '0.1em',
           }}
@@ -50,7 +49,7 @@ function TestimonialCard({
         <p
           style={{
             fontStyle: 'italic',
-            color: 'var(--text-secondary)',
+            color: '#374151',
             lineHeight: 1.75,
             fontSize: '0.9375rem',
             marginBottom: '1.5rem',
@@ -77,7 +76,7 @@ function TestimonialCard({
             style={{
               fontFamily: "'Syne', sans-serif",
               fontWeight: 700,
-              color: 'var(--text-primary)',
+              color: '#0D1120',
               fontSize: '0.9375rem',
             }}
           >
@@ -101,8 +100,8 @@ function TestimonialCard({
 export function TestimonialsSection() {
   return (
     <section
-      className="section-padding"
-      style={{ background: 'var(--bg-primary)' }}
+      className="section-padding section-light-theme"
+      style={{ background: '#F8F6F1' }}
     >
       <div className="container-max">
         <ScrollReveal direction="up">

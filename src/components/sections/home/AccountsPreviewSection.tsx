@@ -24,13 +24,13 @@ function FeatureRow({ label, value }: FeatureRowProps) {
       <div className="flex-1 flex items-center justify-between gap-2 min-w-0">
         <span
           className="font-body text-xs"
-          style={{ color: 'var(--text-muted)' }}
+          style={{ color: '#374151' }}
         >
           {label}
         </span>
         <span
           className="font-mono text-xs font-medium text-right"
-          style={{ color: 'var(--text-secondary)' }}
+          style={{ color: '#374151' }}
         >
           {value}
         </span>
@@ -131,14 +131,14 @@ function AccountCard({ account, index }: AccountCardProps) {
         <div
           className="flex items-center gap-2 px-3 py-2 rounded-[var(--radius-sm)]"
           style={{
-            background: 'rgba(201,168,76,0.06)',
-            border: '1px solid rgba(201,168,76,0.12)',
+            background: 'rgba(201,168,76,0.08)',
+            border: '1px solid rgba(201,168,76,0.18)',
           }}
         >
           <span style={{ fontSize: '0.875rem' }}>🎯</span>
           <span
             className="font-body text-xs font-medium"
-            style={{ color: 'var(--gold-300)' }}
+            style={{ color: '#8A6A1E' }}
           >
             Best for: {account.bestFor}
           </span>
@@ -172,8 +172,8 @@ function AccountCard({ account, index }: AccountCardProps) {
 export function AccountsPreviewSection() {
   return (
     <section
-      className="section-padding"
-      style={{ background: 'var(--bg-primary)' }}
+      className="section-padding section-light-theme"
+      style={{ background: '#FFFFFF' }}
     >
       <div className="container-max">
         <SectionHeader
@@ -195,12 +195,12 @@ export function AccountsPreviewSection() {
           <Link
             to="/accounts"
             className="font-body text-sm font-semibold inline-flex items-center gap-1.5 transition-colors duration-150"
-            style={{ color: 'var(--gold-500)' }}
+            style={{ color: '#8A6A1E' }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-300)'
+              (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
+              (e.currentTarget as HTMLAnchorElement).style.color = '#8A6A1E'
             }}
           >
             Compare All Account Features →

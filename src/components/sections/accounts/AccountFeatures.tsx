@@ -55,7 +55,10 @@ const features: FeatureItem[] = [
 
 export function AccountFeatures() {
   return (
-    <section className="section-padding bg-[var(--bg-secondary)]">
+    <section
+      className="section-light-theme section-padding"
+      style={{ background: '#F8F6F1' }}
+    >
       <div className="container-max">
         <SectionHeader
           eyebrow="Included with Every Account"
@@ -99,13 +102,14 @@ export function AccountFeatures() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        {/* Bottom CTA — white card with gold border on light bg */}
         <ScrollReveal direction="up" delay={0.3}>
           <div
             className="rounded-[var(--radius-xl)] p-8 md:p-12 text-center"
             style={{
-              background: 'linear-gradient(135deg, rgba(201,168,76,0.08) 0%, rgba(28,35,64,0.6) 100%)',
+              background: '#FFFFFF',
               border: '1px solid var(--border-gold)',
+              boxShadow: '0 4px 24px rgba(201,168,76,0.08)',
             }}
           >
             <h3 className="font-display font-bold text-[var(--text-primary)] text-xl md:text-2xl mb-3">

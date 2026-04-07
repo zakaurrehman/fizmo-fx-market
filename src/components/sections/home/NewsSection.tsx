@@ -83,7 +83,7 @@ function NewsCard({
         transition: { duration: 0.2 },
       }}
       style={{
-        background: 'var(--bg-card)',
+        background: '#FFFFFF',
         border: '1px solid var(--border-subtle)',
         borderRadius: 'var(--radius-lg)',
         overflow: 'hidden',
@@ -138,6 +138,7 @@ function NewsCard({
           flexDirection: 'column',
           gap: '0.625rem',
           flex: 1,
+          background: '#FFFFFF',
         }}
       >
         {/* Category chip + date */}
@@ -168,7 +169,7 @@ function NewsCard({
           <span
             style={{
               fontSize: '0.75rem',
-              color: 'var(--text-muted)',
+              color: '#9CA3AF',
               fontFamily: "'JetBrains Mono', monospace",
             }}
           >
@@ -182,7 +183,7 @@ function NewsCard({
             fontFamily: "'Syne', sans-serif",
             fontWeight: 700,
             fontSize: '1rem',
-            color: 'var(--text-primary)',
+            color: '#0D1120',
             lineHeight: 1.4,
             margin: 0,
           }}
@@ -194,7 +195,7 @@ function NewsCard({
         <p
           style={{
             fontSize: '0.875rem',
-            color: 'var(--text-secondary)',
+            color: '#374151',
             lineHeight: 1.65,
             flex: 1,
           }}
@@ -205,7 +206,7 @@ function NewsCard({
         {/* Read more */}
         <span
           style={{
-            color: 'var(--text-gold)',
+            color: '#8A6A1E',
             fontSize: '0.875rem',
             fontWeight: 600,
             marginTop: '0.25rem',
@@ -223,8 +224,8 @@ function NewsCard({
 export function NewsSection() {
   return (
     <section
-      className="section-padding"
-      style={{ background: 'var(--bg-secondary)' }}
+      className="section-padding section-light-theme"
+      style={{ background: '#FFFFFF' }}
     >
       <div className="container-max">
         <ScrollReveal direction="up">

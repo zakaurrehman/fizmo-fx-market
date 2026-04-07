@@ -42,7 +42,10 @@ const tools: ToolCard[] = [
 
 export function TradingTools() {
   return (
-    <section className="section-padding bg-[var(--bg-secondary)]">
+    <section
+      className="section-light-theme section-padding"
+      style={{ background: '#F8F6F1' }}
+    >
       <div className="container-max">
         <SectionHeader
           eyebrow="Built-in Tools"

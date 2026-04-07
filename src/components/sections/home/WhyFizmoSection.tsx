@@ -114,8 +114,8 @@ function FeatureCard({ feature, delay }: FeatureCardProps) {
 export function WhyFizmoSection() {
   return (
     <section
-      className="section-padding relative"
-      style={{ background: 'var(--bg-secondary)' }}
+      className="section-padding relative section-light-theme"
+      style={{ background: '#F8F6F1' }}
     >
       {/* Dot grid overlay */}
       <div

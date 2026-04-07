@@ -40,8 +40,8 @@ const values: ValueItem[] = [
 export function ValuesSection() {
   return (
     <section
-      className="section-padding"
-      style={{ background: 'var(--bg-secondary)' }}
+      className="section-light-theme section-padding"
+      style={{ background: '#F8F6F1' }}
     >
       <div className="container-max">
         <ScrollReveal>

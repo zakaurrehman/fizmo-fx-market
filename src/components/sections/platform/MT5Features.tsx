@@ -72,7 +72,10 @@ const features: FeatureCard[] = [
 
 export function MT5Features() {
   return (
-    <section className="section-padding bg-[var(--bg-secondary)]">
+    <section
+      className="section-light-theme section-padding"
+      style={{ background: '#F8F6F1' }}
+    >
       <div className="container-max">
         <SectionHeader
           eyebrow="Platform Features"

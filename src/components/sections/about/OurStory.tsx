@@ -30,7 +30,10 @@ const milestones: Milestone[] = [
 
 export function OurStory() {
   return (
-    <section className="section-padding" style={{ background: 'var(--bg-primary)' }}>
+    <section
+      className="section-light-theme section-padding"
+      style={{ background: '#FFFFFF' }}
+    >
       <div className="container-max">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
@@ -67,7 +70,7 @@ export function OurStory() {
               <div className="flex flex-col gap-5">
                 <p
                   className="font-body leading-relaxed"
-                  style={{ color: 'var(--text-secondary)', fontSize: '1rem' }}
+                  style={{ color: '#374151', fontSize: '1rem' }}
                 >
                   Fizmo FX Markets was established by a team of trading industry
                   veterans who saw a fundamental problem in retail trading: traders
@@ -76,7 +79,7 @@ export function OurStory() {
                 </p>
                 <p
                   className="font-body leading-relaxed"
-                  style={{ color: 'var(--text-secondary)', fontSize: '1rem' }}
+                  style={{ color: '#374151', fontSize: '1rem' }}
                 >
                   We built Fizmo FX around a different philosophy. Every feature —
                   from our ECN pricing to our instant USDT withdrawals — exists
@@ -85,7 +88,7 @@ export function OurStory() {
                 </p>
                 <p
                   className="font-body leading-relaxed"
-                  style={{ color: 'var(--text-secondary)', fontSize: '1rem' }}
+                  style={{ color: '#374151', fontSize: '1rem' }}
                 >
                   Today, we serve traders across 50+ countries, offering 300+
                   instruments with the speed, transparency, and reliability that
@@ -123,7 +126,7 @@ export function OurStory() {
                       <div
                         className="w-[3.75rem] h-[3.75rem] rounded-full flex items-center justify-center"
                         style={{
-                          background: 'var(--bg-elevated)',
+                          background: '#FFFFFF',
                           border: '2px solid var(--border-gold)',
                           boxShadow: '0 0 16px rgba(201,168,76,0.15)',
                         }}

@@ -53,7 +53,7 @@ const config: Config = {
       backgroundImage: {
         'gradient-gold':     'linear-gradient(135deg, #C9A84C, #E8C25A)',
         'gradient-gold-dim': 'linear-gradient(135deg, #8A6A1E, #C9A84C)',
-        'gradient-card':     'linear-gradient(135deg, #131829, #1C2340)',
+        'gradient-card':     'var(--gradient-card)',
         'gradient-radial':   'radial-gradient(var(--tw-gradient-stops))',
       },
       boxShadow: {

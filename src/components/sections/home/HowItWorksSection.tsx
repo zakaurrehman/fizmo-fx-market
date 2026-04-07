@@ -29,8 +29,7 @@ function StepCard({
         className="absolute top-4 right-4 font-display font-bold select-none pointer-events-none leading-none"
         style={{
           fontSize: '5rem',
-          color: 'var(--gold-500)',
-          opacity: 0.06,
+          color: 'rgba(168,134,42,0.08)',
           lineHeight: 1,
         }}
         aria-hidden="true"
@@ -41,7 +40,7 @@ function StepCard({
       {/* Icon */}
       <div
         className="inline-flex items-center justify-center rounded-[var(--radius-md)] w-16 h-16 flex-shrink-0"
-        style={{ background: 'rgba(201,168,76,0.1)' }}
+        style={{ background: 'rgba(168,134,42,0.1)' }}
       >
         <div style={{ color: 'var(--gold-500)', width: 32, height: 32 }}>
           {icon}
@@ -88,8 +87,8 @@ function StepCard({
 export function HowItWorksSection() {
   return (
     <section
-      className="section-padding"
-      style={{ background: 'var(--bg-primary)' }}
+      className="section-padding section-light-theme"
+      style={{ background: '#F8F6F1' }}
     >
       <div className="container-max">
         <SectionHeader
@@ -132,12 +131,12 @@ export function HowItWorksSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-body text-sm font-semibold inline-flex items-center gap-1 transition-colors duration-[var(--transition-fast)]"
-                  style={{ color: 'var(--gold-500)' }}
+                  style={{ color: '#8A6A1E' }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-300)'
+                    (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
                   }}
                   onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
+                    (e.currentTarget as HTMLAnchorElement).style.color = '#8A6A1E'
                   }}
                 >
                   Start Registration →
@@ -156,14 +155,14 @@ export function HowItWorksSection() {
                 <div
                   className="flex items-start gap-3 rounded-[var(--radius-md)] p-4"
                   style={{
-                    background: 'rgba(201,168,76,0.07)',
-                    border: '1px solid var(--border-gold)',
+                    background: 'rgba(168,134,42,0.08)',
+                    border: '1px solid rgba(168,134,42,0.2)',
                   }}
                 >
                   <span style={{ fontSize: '1rem', flexShrink: 0, marginTop: '2px' }}>💡</span>
                   <p
                     className="font-body text-xs leading-relaxed"
-                    style={{ color: 'var(--gold-300)' }}
+                    style={{ color: '#374151' }}
                   >
                     <strong>Pro Tip:</strong> Use USDT for the fastest deposits — credited in under 30 minutes
                   </p>
@@ -184,12 +183,12 @@ export function HowItWorksSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-body text-sm font-semibold inline-flex items-center gap-1 transition-colors duration-[var(--transition-fast)]"
-                  style={{ color: 'var(--gold-500)' }}
+                  style={{ color: '#8A6A1E' }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-300)'
+                    (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
                   }}
                   onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
+                    (e.currentTarget as HTMLAnchorElement).style.color = '#8A6A1E'
                   }}
                 >
                   Download MT5 →
