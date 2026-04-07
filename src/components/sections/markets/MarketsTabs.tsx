@@ -47,13 +47,14 @@ export function MarketsTabs() {
   }, [location.pathname])
 
   return (
-    <section id="markets-tabs" className="bg-[var(--bg-primary)]">
+    <section id="markets-tabs" className="section-light-theme" style={{ background: '#FFFFFF' }}>
       {/* Sticky tab bar */}
       <div
-        className="sticky z-30 border-b border-[var(--border-subtle)]"
+        className="sticky z-30 border-b"
         style={{
           top: '120px',
-          background: 'var(--bg-secondary)',
+          background: '#FFFFFF',
+          borderBottomColor: 'rgba(0,0,0,0.08)',
         }}
       >
         <div className="container-max">
@@ -71,11 +72,11 @@ export function MarketsTabs() {
                   aria-selected={isActive}
                   aria-controls={`tabpanel-${tab.id}`}
                   onClick={() => setActiveTab(tab.id)}
-                  className="relative flex-shrink-0 px-6 py-4 text-sm font-medium font-body transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold-500)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-secondary)]"
+                  className="relative flex-shrink-0 px-6 py-4 text-sm font-medium font-body transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold-500)] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   style={{
                     color: isActive
-                      ? 'var(--text-gold)'
-                      : 'var(--text-muted)',
+                      ? '#8A6A1E'
+                      : '#6B7280',
                     borderBottom: isActive
                       ? '2px solid var(--gold-500)'
                       : '2px solid transparent',
@@ -83,14 +84,12 @@ export function MarketsTabs() {
                   }}
                   onMouseEnter={(e) => {
                     if (!isActive) {
-                      ;(e.currentTarget as HTMLButtonElement).style.color =
-                        'var(--text-primary)'
+                      ;(e.currentTarget as HTMLButtonElement).style.color = '#0D1120'
                     }
                   }}
                   onMouseLeave={(e) => {
                     if (!isActive) {
-                      ;(e.currentTarget as HTMLButtonElement).style.color =
-                        'var(--text-muted)'
+                      ;(e.currentTarget as HTMLButtonElement).style.color = '#6B7280'
                     }
                   }}
                 >

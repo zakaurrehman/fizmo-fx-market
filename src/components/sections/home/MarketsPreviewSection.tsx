@@ -119,7 +119,7 @@ function MarketCard({ market, delay }: { market: MarketCardData; delay: number }
             className="font-mono text-xs px-2 py-1 rounded"
             style={{
               color: 'var(--text-muted)',
-              background: 'rgba(255,255,255,0.04)',
+              background: 'rgba(0,0,0,0.04)',
               border: '1px solid var(--border-subtle)',
             }}
           >
@@ -149,8 +149,8 @@ function MarketCard({ market, delay }: { market: MarketCardData; delay: number }
 export function MarketsPreviewSection() {
   return (
     <section
-      className="section-padding"
-      style={{ background: 'var(--bg-primary)' }}
+      className="section-light-theme section-padding"
+      style={{ background: '#F8F6F1' }}
     >
       <div className="container-max">
         <SectionHeader
