@@ -1,10 +1,16 @@
 import { Link } from 'react-router-dom'
-import { Mail, Phone, MessageCircle, Share2, Globe, Camera } from 'lucide-react'
+import { Mail, Phone, MessageCircle } from 'lucide-react'
 import { Logo } from '@/components/ui/Logo'
-// Social icon aliases
-const Twitter = Share2
-const Linkedin = Globe
-const Instagram = Camera
+
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <circle cx="12" cy="12" r="4.5" />
+      <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
 
 export function Footer() {
   const year = new Date().getFullYear()
@@ -30,23 +36,38 @@ export function Footer() {
             </p>
             {/* Socials */}
             <div className="flex items-center gap-3">
-              {[
-                { icon: Twitter, href: '#', label: 'Twitter' },
-                { icon: Linkedin, href: '#', label: 'LinkedIn' },
-                { icon: Instagram, href: '#', label: 'Instagram' },
-                { icon: MessageCircle, href: 'https://wa.me/447759046727', label: 'WhatsApp' },
-              ].map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="w-9 h-9 flex items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--gold-500)] hover:border-[var(--border-gold)] hover:scale-110 transition-all duration-200"
-                >
-                  <Icon className="w-4 h-4" />
-                </a>
-              ))}
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/447759046727"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="w-9 h-9 flex items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--gold-500)] hover:border-[var(--border-gold)] hover:scale-110 transition-all duration-200"
+              >
+                <MessageCircle className="w-4 h-4" />
+              </a>
+              {/* Website homepage */}
+              <Link
+                to="/"
+                aria-label="Website"
+                className="w-9 h-9 flex items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--gold-500)] hover:border-[var(--border-gold)] hover:scale-110 transition-all duration-200"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </Link>
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/fizmofxglobal?igsh=MWZmd25oajA0bWQ4eg=="
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="w-9 h-9 flex items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--gold-500)] hover:border-[var(--border-gold)] hover:scale-110 transition-all duration-200"
+              >
+                <InstagramIcon className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
