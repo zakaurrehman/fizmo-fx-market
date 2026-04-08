@@ -56,7 +56,7 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center shrink-0" onClick={() => setMobileOpen(false)}>
-              <Logo variant="dark" height={34} />
+              <Logo variant="dark" height={48} />
             </Link>
 
             {/* Desktop Nav */}

@@ -23,7 +23,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-flex mb-4">
-              <Logo variant="dark" height={30} />
+              <Logo variant="dark" height={44} />
             </Link>
             <p className="text-[var(--text-muted)] text-sm leading-relaxed mb-6">
               Your Edge in Global Markets. Trade smarter with ultra-tight spreads and instant execution.
