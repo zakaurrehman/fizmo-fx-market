@@ -10,8 +10,11 @@ import { AffiliateSection } from '@/components/sections/home/AffiliateSection'
 import { TestimonialsSection } from '@/components/sections/home/TestimonialsSection'
 import { NewsSection } from '@/components/sections/home/NewsSection'
 import { BottomCTABanner } from '@/components/sections/home/BottomCTABanner'
+import useMeta from '@/hooks/useMeta'
+import { seo, globalKeywords } from '@/data/seoData'
 
 export function HomePage() {
+  useMeta({ ...seo.home, keywords: seo.home.keywords || globalKeywords })
   return (
     <>
       <HeroSection />
