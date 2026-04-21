@@ -2,12 +2,38 @@ import { Link } from 'react-router-dom'
 import { Mail, Phone, MessageCircle } from 'lucide-react'
 import { Logo } from '@/components/ui/Logo'
 
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+  )
+}
+
 function InstagramIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className={className}>
       <rect x="2" y="2" width="20" height="20" rx="5" />
       <circle cx="12" cy="12" r="4.5" />
       <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
+
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+    </svg>
+  )
+}
+
+function LinkedInIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect x="2" y="9" width="4" height="12" />
+      <circle cx="4" cy="4" r="2" />
     </svg>
   )
 }
@@ -36,38 +62,23 @@ export function Footer() {
             </p>
             {/* Socials */}
             <div className="flex items-center gap-3">
-              {/* WhatsApp */}
-              <a
-                href="https://wa.me/447759046727"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="WhatsApp"
-                className="w-9 h-9 flex items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--gold-500)] hover:border-[var(--border-gold)] hover:scale-110 transition-all duration-200"
-              >
-                <MessageCircle className="w-4 h-4" />
-              </a>
-              {/* Website homepage */}
-              <Link
-                to="/"
-                aria-label="Website"
-                className="w-9 h-9 flex items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--gold-500)] hover:border-[var(--border-gold)] hover:scale-110 transition-all duration-200"
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="2" y1="12" x2="22" y2="12" />
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-              </Link>
-              {/* Instagram */}
-              <a
-                href="https://www.instagram.com/fizmofxglobal?igsh=MWZmd25oajA0bWQ4eg=="
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="w-9 h-9 flex items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--gold-500)] hover:border-[var(--border-gold)] hover:scale-110 transition-all duration-200"
-              >
-                <InstagramIcon className="w-4 h-4" />
-              </a>
+              {[
+                { icon: <FacebookIcon className="w-4 h-4" />, href: 'https://www.facebook.com/profile.php?id=61570808971485', label: 'Facebook' },
+                { icon: <InstagramIcon className="w-4 h-4" />, href: 'https://www.instagram.com/fizmofx.market/', label: 'Instagram' },
+                { icon: <TikTokIcon className="w-4 h-4" />, href: 'https://www.tiktok.com/@fizmo.fx.markets?lang=en-GB', label: 'TikTok' },
+                { icon: <LinkedInIcon className="w-4 h-4" />, href: 'https://www.linkedin.com/in/fizmo-fx-markets-aa47b5403/?skipRedirect=true', label: 'LinkedIn' },
+              ].map(({ icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-9 h-9 flex items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--gold-500)] hover:border-[var(--border-gold)] hover:scale-110 transition-all duration-200"
+                >
+                  {icon}
+                </a>
+              ))}
             </div>
           </div>
 
