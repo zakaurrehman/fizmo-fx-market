@@ -42,6 +42,9 @@ function setPropertyMeta(prop: string, content?: string) {
 export default function useMeta(options: MetaOptions = {}) {
   const { title, description, keywords, og } = options
 
+  // accept options.url as canonical/og:url
+  const url = (options as MetaOptions & { url?: string }).url
+
   useEffect(() => {
     if (title) document.title = title
 
@@ -56,5 +59,21 @@ export default function useMeta(options: MetaOptions = {}) {
       setMeta('twitter:title', og.title || title)
       setMeta('twitter:description', og.description || description)
     }
+    // set canonical link and og:url
+    if (url) {
+      let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null
+      if (link) {
+        link.href = url
+      } else {
+        link = document.createElement('link')
+        link.rel = 'canonical'
+        link.href = url
+        document.head.appendChild(link)
+      }
+
+      setPropertyMeta('og:url', url)
+      setMeta('twitter:url', url)
+    }
   }, [title, description, keywords, og?.title, og?.description, og?.image])
 }
+
