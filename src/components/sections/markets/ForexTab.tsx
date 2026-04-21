@@ -9,8 +9,8 @@ const REGISTER_URL = 'https://my.fizmofxmarkets.com/register'
 const featureList: string[] = [
   '60+ currency pairs — majors, minors, exotics',
   'Trading hours: Sunday 22:00 – Friday 22:00 GMT',
-  'Spreads from 0.0 pips (ECN) or 1.0 pip (Standard)',
-  'Leverage up to 1:500',
+  'Spreads from 0.16 pips (ECN) or 0.30 pip (Standard)',
+  'Leverage up to 1:2000',
   'No restrictions on scalping or hedging',
   'Expert Advisors (EAs) fully supported',
 ]

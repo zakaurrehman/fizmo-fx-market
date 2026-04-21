@@ -25,15 +25,15 @@ const features: FeatureItem[] = [
   },
   {
     icon: <Activity size={28} />,
-    title: 'Spreads From 0.0 Pips',
+    title: 'Spreads From 0.16 Pips',
     description:
-      'Our ECN accounts deliver raw interbank pricing with spreads starting at 0.0 pips on major pairs. Transparent pricing means you always know your true trading cost.',
+      'Our ECN accounts deliver raw interbank pricing with spreads starting at 0.16 pips on major pairs. Transparent pricing means you always know your true trading cost.',
   },
   {
     icon: <TrendingUp size={28} />,
-    title: '1:500 Leverage',
+    title: '1:2000 Leverage',
     description:
-      'Amplify your market exposure with leverage up to 1:500 available across all account types. Control larger positions while maintaining precise risk management.',
+      'Amplify your market exposure with leverage up to 1:2000 available across all account types. Control larger positions while maintaining precise risk management.',
   },
   {
     icon: <Shield size={28} />,

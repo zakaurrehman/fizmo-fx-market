@@ -43,7 +43,7 @@ const features: FeatureItem[] = [
     icon: <Sliders className="w-6 h-6" />,
     title: 'Flexible Leverage',
     description:
-      'Adjust leverage per your trading strategy. Reduce risk by lowering leverage, or maximize exposure up to 1:500 where permitted.',
+      'Adjust leverage per your trading strategy. Reduce risk by lowering leverage, or maximize exposure up to 1:2000 where permitted.',
   },
   {
     icon: <Monitor className="w-6 h-6" />,

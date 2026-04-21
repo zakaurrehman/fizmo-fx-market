@@ -147,7 +147,7 @@ export function HeroSection() {
               }}
             >
               Access 300+ instruments including Forex, Crypto, Indices and
-              Commodities. Ultra-tight spreads from 0.0 pips, 1:500 leverage,
+              Commodities. Ultra-tight spreads from 0.16 pips, 1:2000 leverage,
               and instant USDT withdrawals — built for traders who demand the
               best.
             </p>
@@ -340,7 +340,7 @@ export function HeroSection() {
               className="text-center font-mono mt-3"
               style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}
             >
-              Live pricing · spreads from 0.0 pips · zero commission
+              Live pricing · spreads from 0.16 pips · zero commission
             </p>
           </motion.div>
 

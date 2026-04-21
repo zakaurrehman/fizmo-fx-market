@@ -1,16 +1,16 @@
 import type { ForexInstrument, CryptoInstrument, IndexInstrument, CommodityInstrument } from '@/types'
 
 export const forexInstruments: ForexInstrument[] = [
-  { symbol: 'EUR/USD', description: 'Euro / US Dollar', spreadFrom: '0.0 pips', leverage: '1:500', minLot: '0.01' },
-  { symbol: 'GBP/USD', description: 'British Pound / US Dollar', spreadFrom: '0.3 pips', leverage: '1:500', minLot: '0.01' },
-  { symbol: 'USD/JPY', description: 'US Dollar / Japanese Yen', spreadFrom: '0.2 pips', leverage: '1:500', minLot: '0.01' },
-  { symbol: 'AUD/USD', description: 'Australian Dollar / USD', spreadFrom: '0.3 pips', leverage: '1:500', minLot: '0.01' },
-  { symbol: 'USD/CAD', description: 'US Dollar / Canadian Dollar', spreadFrom: '0.4 pips', leverage: '1:500', minLot: '0.01' },
-  { symbol: 'USD/CHF', description: 'US Dollar / Swiss Franc', spreadFrom: '0.4 pips', leverage: '1:500', minLot: '0.01' },
-  { symbol: 'NZD/USD', description: 'New Zealand Dollar / USD', spreadFrom: '0.5 pips', leverage: '1:500', minLot: '0.01' },
-  { symbol: 'EUR/GBP', description: 'Euro / British Pound', spreadFrom: '0.6 pips', leverage: '1:500', minLot: '0.01' },
-  { symbol: 'EUR/JPY', description: 'Euro / Japanese Yen', spreadFrom: '0.5 pips', leverage: '1:500', minLot: '0.01' },
-  { symbol: 'GBP/JPY', description: 'British Pound / Japanese Yen', spreadFrom: '0.7 pips', leverage: '1:500', minLot: '0.01' },
+  { symbol: 'EUR/USD', description: 'Euro / US Dollar', spreadFrom: '0.16 pips', leverage: '1:2000', minLot: '0.01' },
+  { symbol: 'GBP/USD', description: 'British Pound / US Dollar', spreadFrom: '0.3 pips', leverage: '1:2000', minLot: '0.01' },
+  { symbol: 'USD/JPY', description: 'US Dollar / Japanese Yen', spreadFrom: '0.2 pips', leverage: '1:2000', minLot: '0.01' },
+  { symbol: 'AUD/USD', description: 'Australian Dollar / USD', spreadFrom: '0.3 pips', leverage: '1:2000', minLot: '0.01' },
+  { symbol: 'USD/CAD', description: 'US Dollar / Canadian Dollar', spreadFrom: '0.4 pips', leverage: '1:2000', minLot: '0.01' },
+  { symbol: 'USD/CHF', description: 'US Dollar / Swiss Franc', spreadFrom: '0.4 pips', leverage: '1:2000', minLot: '0.01' },
+  { symbol: 'NZD/USD', description: 'New Zealand Dollar / USD', spreadFrom: '0.5 pips', leverage: '1:2000', minLot: '0.01' },
+  { symbol: 'EUR/GBP', description: 'Euro / British Pound', spreadFrom: '0.6 pips', leverage: '1:2000', minLot: '0.01' },
+  { symbol: 'EUR/JPY', description: 'Euro / Japanese Yen', spreadFrom: '0.5 pips', leverage: '1:2000', minLot: '0.01' },
+  { symbol: 'GBP/JPY', description: 'British Pound / Japanese Yen', spreadFrom: '0.7 pips', leverage: '1:2000', minLot: '0.01' },
 ]
 
 export const cryptoInstruments: CryptoInstrument[] = [

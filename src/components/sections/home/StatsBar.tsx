@@ -94,7 +94,7 @@ export function StatsBar() {
             <div className="relative flex items-stretch">
               <div className="flex-1">
                 <StaticStat
-                  value="1:500"
+                  value="1:2000"
                   label="Maximum Leverage"
                   sublabel="Available on all account types"
                 />

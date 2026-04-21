@@ -23,9 +23,9 @@ const tableRows: TableRow[] = [
   },
   {
     feature: 'Spread From',
-    standard: '1.0 pip',
-    pro: '0.8 pip',
-    ecn: '0.0 pip',
+    standard: '0.30 pip',
+    pro: '0.23 pip',
+    ecn: '0.16 pip',
   },
   {
     feature: 'Commission',
@@ -35,9 +35,9 @@ const tableRows: TableRow[] = [
   },
   {
     feature: 'Leverage',
-    standard: '1:500',
-    pro: '1:500',
-    ecn: '1:500',
+    standard: '1:2000',
+    pro: '1:2000',
+    ecn: '1:2000',
   },
   {
     feature: 'Execution',

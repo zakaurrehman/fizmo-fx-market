@@ -35,7 +35,7 @@ export const faqData: FAQItem[] = [
     id: 'faq-6',
     question: 'What leverage do you offer?',
     answer:
-      'We offer leverage up to 1:500 on all account types. Leverage on cryptocurrencies is capped at 1:10 and indices at 1:200. You can adjust your account leverage at any time through your client portal.',
+      'We offer leverage up to 1:2000 on all account types. Leverage on cryptocurrencies is capped at 1:10 and indices at 1:200. You can adjust your account leverage at any time through your client portal.',
   },
   {
     id: 'faq-7',
