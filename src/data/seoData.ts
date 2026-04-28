@@ -1,8 +1,9 @@
+
 const seo = {
   home: {
-    title: 'Fizmo FX Markets | Trade Global Markets',
+    title: 'Fizmo FX Markets | Trusted Forex Broker',
     description:
-      'Award-winning forex broker. Trade 300+ instruments with ultra-tight spreads, 1:500 leverage and instant withdrawals. Create your account in 2 minutes.',
+      'Trade Forex, Crypto, Commodities, Indices & CFDs with Fizmo FX Markets. Enjoy MT5 trading, ultra-tight spreads, fast withdrawals, low deposits, and 24/7 expert support. Start trading today.',
     keywords: 'Trade Global Markets, global markets trader, forex trading online, step by step',
     url: 'https://www.fizmofxmarkets.com/'
   },
