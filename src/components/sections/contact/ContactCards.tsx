@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import { Mail, MessageCircle, Phone, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
+import { trackPixel } from '@/lib/metaPixel'
 
 interface ContactCard {
   icon: ReactNode
@@ -132,6 +133,9 @@ export function ContactCards() {
                   size="md"
                   href={card.buttonHref}
                   external={card.external}
+                  onClick={() =>
+                    trackPixel('Contact', { content_name: card.title })
+                  }
                 >
                   {card.buttonLabel}
                 </Button>

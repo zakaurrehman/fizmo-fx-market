@@ -1,6 +1,7 @@
-import type { ReactNode } from 'react'
+import type { ReactNode, MouseEvent } from 'react'
 import { clsx } from 'clsx'
 import type { ButtonVariant, ButtonSize } from '@/types'
+import { trackPixel } from '@/lib/metaPixel'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant
@@ -40,8 +41,19 @@ export function Button({
   className,
   children,
   disabled,
+  onClick,
   ...props
 }: ButtonProps) {
+  // "Open Account" / register CTAs send the user to the external broker
+  // signup. Registration completes off-domain so we can't fire
+  // CompleteRegistration here — the click itself is the trackable
+  // lead/intent. Centralizing it here covers every such CTA sitewide.
+  const handleClick = (e: MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
+    if (href && href.includes('my.fizmofxmarkets.com/register')) {
+      trackPixel('Lead', { content_name: 'Open Account' })
+    }
+    onClick?.(e as MouseEvent<HTMLButtonElement>)
+  }
   const classes = clsx(
     'inline-flex items-center justify-center gap-2 font-body font-medium',
     'transition-all duration-[var(--transition-base)] cursor-pointer select-none',
@@ -67,6 +79,7 @@ export function Button({
       <a
         href={href}
         className={classes}
+        onClick={handleClick}
         {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       >
         {content}
@@ -75,7 +88,12 @@ export function Button({
   }
 
   return (
-    <button className={classes} disabled={disabled || loading} {...props}>
+    <button
+      className={classes}
+      disabled={disabled || loading}
+      onClick={handleClick}
+      {...props}
+    >
       {content}
     </button>
   )

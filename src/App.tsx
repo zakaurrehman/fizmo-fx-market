@@ -1,8 +1,9 @@
 import type { ReactNode } from 'react'
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Layout } from '@/components/layout/Layout'
+import { trackPixel } from '@/lib/metaPixel'
 import { HomePage } from '@/pages/HomePage'
 import { AccountsPage } from '@/pages/AccountsPage'
 import { MarketsPage } from '@/pages/MarketsPage'
@@ -35,20 +36,42 @@ function PageWrapper({ children }: { children: ReactNode }): React.ReactElement 
   )
 }
 
-declare global {
-  interface Window {
-    fbq?: (...args: unknown[]) => void
-  }
-}
+// Pages worth a Meta Pixel ViewContent (high-intent broker pages used for ad
+// optimization / retargeting). Longest paths first so /markets/forex wins over
+// /markets. Other routes only get a PageView.
+const VIEW_CONTENT: ReadonlyArray<readonly [string, string, string]> = [
+  ['/markets/forex', 'Forex Market', 'Markets'],
+  ['/markets/crypto', 'Cryptocurrency Market', 'Markets'],
+  ['/markets/indices', 'Indices Market', 'Markets'],
+  ['/markets/commodities', 'Commodities Market', 'Markets'],
+  ['/markets', 'Markets Overview', 'Markets'],
+  ['/accounts', 'Trading Accounts', 'Accounts'],
+  ['/platform', 'Trading Platform', 'Platform'],
+]
 
 function ScrollToTop(): null {
   const { pathname } = useLocation()
+  const initialLoad = useRef(true)
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior })
-    // Meta Pixel: the snippet in index.html only fires once on initial load,
-    // so track a PageView on every client-side route change too.
-    window.fbq?.('track', 'PageView')
+
+    // The snippet in index.html already fires PageView for the initial load;
+    // only track PageView for subsequent client-side route changes to avoid
+    // double-counting the first page.
+    if (initialLoad.current) {
+      initialLoad.current = false
+    } else {
+      trackPixel('PageView')
+    }
+
+    const match = VIEW_CONTENT.find(([path]) => pathname.startsWith(path))
+    if (match) {
+      trackPixel('ViewContent', {
+        content_name: match[1],
+        content_category: match[2],
+      })
+    }
   }, [pathname])
 
   return null

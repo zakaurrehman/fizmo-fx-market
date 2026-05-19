@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/Button'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import type { ContactFormData } from '@/types'
 import { ContactFormSchema } from '@/types'
+import { trackPixel } from '@/lib/metaPixel'
 
 const subjectOptions = [
   'Account Inquiry',
@@ -124,9 +125,13 @@ export function ContactForm() {
     resolver: zodResolver(ContactFormSchema),
   })
 
-  const onSubmit = async (_data: ContactFormData): Promise<void> => {
+  const onSubmit = async (data: ContactFormData): Promise<void> => {
     // Simulate API call
     await new Promise<void>((resolve) => setTimeout(resolve, 1500))
+    trackPixel('Lead', {
+      content_name: 'Contact Form',
+      content_category: data.subject,
+    })
     setSubmitted(true)
   }
 
