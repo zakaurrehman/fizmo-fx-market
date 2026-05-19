@@ -35,11 +35,20 @@ function PageWrapper({ children }: { children: ReactNode }): React.ReactElement 
   )
 }
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void
+  }
+}
+
 function ScrollToTop(): null {
   const { pathname } = useLocation()
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior })
+    // Meta Pixel: the snippet in index.html only fires once on initial load,
+    // so track a PageView on every client-side route change too.
+    window.fbq?.('track', 'PageView')
   }, [pathname])
 
   return null
