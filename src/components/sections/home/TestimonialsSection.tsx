@@ -1,3 +1,4 @@
+import { Star, MapPin } from 'lucide-react'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { GlowCard } from '@/components/ui/GlowCard'
 import { Badge } from '@/components/ui/Badge'
@@ -36,13 +37,15 @@ function TestimonialCard({
         {/* Stars */}
         <div
           style={{
-            fontSize: '1rem',
-            color: '#C9A84C',
+            display: 'flex',
+            gap: '0.25rem',
             marginBottom: '1rem',
-            letterSpacing: '0.1em',
           }}
+          aria-label={`${testimonial.rating} out of 5 stars`}
         >
-          {'★'.repeat(testimonial.rating)}
+          {Array.from({ length: testimonial.rating }).map((_, i) => (
+            <Star key={i} size={15} fill="#C9A84C" color="#C9A84C" />
+          ))}
         </div>
 
         {/* Quote */}
@@ -85,7 +88,10 @@ function TestimonialCard({
 
           <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
             <Badge variant="muted" size="sm">
-              {testimonial.location}
+              <span className="inline-flex items-center gap-1">
+                <MapPin size={11} />
+                {testimonial.location}
+              </span>
             </Badge>
             <Badge variant="gold" size="sm">
               {testimonial.accountType}

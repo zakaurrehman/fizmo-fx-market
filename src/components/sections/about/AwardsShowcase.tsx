@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { Fragment } from 'react'
 import { motion } from 'framer-motion'
-import { Trophy, Zap, Lock, BarChart2 } from 'lucide-react'
+import { Trophy, Zap, Lock, BarChart2, Star } from 'lucide-react'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 
@@ -115,13 +115,16 @@ export function AwardsShowcase() {
             {/* Stars */}
             <div
               style={{
-                fontSize: '1.375rem',
-                color: 'var(--gold-500)',
-                letterSpacing: '0.12em',
+                display: 'flex',
+                justifyContent: 'center',
+                gap: '0.375rem',
                 marginBottom: '1.25rem',
               }}
+              aria-label="5 out of 5 stars"
             >
-              ★★★★★
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star key={i} size={20} fill="var(--gold-500)" color="var(--gold-500)" />
+              ))}
             </div>
 
             {/* Description */}

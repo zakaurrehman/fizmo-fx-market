@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { motion } from 'framer-motion'
-import { Trophy } from 'lucide-react'
+import { Trophy, Star } from 'lucide-react'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 
@@ -86,13 +86,16 @@ export function AwardsSection() {
             {/* Stars */}
             <div
               style={{
-                fontSize: '1.5rem',
-                color: 'var(--gold-500)',
+                display: 'flex',
+                justifyContent: 'center',
+                gap: '0.375rem',
                 marginBottom: '1.25rem',
-                letterSpacing: '0.1em',
               }}
+              aria-label="5 out of 5 stars"
             >
-              ★★★★★
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star key={i} size={22} fill="var(--gold-500)" color="var(--gold-500)" />
+              ))}
             </div>
 
             {/* Description */}

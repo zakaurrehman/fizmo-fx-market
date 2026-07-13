@@ -1,9 +1,11 @@
+import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
+import { Globe, Bitcoin, BarChart3, Gem } from 'lucide-react'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { GlowCard } from '@/components/ui/GlowCard'
 
 interface MarketCardData {
-  emoji: string
+  icon: ReactNode
   category: string
   title: string
   badge: string
@@ -15,7 +17,7 @@ interface MarketCardData {
 
 const markets: MarketCardData[] = [
   {
-    emoji: '🌐',
+    icon: <Globe size={24} strokeWidth={1.75} />,
     category: 'FOREX',
     title: 'Foreign Exchange',
     badge: '60+ Currency Pairs',
@@ -26,7 +28,7 @@ const markets: MarketCardData[] = [
     linkHref: '/markets/forex',
   },
   {
-    emoji: '₿',
+    icon: <Bitcoin size={24} strokeWidth={1.75} />,
     category: 'CRYPTO',
     title: 'Cryptocurrencies',
     badge: '30+ Crypto Pairs',
@@ -37,7 +39,7 @@ const markets: MarketCardData[] = [
     linkHref: '/markets/crypto',
   },
   {
-    emoji: '📊',
+    icon: <BarChart3 size={24} strokeWidth={1.75} />,
     category: 'INDICES',
     title: 'Stock Indices',
     badge: '15+ Global Indices',
@@ -48,7 +50,7 @@ const markets: MarketCardData[] = [
     linkHref: '/markets/indices',
   },
   {
-    emoji: '💎',
+    icon: <Gem size={24} strokeWidth={1.75} />,
     category: 'COMMODITIES',
     title: 'Commodities',
     badge: '20+ Commodities',
@@ -63,15 +65,18 @@ const markets: MarketCardData[] = [
 function MarketCard({ market, delay }: { market: MarketCardData; delay: number }) {
   return (
     <GlowCard padding="lg" delay={delay} className="flex flex-col gap-5 h-full group">
-      {/* Emoji + category */}
+      {/* Icon + category */}
       <div className="flex items-center gap-3">
-        <span
-          className="text-4xl leading-none"
-          role="img"
-          aria-label={market.title}
+        <div
+          className="w-12 h-12 rounded-[var(--radius-md)] flex items-center justify-center flex-shrink-0"
+          style={{
+            background: 'rgba(168,134,42,0.1)',
+            color: 'var(--gold-500)',
+          }}
+          aria-hidden="true"
         >
-          {market.emoji}
-        </span>
+          {market.icon}
+        </div>
         <span
           className="font-mono text-xs font-semibold tracking-[0.15em] uppercase px-2.5 py-1 rounded-full"
           style={{

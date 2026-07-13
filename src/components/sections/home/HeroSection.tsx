@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react'
 import { motion } from 'framer-motion'
+import { Trophy, ShieldCheck, Zap, BarChart3, Wallet } from 'lucide-react'
 import {
   AreaChart,
   Area,
@@ -76,10 +77,10 @@ export function HeroSection() {
   }, [])
 
   const trustItems = [
-    { icon: '🔒', label: 'Regulated Broker' },
-    { icon: '⚡', label: 'Instant Withdrawals' },
-    { icon: '📊', label: '300+ Instruments' },
-    { icon: '💰', label: 'From $10' },
+    { icon: <ShieldCheck size={16} />, label: 'Regulated Broker' },
+    { icon: <Zap size={16} />, label: 'Instant Withdrawals' },
+    { icon: <BarChart3 size={16} />, label: '300+ Instruments' },
+    { icon: <Wallet size={16} />, label: 'From $10' },
   ]
 
   return (
@@ -120,7 +121,8 @@ export function HeroSection() {
                 color: 'var(--gold-300)',
               }}
             >
-              🏆 Award-Winning Broker · Dubai 2024
+              <Trophy size={14} />
+              Award-Winning Broker · Dubai 2024
             </div>
 
             {/* H1 */}
@@ -174,10 +176,11 @@ export function HeroSection() {
 
             {/* Small note */}
             <p
-              className="font-body"
+              className="font-body inline-flex items-center gap-1.5"
               style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}
             >
-              ⚡ Open account in under 2 minutes · No deposit required for demo
+              <Zap size={12} style={{ color: 'var(--gold-500)', flexShrink: 0 }} />
+              Open account in under 2 minutes · No deposit required for demo
             </p>
 
             {/* Trust strip */}
@@ -188,7 +191,7 @@ export function HeroSection() {
               {trustItems.map((item, i) => (
                 <React.Fragment key={item.label}>
                   <div className="flex items-center gap-2 px-4 py-1 first:pl-0">
-                    <span style={{ fontSize: '1rem' }}>{item.icon}</span>
+                    <span className="inline-flex" style={{ color: 'var(--gold-500)' }}>{item.icon}</span>
                     <span
                       className="font-body text-sm font-medium whitespace-nowrap"
                       style={{ color: 'var(--text-secondary)' }}

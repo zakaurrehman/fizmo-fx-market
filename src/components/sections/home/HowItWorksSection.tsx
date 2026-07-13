@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { UserPlus, Wallet, TrendingUp } from 'lucide-react'
+import { UserPlus, Wallet, TrendingUp, Lightbulb } from 'lucide-react'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { GlowCard } from '@/components/ui/GlowCard'
 
@@ -159,7 +159,7 @@ export function HowItWorksSection() {
                     border: '1px solid rgba(168,134,42,0.2)',
                   }}
                 >
-                  <span style={{ fontSize: '1rem', flexShrink: 0, marginTop: '2px' }}>💡</span>
+                  <Lightbulb size={16} style={{ color: '#8A6A1E', flexShrink: 0, marginTop: '2px' }} />
                   <p
                     className="font-body text-xs leading-relaxed"
                     style={{ color: '#374151' }}

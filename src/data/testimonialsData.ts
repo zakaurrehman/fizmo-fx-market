@@ -4,7 +4,7 @@ export const testimonialsData: Testimonial[] = [
   {
     id: 'testimonial-1',
     name: 'Ahmed Al-Rashidi',
-    location: '📍 Saudi Arabia',
+    location: 'Saudi Arabia',
     accountType: 'Pro Account',
     rating: 5,
     quote:
@@ -13,7 +13,7 @@ export const testimonialsData: Testimonial[] = [
   {
     id: 'testimonial-2',
     name: 'Priya Sharma',
-    location: '📍 India',
+    location: 'India',
     accountType: 'ECN Account',
     rating: 5,
     quote:
@@ -22,7 +22,7 @@ export const testimonialsData: Testimonial[] = [
   {
     id: 'testimonial-3',
     name: 'Carlos Mendoza',
-    location: '📍 Colombia',
+    location: 'Colombia',
     accountType: 'Standard Account',
     rating: 5,
     quote:

@@ -1,27 +1,29 @@
+import type { ReactNode } from 'react'
 import { Fragment } from 'react'
+import { Gem, LayoutDashboard, Globe } from 'lucide-react'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { Button } from '@/components/ui/Button'
 
 interface BenefitItem {
-  emoji: string
+  icon: ReactNode
   title: string
   subtitle: string
 }
 
 const benefits: BenefitItem[] = [
   {
-    emoji: '💎',
+    icon: <Gem size={26} strokeWidth={1.5} />,
     title: 'Up to 80% Revenue Share',
     subtitle: 'Highest in the industry',
   },
   {
-    emoji: '📊',
+    icon: <LayoutDashboard size={26} strokeWidth={1.5} />,
     title: 'Real-Time Dashboard',
     subtitle: 'Track referrals and earnings live',
   },
   {
-    emoji: '🌍',
+    icon: <Globe size={26} strokeWidth={1.5} />,
     title: 'Global Reach',
     subtitle: 'Clients from 50+ countries',
   },
@@ -88,12 +90,20 @@ export function AffiliateSection() {
                 >
                   <div
                     style={{
-                      fontSize: '2.25rem',
-                      marginBottom: '0.625rem',
-                      lineHeight: 1,
+                      width: 56,
+                      height: 56,
+                      margin: '0 auto 0.75rem',
+                      borderRadius: 'var(--radius-md)',
+                      background: 'rgba(201,168,76,0.1)',
+                      border: '1px solid var(--border-gold)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'var(--gold-500)',
                     }}
+                    aria-hidden="true"
                   >
-                    {item.emoji}
+                    {item.icon}
                   </div>
                   <div
                     style={{

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Check } from 'lucide-react'
+import { Check, Target } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { GlowCard } from '@/components/ui/GlowCard'
@@ -135,7 +135,7 @@ function AccountCard({ account, index }: AccountCardProps) {
             border: '1px solid rgba(201,168,76,0.18)',
           }}
         >
-          <span style={{ fontSize: '0.875rem' }}>🎯</span>
+          <Target size={14} style={{ color: '#8A6A1E', flexShrink: 0 }} />
           <span
             className="font-body text-xs font-medium"
             style={{ color: '#8A6A1E' }}

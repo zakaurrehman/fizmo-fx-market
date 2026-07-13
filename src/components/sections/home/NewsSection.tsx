@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { motion } from 'framer-motion'
-import { Globe, TrendingUp } from 'lucide-react'
+import { Globe, TrendingUp, Bitcoin } from 'lucide-react'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { newsData } from '@/data/newsData'
@@ -40,19 +40,7 @@ const categoryStyles: Record<CategoryColor, CategoryStyle> = {
     chipBorder: 'rgba(249,115,22,0.3)',
     gradientFrom: 'rgba(234,88,12,0.25)',
     gradientTo: 'rgba(249,115,22,0.04)',
-    icon: (
-      <span
-        style={{
-          fontSize: '2.25rem',
-          color: '#FB923C',
-          fontFamily: "'JetBrains Mono', monospace",
-          fontWeight: 700,
-          lineHeight: 1,
-        }}
-      >
-        ₿
-      </span>
-    ),
+    icon: <Bitcoin size={40} color="#FB923C" strokeWidth={1.25} />,
   },
 }
 
