@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { Globe, Bitcoin, BarChart3, Gem } from 'lucide-react'
+import { Globe, Bitcoin, BarChart3, Gem, ArrowRight } from 'lucide-react'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { GlowCard } from '@/components/ui/GlowCard'
 
@@ -24,7 +24,7 @@ const markets: MarketCardData[] = [
     description:
       'Trade major, minor and exotic currency pairs in the world\'s largest financial market. $7.5 trillion daily volume, 24/5 access, spreads from 0.0 pips.',
     pairs: ['EUR/USD', 'GBP/USD', 'USD/JPY', 'AUD/USD'],
-    linkLabel: 'Trade Forex →',
+    linkLabel: 'Trade Forex',
     linkHref: '/markets/forex',
   },
   {
@@ -35,7 +35,7 @@ const markets: MarketCardData[] = [
     description:
       'Capitalize on 24/7 cryptocurrency markets with CFD leverage. Trade Bitcoin, Ethereum, Ripple, Litecoin and more without owning the underlying asset.',
     pairs: ['BTC/USD', 'ETH/USD', 'XRP/USD', 'SOL/USD'],
-    linkLabel: 'Trade Crypto →',
+    linkLabel: 'Trade Crypto',
     linkHref: '/markets/crypto',
   },
   {
@@ -46,7 +46,7 @@ const markets: MarketCardData[] = [
     description:
       'Gain exposure to entire economies with a single trade. Trade the S&P 500, NASDAQ 100, DAX 40, FTSE 100, Nikkei 225 and more with ultra-low spreads.',
     pairs: ['SPX500', 'NAS100', 'DAX40', 'FTSE100'],
-    linkLabel: 'Trade Indices →',
+    linkLabel: 'Trade Indices',
     linkHref: '/markets/indices',
   },
   {
@@ -57,7 +57,7 @@ const markets: MarketCardData[] = [
     description:
       'Diversify with gold, silver, crude oil, natural gas, and agricultural products. Zero commission on commodity CFDs with competitive overnight financing.',
     pairs: ['XAU/USD', 'WTI/OIL', 'BRENT', 'NGAS'],
-    linkLabel: 'Trade Commodities →',
+    linkLabel: 'Trade Commodities',
     linkHref: '/markets/commodities',
   },
 ]
@@ -136,7 +136,7 @@ function MarketCard({ market, delay }: { market: MarketCardData; delay: number }
       {/* Internal link */}
       <Link
         to={market.linkHref}
-        className="font-body text-sm font-semibold inline-flex items-center gap-1 transition-colors duration-150"
+        className="group/link font-body text-sm font-semibold inline-flex items-center gap-1 transition-colors duration-150"
         style={{ color: 'var(--gold-500)' }}
         onMouseEnter={(e) => {
           (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-300)'
@@ -146,6 +146,7 @@ function MarketCard({ market, delay }: { market: MarketCardData; delay: number }
         }}
       >
         {market.linkLabel}
+        <ArrowRight size={14} className="transition-transform duration-200 group-hover/link:translate-x-0.5" />
       </Link>
     </GlowCard>
   )

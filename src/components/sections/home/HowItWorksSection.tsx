@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { UserPlus, Wallet, TrendingUp, Lightbulb } from 'lucide-react'
+import { UserPlus, Wallet, TrendingUp, Lightbulb, ArrowRight } from 'lucide-react'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { GlowCard } from '@/components/ui/GlowCard'
 
@@ -130,7 +130,7 @@ export function HowItWorksSection() {
                   href="https://my.fizmofxmarkets.com/register"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-body text-sm font-semibold inline-flex items-center gap-1 transition-colors duration-[var(--transition-fast)]"
+                  className="group font-body text-sm font-semibold inline-flex items-center gap-1 transition-colors duration-[var(--transition-fast)]"
                   style={{ color: '#8A6A1E' }}
                   onMouseEnter={(e) => {
                     (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
@@ -139,7 +139,8 @@ export function HowItWorksSection() {
                     (e.currentTarget as HTMLAnchorElement).style.color = '#8A6A1E'
                   }}
                 >
-                  Start Registration →
+                  Start Registration
+                  <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-0.5" />
                 </a>
               }
             />
@@ -182,7 +183,7 @@ export function HowItWorksSection() {
                   href="https://www.metatrader5.com/en/download"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-body text-sm font-semibold inline-flex items-center gap-1 transition-colors duration-[var(--transition-fast)]"
+                  className="group font-body text-sm font-semibold inline-flex items-center gap-1 transition-colors duration-[var(--transition-fast)]"
                   style={{ color: '#8A6A1E' }}
                   onMouseEnter={(e) => {
                     (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
@@ -191,7 +192,8 @@ export function HowItWorksSection() {
                     (e.currentTarget as HTMLAnchorElement).style.color = '#8A6A1E'
                   }}
                 >
-                  Download MT5 →
+                  Download MT5
+                  <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-0.5" />
                 </a>
               }
             />

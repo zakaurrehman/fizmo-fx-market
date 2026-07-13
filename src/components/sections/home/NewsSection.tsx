@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { motion } from 'framer-motion'
-import { Globe, TrendingUp, Bitcoin } from 'lucide-react'
+import { Globe, TrendingUp, Bitcoin, ArrowRight } from 'lucide-react'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { newsData } from '@/data/newsData'
@@ -193,6 +193,7 @@ function NewsCard({
 
         {/* Read more */}
         <span
+          className="inline-flex items-center gap-1"
           style={{
             color: '#8A6A1E',
             fontSize: '0.875rem',
@@ -202,7 +203,8 @@ function NewsCard({
             cursor: 'pointer',
           }}
         >
-          Read More →
+          Read More
+          <ArrowRight size={14} />
         </span>
       </div>
     </motion.article>

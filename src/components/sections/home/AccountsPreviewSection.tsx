@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Check, Target } from 'lucide-react'
+import { Check, Target, ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { GlowCard } from '@/components/ui/GlowCard'
@@ -160,8 +160,9 @@ function AccountCard({ account, index }: AccountCardProps) {
             href="https://my.fizmofxmarkets.com/register"
             external
             className="w-full justify-center"
+            icon={<ArrowRight size={16} />}
           >
-            Open {account.name} Account →
+            Open {account.name} Account
           </Button>
         </div>
       </GlowCard>
@@ -194,7 +195,7 @@ export function AccountsPreviewSection() {
         <div className="text-center">
           <Link
             to="/accounts"
-            className="font-body text-sm font-semibold inline-flex items-center gap-1.5 transition-colors duration-150"
+            className="group font-body text-sm font-semibold inline-flex items-center gap-1.5 transition-colors duration-150"
             style={{ color: '#8A6A1E' }}
             onMouseEnter={(e) => {
               (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
@@ -203,7 +204,8 @@ export function AccountsPreviewSection() {
               (e.currentTarget as HTMLAnchorElement).style.color = '#8A6A1E'
             }}
           >
-            Compare All Account Features →
+            Compare All Account Features
+            <ArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-0.5" />
           </Link>
         </div>
       </div>

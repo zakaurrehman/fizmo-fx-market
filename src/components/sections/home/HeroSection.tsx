@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { Trophy, ShieldCheck, Zap, BarChart3, Wallet } from 'lucide-react'
+import { Trophy, ShieldCheck, Zap, BarChart3, Wallet, ArrowRight } from 'lucide-react'
 import {
   AreaChart,
   Area,
@@ -10,7 +10,6 @@ import {
   ResponsiveContainer,
 } from 'recharts'
 import { Button } from '@/components/ui/Button'
-import { ParticleCanvas } from '@/components/ui/ParticleCanvas'
 
 interface ChartDataPoint {
   index: number
@@ -91,8 +90,17 @@ export function HeroSection() {
         background: 'var(--gradient-hero)',
       }}
     >
-      {/* Particle background */}
-      <ParticleCanvas />
+      {/* Subtle dot grid, faded toward the edges */}
+      <div
+        className="absolute inset-0 bg-dot-grid pointer-events-none"
+        style={{
+          maskImage:
+            'radial-gradient(ellipse 75% 65% at 50% 40%, black 20%, transparent 75%)',
+          WebkitMaskImage:
+            'radial-gradient(ellipse 75% 65% at 50% 40%, black 20%, transparent 75%)',
+        }}
+        aria-hidden="true"
+      />
 
       {/* Radial overlay accent */}
       <div
@@ -161,8 +169,9 @@ export function HeroSection() {
                 size="lg"
                 href="https://my.fizmofxmarkets.com/register"
                 external
+                icon={<ArrowRight size={18} />}
               >
-                Open Live Account →
+                Open Live Account
               </Button>
               <Button
                 variant="outline"

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { motion, AnimatePresence } from 'framer-motion'
-import { CheckCircle } from 'lucide-react'
+import { CheckCircle, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import type { ContactFormData } from '@/types'
@@ -374,8 +374,9 @@ export function ContactForm() {
                           loading={isSubmitting}
                           disabled={isSubmitting}
                           className="w-full mt-2"
+                          icon={<ArrowRight size={16} />}
                         >
-                          {isSubmitting ? 'Sending…' : 'Send Message →'}
+                          {isSubmitting ? 'Sending…' : 'Send Message'}
                         </Button>
 
                         <p

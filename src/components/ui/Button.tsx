@@ -55,7 +55,7 @@ export function Button({
     onClick?.(e as MouseEvent<HTMLButtonElement>)
   }
   const classes = clsx(
-    'inline-flex items-center justify-center gap-2 font-body font-medium',
+    'group inline-flex items-center justify-center gap-2 font-body font-medium',
     'transition-all duration-[var(--transition-base)] cursor-pointer select-none',
     'disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none',
     variantClasses[variant],
@@ -68,9 +68,15 @@ export function Button({
       {loading && (
         <span className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
       )}
-      {icon && iconPosition === 'left' && !loading && <span>{icon}</span>}
+      {icon && iconPosition === 'left' && !loading && (
+        <span className="inline-flex">{icon}</span>
+      )}
       {children}
-      {icon && iconPosition === 'right' && !loading && <span>{icon}</span>}
+      {icon && iconPosition === 'right' && !loading && (
+        <span className="inline-flex transition-transform duration-200 group-hover:translate-x-0.5">
+          {icon}
+        </span>
+      )}
     </>
   )
 
