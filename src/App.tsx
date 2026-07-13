@@ -1,15 +1,18 @@
 import type { ReactNode } from 'react'
-import React, { useEffect, useRef } from 'react'
+import React, { lazy, Suspense, useEffect, useRef } from 'react'
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Layout } from '@/components/layout/Layout'
 import { trackPixel } from '@/lib/metaPixel'
-import { HomePage } from '@/pages/HomePage'
-import { AccountsPage } from '@/pages/AccountsPage'
-import { MarketsPage } from '@/pages/MarketsPage'
-import { PlatformPage } from '@/pages/PlatformPage'
-import { AboutPage } from '@/pages/AboutPage'
-import { ContactPage } from '@/pages/ContactPage'
+
+// Route-level code splitting: each page becomes its own chunk so the initial
+// download only carries the shared shell plus the requested page.
+const HomePage = lazy(() => import('@/pages/HomePage').then((m) => ({ default: m.HomePage })))
+const AccountsPage = lazy(() => import('@/pages/AccountsPage').then((m) => ({ default: m.AccountsPage })))
+const MarketsPage = lazy(() => import('@/pages/MarketsPage').then((m) => ({ default: m.MarketsPage })))
+const PlatformPage = lazy(() => import('@/pages/PlatformPage').then((m) => ({ default: m.PlatformPage })))
+const AboutPage = lazy(() => import('@/pages/AboutPage').then((m) => ({ default: m.AboutPage })))
+const ContactPage = lazy(() => import('@/pages/ContactPage').then((m) => ({ default: m.ContactPage })))
 
 const pageVariants = {
   initial: { opacity: 0, y: 16 },
@@ -84,7 +87,8 @@ export default function App(): React.ReactElement {
     <>
       <ScrollToTop />
       <Layout>
-        <AnimatePresence mode="wait">
+        <Suspense fallback={null}>
+          <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route
               path="/"
@@ -168,7 +172,8 @@ export default function App(): React.ReactElement {
             />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
-        </AnimatePresence>
+          </AnimatePresence>
+        </Suspense>
       </Layout>
     </>
   )

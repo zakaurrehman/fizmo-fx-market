@@ -136,14 +136,7 @@ function MarketCard({ market, delay }: { market: MarketCardData; delay: number }
       {/* Internal link */}
       <Link
         to={market.linkHref}
-        className="group/link font-body text-sm font-semibold inline-flex items-center gap-1 transition-colors duration-150"
-        style={{ color: 'var(--gold-500)' }}
-        onMouseEnter={(e) => {
-          (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-300)'
-        }}
-        onMouseLeave={(e) => {
-          (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
-        }}
+        className="group/link link-gold font-body text-sm font-semibold inline-flex items-center gap-1"
       >
         {market.linkLabel}
         <ArrowRight size={14} className="transition-transform duration-200 group-hover/link:translate-x-0.5" />

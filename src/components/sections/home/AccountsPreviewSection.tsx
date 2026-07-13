@@ -195,14 +195,7 @@ export function AccountsPreviewSection() {
         <div className="text-center">
           <Link
             to="/accounts"
-            className="group font-body text-sm font-semibold inline-flex items-center gap-1.5 transition-colors duration-150"
-            style={{ color: '#8A6A1E' }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.color = '#8A6A1E'
-            }}
+            className="group link-gold font-body text-sm font-semibold inline-flex items-center gap-1.5"
           >
             Compare All Account Features
             <ArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-0.5" />

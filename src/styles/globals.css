@@ -171,6 +171,22 @@
     border: 1px solid var(--border-gold);
   }
 
+  /* Gold text link — theme-aware color + hover, replaces per-link JS handlers */
+  .link-gold {
+    color: var(--text-gold);
+    transition: color var(--transition-fast);
+  }
+
+  .link-gold:hover,
+  .link-gold:focus-visible {
+    color: var(--gold-300);
+  }
+
+  .section-light-theme .link-gold:hover,
+  .section-light-theme .link-gold:focus-visible {
+    color: var(--gold-500);
+  }
+
   .card-base {
     background: var(--gradient-card);
     border: 1px solid var(--border-subtle);
@@ -206,6 +222,16 @@
 
   .ticker-track:hover {
     animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    .ticker-track {
+      animation-play-state: paused;
+    }
   }
 
   /* Navbar transition */

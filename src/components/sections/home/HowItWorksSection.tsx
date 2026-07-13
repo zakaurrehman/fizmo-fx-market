@@ -130,14 +130,7 @@ export function HowItWorksSection() {
                   href="https://my.fizmofxmarkets.com/register"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group font-body text-sm font-semibold inline-flex items-center gap-1 transition-colors duration-[var(--transition-fast)]"
-                  style={{ color: '#8A6A1E' }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.color = '#8A6A1E'
-                  }}
+                  className="group link-gold font-body text-sm font-semibold inline-flex items-center gap-1"
                 >
                   Start Registration
                   <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-0.5" />
@@ -183,14 +176,7 @@ export function HowItWorksSection() {
                   href="https://www.metatrader5.com/en/download"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group font-body text-sm font-semibold inline-flex items-center gap-1 transition-colors duration-[var(--transition-fast)]"
-                  style={{ color: '#8A6A1E' }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold-500)'
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.color = '#8A6A1E'
-                  }}
+                  className="group link-gold font-body text-sm font-semibold inline-flex items-center gap-1"
                 >
                   Download MT5
                   <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-0.5" />
