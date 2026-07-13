@@ -128,7 +128,7 @@ export function OurStory() {
                         style={{
                           background: '#FFFFFF',
                           border: '2px solid var(--border-gold)',
-                          boxShadow: '0 0 16px rgba(201,168,76,0.15)',
+                          boxShadow: '0 0 16px rgba(212,175,55,0.15)',
                         }}
                       >
                         <span

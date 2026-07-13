@@ -187,7 +187,7 @@ export function Navbar() {
                       to={link.href}
                       className={`block px-4 py-3 text-sm rounded-[var(--radius-sm)] ${
                         isActive(link.href)
-                          ? 'text-[var(--text-gold)] bg-[rgba(201,168,76,0.08)]'
+                          ? 'text-[var(--text-gold)] bg-[rgba(212,175,55,0.08)]'
                           : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
                       }`}
                     >

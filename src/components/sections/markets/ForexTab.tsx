@@ -86,7 +86,7 @@ export function ForexTab() {
               {forexInstruments.map((row: ForexInstrument, index: number) => (
                 <tr
                   key={row.symbol}
-                  className="transition-colors duration-150 hover:bg-[rgba(201,168,76,0.05)] group"
+                  className="transition-colors duration-150 hover:bg-[rgba(212,175,55,0.05)] group"
                   style={{
                     background: index % 2 === 0 ? '#FFFFFF' : '#F8F6F1',
                   }}

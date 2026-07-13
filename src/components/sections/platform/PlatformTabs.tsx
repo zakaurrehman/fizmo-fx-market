@@ -230,7 +230,7 @@ export function PlatformTabs() {
                 className="relative flex items-center gap-2 flex-1 sm:flex-initial px-5 py-2.5 rounded-[10px] text-sm font-medium font-body transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold-500)]"
                 style={{
                   background: isActive
-                    ? 'linear-gradient(135deg, rgba(201,168,76,0.18), rgba(201,168,76,0.08))'
+                    ? 'linear-gradient(135deg, rgba(212,175,55,0.18), rgba(212,175,55,0.08))'
                     : 'transparent',
                   color: isActive ? 'var(--text-gold)' : '#6B7280',
                   border: isActive

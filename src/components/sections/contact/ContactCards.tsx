@@ -95,7 +95,7 @@ export function ContactCards() {
                 <div
                   className="w-16 h-16 rounded-[var(--radius-lg)] flex items-center justify-center"
                   style={{
-                    background: 'rgba(201,168,76,0.1)',
+                    background: 'rgba(212,175,55,0.1)',
                     border: '1px solid var(--border-gold)',
                     color: 'var(--gold-500)',
                   }}
@@ -158,7 +158,7 @@ export function ContactCards() {
               <div
                 className="w-11 h-11 rounded-[var(--radius-md)] flex items-center justify-center flex-shrink-0"
                 style={{
-                  background: 'rgba(201,168,76,0.1)',
+                  background: 'rgba(212,175,55,0.1)',
                   border: '1px solid var(--border-gold)',
                   color: 'var(--gold-500)',
                 }}

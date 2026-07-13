@@ -24,7 +24,7 @@ export function PlatformHero() {
       style={{
         minHeight: '50vh',
         background:
-          'radial-gradient(ellipse at 60% 50%, rgba(201,168,76,0.08) 0%, transparent 60%), #080B14',
+          'radial-gradient(ellipse at 60% 50%, rgba(212,175,55,0.08) 0%, transparent 60%), #080B14',
       }}
     >
       {/* Dot grid overlay */}
@@ -32,7 +32,7 @@ export function PlatformHero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage:
-            'radial-gradient(circle, rgba(201,168,76,0.05) 1px, transparent 1px)',
+            'radial-gradient(circle, rgba(212,175,55,0.05) 1px, transparent 1px)',
           backgroundSize: '40px 40px',
         }}
       />
@@ -109,7 +109,7 @@ export function PlatformHero() {
               transition={{ duration: 0.4, delay: 0.45 + index * 0.07 }}
               className="flex items-center gap-2 px-5 py-2.5 rounded-full font-body"
               style={{
-                background: 'rgba(201,168,76,0.08)',
+                background: 'rgba(212,175,55,0.08)',
                 border: '1px solid var(--border-gold)',
               }}
             >

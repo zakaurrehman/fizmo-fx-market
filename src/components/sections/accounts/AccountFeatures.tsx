@@ -80,7 +80,7 @@ export function AccountFeatures() {
                 <div
                   className="inline-flex items-center justify-center w-12 h-12 rounded-[var(--radius-md)] mb-5"
                   style={{
-                    background: 'rgba(201,168,76,0.12)',
+                    background: 'rgba(212,175,55,0.12)',
                     border: '1px solid var(--border-gold)',
                     color: 'var(--text-gold)',
                   }}
@@ -109,7 +109,7 @@ export function AccountFeatures() {
             style={{
               background: '#FFFFFF',
               border: '1px solid var(--border-gold)',
-              boxShadow: '0 4px 24px rgba(201,168,76,0.08)',
+              boxShadow: '0 4px 24px rgba(212,175,55,0.08)',
             }}
           >
             <h3 className="font-display font-bold text-[var(--text-primary)] text-xl md:text-2xl mb-3">

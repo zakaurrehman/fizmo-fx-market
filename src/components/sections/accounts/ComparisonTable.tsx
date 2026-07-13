@@ -151,7 +151,7 @@ export function ComparisonTable() {
                     <tr
                       key={row.feature}
                       style={{ background: isOdd ? oddBg : evenBg }}
-                      className="transition-colors duration-150 hover:bg-[rgba(201,168,76,0.04)]"
+                      className="transition-colors duration-150 hover:bg-[rgba(212,175,55,0.04)]"
                     >
                       {/* Feature label */}
                       <td className="px-6 py-3.5 text-sm font-body text-[var(--text-secondary)] border-b border-[var(--border-subtle)]">
@@ -168,8 +168,8 @@ export function ComparisonTable() {
                         className="px-6 py-3.5 text-sm font-mono border-b text-center"
                         style={{
                           color: 'var(--gold-300)',
-                          borderBottomColor: 'rgba(201,168,76,0.15)',
-                          background: 'rgba(201,168,76,0.06)',
+                          borderBottomColor: 'rgba(212,175,55,0.15)',
+                          background: 'rgba(212,175,55,0.06)',
                         }}
                       >
                         {row.pro}

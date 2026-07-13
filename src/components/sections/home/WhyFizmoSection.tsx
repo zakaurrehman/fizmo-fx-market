@@ -84,7 +84,7 @@ function FeatureCard({ feature, delay }: FeatureCardProps) {
         <div
           className="inline-flex items-center justify-center w-14 h-14 rounded-[var(--radius-md)] flex-shrink-0 transition-colors duration-[var(--transition-base)]"
           style={{
-            background: 'rgba(201,168,76,0.1)',
+            background: 'rgba(212,175,55,0.1)',
             color: 'var(--gold-500)',
           }}
         >

@@ -44,7 +44,7 @@ function TestimonialCard({
           aria-label={`${testimonial.rating} out of 5 stars`}
         >
           {Array.from({ length: testimonial.rating }).map((_, i) => (
-            <Star key={i} size={15} fill="#C9A84C" color="#C9A84C" />
+            <Star key={i} size={15} fill="#D4AF37" color="#D4AF37" />
           ))}
         </div>
 

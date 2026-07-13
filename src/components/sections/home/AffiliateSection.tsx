@@ -35,7 +35,7 @@ export function AffiliateSection() {
       className="section-padding"
       style={{
         background: `
-          radial-gradient(ellipse at 50% 50%, rgba(201,168,76,0.06) 0%, transparent 65%),
+          radial-gradient(ellipse at 50% 50%, rgba(212,175,55,0.06) 0%, transparent 65%),
           var(--bg-secondary)
         `,
       }}
@@ -94,7 +94,7 @@ export function AffiliateSection() {
                       height: 56,
                       margin: '0 auto 0.75rem',
                       borderRadius: 'var(--radius-md)',
-                      background: 'rgba(201,168,76,0.1)',
+                      background: 'rgba(212,175,55,0.1)',
                       border: '1px solid var(--border-gold)',
                       display: 'flex',
                       alignItems: 'center',

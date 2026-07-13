@@ -107,7 +107,7 @@ export function HeroSection() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 80% 60% at 70% 50%, rgba(201,168,76,0.05) 0%, transparent 70%)',
+            'radial-gradient(ellipse 80% 60% at 70% 50%, rgba(212,175,55,0.05) 0%, transparent 70%)',
         }}
       />
 
@@ -125,7 +125,7 @@ export function HeroSection() {
             <div className="inline-flex w-fit items-center gap-2 px-4 py-2 rounded-full font-mono text-xs font-medium tracking-wide"
               style={{
                 border: '1px solid var(--border-gold)',
-                background: 'rgba(201,168,76,0.07)',
+                background: 'rgba(212,175,55,0.07)',
                 color: 'var(--gold-300)',
               }}
             >
@@ -277,8 +277,8 @@ export function HeroSection() {
                   >
                     <defs>
                       <linearGradient id="goldGradient" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#C9A84C" stopOpacity={0.35} />
-                        <stop offset="100%" stopColor="#C9A84C" stopOpacity={0.02} />
+                        <stop offset="0%" stopColor="#D4AF37" stopOpacity={0.35} />
+                        <stop offset="100%" stopColor="#D4AF37" stopOpacity={0.02} />
                       </linearGradient>
                     </defs>
                     <XAxis dataKey="index" hide />

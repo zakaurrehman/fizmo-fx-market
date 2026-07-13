@@ -69,7 +69,7 @@ export function RegulatorySection() {
               margin: '0 auto 2rem',
               background: '#FFFFFF',
               border: '1px solid var(--border-gold)',
-              boxShadow: '0 4px 24px rgba(201,168,76,0.08)',
+              boxShadow: '0 4px 24px rgba(212,175,55,0.08)',
               borderRadius: 'var(--radius-xl)',
               padding: '2.5rem',
             }}
@@ -81,7 +81,7 @@ export function RegulatorySection() {
                 width: 80,
                 height: 80,
                 borderRadius: '50%',
-                background: 'rgba(201,168,76,0.1)',
+                background: 'rgba(212,175,55,0.1)',
                 border: '1px solid var(--border-gold)',
               }}
             >

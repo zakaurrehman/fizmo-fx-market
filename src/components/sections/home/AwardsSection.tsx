@@ -46,7 +46,7 @@ export function AwardsSection() {
                 height: 80,
                 margin: '0 auto 1.5rem',
                 borderRadius: '50%',
-                background: 'rgba(201,168,76,0.12)',
+                background: 'rgba(212,175,55,0.12)',
                 border: '1px solid var(--border-gold)',
                 display: 'flex',
                 alignItems: 'center',

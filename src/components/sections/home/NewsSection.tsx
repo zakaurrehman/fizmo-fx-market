@@ -27,12 +27,12 @@ const categoryStyles: Record<CategoryColor, CategoryStyle> = {
     icon: <Globe size={40} color="#60A5FA" strokeWidth={1.25} />,
   },
   gold: {
-    chipBg: 'rgba(201,168,76,0.15)',
-    chipText: '#C9A84C',
-    chipBorder: 'rgba(201,168,76,0.3)',
-    gradientFrom: 'rgba(201,168,76,0.25)',
-    gradientTo: 'rgba(201,168,76,0.04)',
-    icon: <TrendingUp size={40} color="#C9A84C" strokeWidth={1.25} />,
+    chipBg: 'rgba(212,175,55,0.15)',
+    chipText: '#D4AF37',
+    chipBorder: 'rgba(212,175,55,0.3)',
+    gradientFrom: 'rgba(212,175,55,0.25)',
+    gradientTo: 'rgba(212,175,55,0.04)',
+    icon: <TrendingUp size={40} color="#D4AF37" strokeWidth={1.25} />,
   },
   orange: {
     chipBg: 'rgba(249,115,22,0.15)',

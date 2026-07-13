@@ -81,8 +81,8 @@ function MarketCard({ market, delay }: { market: MarketCardData; delay: number }
           className="font-mono text-xs font-semibold tracking-[0.15em] uppercase px-2.5 py-1 rounded-full"
           style={{
             color: 'var(--gold-500)',
-            background: 'rgba(201,168,76,0.1)',
-            border: '1px solid rgba(201,168,76,0.2)',
+            background: 'rgba(212,175,55,0.1)',
+            border: '1px solid rgba(212,175,55,0.2)',
           }}
         >
           {market.category}

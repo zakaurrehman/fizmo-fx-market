@@ -97,7 +97,7 @@ export function MT5Features() {
                 <div
                   className="inline-flex items-center justify-center w-11 h-11 rounded-[var(--radius-md)] mb-4"
                   style={{
-                    background: 'rgba(201,168,76,0.1)',
+                    background: 'rgba(212,175,55,0.1)',
                     border: '1px solid var(--border-gold)',
                     color: 'var(--text-gold)',
                   }}

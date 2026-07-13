@@ -59,7 +59,7 @@ export function ValuesSection() {
               <div
                 className="w-14 h-14 rounded-[var(--radius-md)] flex items-center justify-center mb-5"
                 style={{
-                  background: 'rgba(201,168,76,0.1)',
+                  background: 'rgba(212,175,55,0.1)',
                   border: '1px solid var(--border-gold)',
                   color: 'var(--gold-500)',
                 }}

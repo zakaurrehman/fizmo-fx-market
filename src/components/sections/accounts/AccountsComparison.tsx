@@ -67,7 +67,7 @@ function AccountCard({ account, index }: AccountCardProps) {
             <span
               className="inline-block px-4 py-1 text-xs font-mono font-bold tracking-[0.15em] uppercase rounded-full"
               style={{
-                background: 'linear-gradient(135deg, #C9A84C, #E8C25A)',
+                background: 'linear-gradient(135deg, #D4AF37, #EDCB6A)',
                 color: '#080B14',
               }}
             >

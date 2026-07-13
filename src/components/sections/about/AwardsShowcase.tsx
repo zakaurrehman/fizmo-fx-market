@@ -77,7 +77,7 @@ export function AwardsShowcase() {
                 height: 96,
                 margin: '0 auto 2rem',
                 borderRadius: '50%',
-                background: 'rgba(201,168,76,0.1)',
+                background: 'rgba(212,175,55,0.1)',
                 border: '1px solid var(--border-gold)',
                 display: 'flex',
                 alignItems: 'center',
@@ -91,7 +91,7 @@ export function AwardsShowcase() {
             <div
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full font-mono text-xs font-medium tracking-wide mb-4"
               style={{
-                background: 'rgba(201,168,76,0.1)',
+                background: 'rgba(212,175,55,0.1)',
                 border: '1px solid var(--border-gold)',
                 color: 'var(--gold-300)',
               }}
@@ -207,7 +207,7 @@ export function AwardsShowcase() {
                 <div
                   className="w-12 h-12 rounded-[var(--radius-md)] flex items-center justify-center mx-auto mb-4"
                   style={{
-                    background: 'rgba(201,168,76,0.1)',
+                    background: 'rgba(212,175,55,0.1)',
                     border: '1px solid var(--border-gold)',
                     color: 'var(--gold-500)',
                   }}

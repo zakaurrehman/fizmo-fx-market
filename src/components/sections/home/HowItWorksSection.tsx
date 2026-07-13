@@ -110,7 +110,7 @@ export function HowItWorksSection() {
             className="hidden lg:block absolute top-[3.25rem] left-[calc(16.666%+2rem)] right-[calc(16.666%+2rem)]"
             style={{
               height: '1px',
-              borderTop: '2px dashed rgba(201,168,76,0.18)',
+              borderTop: '2px dashed rgba(212,175,55,0.18)',
               zIndex: 0,
             }}
             aria-hidden="true"

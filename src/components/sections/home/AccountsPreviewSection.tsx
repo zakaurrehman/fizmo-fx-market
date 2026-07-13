@@ -17,7 +17,7 @@ function FeatureRow({ label, value }: FeatureRowProps) {
     <div className="flex items-start gap-3 py-2" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
       <div
         className="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center"
-        style={{ background: 'rgba(201,168,76,0.15)' }}
+        style={{ background: 'rgba(212,175,55,0.15)' }}
       >
         <Check size={10} style={{ color: 'var(--gold-500)' }} />
       </div>
@@ -68,7 +68,7 @@ function AccountCard({ account, index }: AccountCardProps) {
             style={{
               background: 'var(--gradient-gold)',
               color: '#080B14',
-              boxShadow: '0 0 20px rgba(201,168,76,0.4)',
+              boxShadow: '0 0 20px rgba(212,175,55,0.4)',
             }}
           >
             MOST POPULAR
@@ -110,8 +110,8 @@ function AccountCard({ account, index }: AccountCardProps) {
                 color: isFeautred ? '#080B14' : 'var(--gold-500)',
                 background: isFeautred
                   ? 'var(--gradient-gold)'
-                  : 'rgba(201,168,76,0.1)',
-                border: isFeautred ? 'none' : '1px solid rgba(201,168,76,0.2)',
+                  : 'rgba(212,175,55,0.1)',
+                border: isFeautred ? 'none' : '1px solid rgba(212,175,55,0.2)',
               }}
             >
               {account.badge}
@@ -131,8 +131,8 @@ function AccountCard({ account, index }: AccountCardProps) {
         <div
           className="flex items-center gap-2 px-3 py-2 rounded-[var(--radius-sm)]"
           style={{
-            background: 'rgba(201,168,76,0.08)',
-            border: '1px solid rgba(201,168,76,0.18)',
+            background: 'rgba(212,175,55,0.08)',
+            border: '1px solid rgba(212,175,55,0.18)',
           }}
         >
           <Target size={14} style={{ color: '#8A6A1E', flexShrink: 0 }} />

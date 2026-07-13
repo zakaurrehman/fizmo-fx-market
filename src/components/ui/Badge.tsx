@@ -9,7 +9,7 @@ interface BadgeProps {
 }
 
 const variantClasses = {
-  gold:    'bg-[rgba(201,168,76,0.15)] text-[var(--gold-300)] border border-[var(--border-gold)]',
+  gold:    'bg-[rgba(212,175,55,0.15)] text-[var(--gold-300)] border border-[var(--border-gold)]',
   teal:    'bg-[rgba(20,184,166,0.15)] text-[var(--teal-400)] border border-[rgba(20,184,166,0.3)]',
   green:   'bg-[rgba(52,211,153,0.15)] text-[var(--green-400)] border border-[rgba(52,211,153,0.3)]',
   red:     'bg-[rgba(248,113,113,0.15)] text-[var(--red-400)] border border-[rgba(248,113,113,0.3)]',

@@ -17,9 +17,9 @@ const featureList: string[] = [
 
 const categoryColors: Record<string, { bg: string; text: string; border: string }> = {
   'Precious Metal': {
-    bg: 'rgba(201,168,76,0.1)',
+    bg: 'rgba(212,175,55,0.1)',
     text: 'var(--gold-300)',
-    border: 'rgba(201,168,76,0.3)',
+    border: 'rgba(212,175,55,0.3)',
   },
   Energy: {
     bg: 'rgba(45,212,191,0.1)',
@@ -121,7 +121,7 @@ export function CommoditiesTab() {
                 return (
                   <tr
                     key={row.symbol}
-                    className="transition-colors duration-150 hover:bg-[rgba(201,168,76,0.05)]"
+                    className="transition-colors duration-150 hover:bg-[rgba(212,175,55,0.05)]"
                     style={{
                       background: index % 2 === 0 ? '#FFFFFF' : '#F8F6F1',
                     }}

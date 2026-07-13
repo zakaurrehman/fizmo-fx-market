@@ -86,7 +86,7 @@ export function CryptoTab() {
               {cryptoInstruments.map((row: CryptoInstrument, index: number) => (
                 <tr
                   key={row.symbol}
-                  className="transition-colors duration-150 hover:bg-[rgba(201,168,76,0.05)]"
+                  className="transition-colors duration-150 hover:bg-[rgba(212,175,55,0.05)]"
                   style={{
                     background: index % 2 === 0 ? '#FFFFFF' : '#F8F6F1',
                   }}
