@@ -32,7 +32,7 @@ export function AnimatedCounter({
 
   return (
     <div ref={ref} className={clsx('text-center', className)}>
-      <div className="stat-number text-[var(--gold-500)] font-mono font-bold text-4xl md:text-5xl leading-none">
+      <div className="stat-number text-[var(--accent-500)] font-mono font-bold text-4xl md:text-5xl leading-none">
         {displayValue}
       </div>
       {label && (

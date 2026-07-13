@@ -67,7 +67,7 @@ function AccountCard({ account, index }: AccountCardProps) {
             <span
               className="inline-block px-4 py-1 text-xs font-mono font-bold tracking-[0.15em] uppercase rounded-full"
               style={{
-                background: 'linear-gradient(135deg, #D4AF37, #EDCB6A)',
+                background: 'linear-gradient(135deg, #10B981, #6EE7B7)',
                 color: '#080B14',
               }}
             >
@@ -100,7 +100,7 @@ function AccountCard({ account, index }: AccountCardProps) {
             className="font-mono font-bold leading-none"
             style={{
               fontSize: 'clamp(2.5rem, 6vw, 3.5rem)',
-              color: 'var(--gold-300)',
+              color: 'var(--accent-300)',
             }}
           >
             {account.minDeposit}
@@ -178,7 +178,7 @@ export function AccountsComparison() {
     <section
       id="accounts-comparison"
       className="section-light-theme section-padding"
-      style={{ background: '#F8F6F1' }}
+      style={{ background: '#F6F9F8' }}
     >
       <div className="container-max">
         <SectionHeader
@@ -186,7 +186,7 @@ export function AccountsComparison() {
           title={
             <>
               Choose Your{' '}
-              <span className="text-gradient-gold">Trading Account</span>
+              <span className="text-gradient-accent">Trading Account</span>
             </>
           }
           subtitle="Three account types designed to match your trading style and experience level. All include Islamic swap-free options."

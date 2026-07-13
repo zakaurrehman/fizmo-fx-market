@@ -34,7 +34,7 @@ function AccordionItem({ item, isOpen, onToggle }: AccordionItemProps) {
           className="font-body font-medium leading-snug"
           style={{
             fontSize: '1rem',
-            color: isOpen ? 'var(--text-gold)' : 'var(--text-primary)',
+            color: isOpen ? 'var(--text-accent)' : 'var(--text-primary)',
             transition: 'color var(--transition-base)',
           }}
         >
@@ -45,7 +45,7 @@ function AccordionItem({ item, isOpen, onToggle }: AccordionItemProps) {
         <span
           className="flex-shrink-0"
           style={{
-            color: isOpen ? 'var(--gold-500)' : 'var(--text-muted)',
+            color: isOpen ? 'var(--accent-500)' : 'var(--text-muted)',
             transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
             transition: 'transform 0.25s ease, color var(--transition-base)',
             display: 'flex',
@@ -90,7 +90,7 @@ export function FAQSection() {
   return (
     <section
       className="section-light-theme section-padding"
-      style={{ background: '#F8F6F1' }}
+      style={{ background: '#F6F9F8' }}
     >
       <div className="container-max">
         <ScrollReveal>
@@ -143,7 +143,7 @@ export function FAQSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium"
-                style={{ color: 'var(--text-gold)', textDecoration: 'underline', textDecorationColor: 'var(--border-gold)' }}
+                style={{ color: 'var(--text-accent)', textDecoration: 'underline', textDecorationColor: 'var(--border-accent)' }}
               >
                 Chat with us on WhatsApp
               </a>{' '}
@@ -151,7 +151,7 @@ export function FAQSection() {
               <a
                 href="mailto:support@fizmofxmarkets.com"
                 className="font-medium"
-                style={{ color: 'var(--text-gold)', textDecoration: 'underline', textDecorationColor: 'var(--border-gold)' }}
+                style={{ color: 'var(--text-accent)', textDecoration: 'underline', textDecorationColor: 'var(--border-accent)' }}
               >
                 send us an email
               </a>

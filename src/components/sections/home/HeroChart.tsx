@@ -24,14 +24,14 @@ function CustomTooltip({ active, payload }: CustomTooltipProps) {
       <div
         style={{
           background: 'var(--bg-elevated)',
-          border: '1px solid var(--border-gold)',
+          border: '1px solid var(--border-accent)',
           borderRadius: 'var(--radius-sm)',
           padding: '6px 12px',
         }}
       >
         <span
           className="font-mono text-sm"
-          style={{ color: 'var(--gold-300)' }}
+          style={{ color: 'var(--accent-300)' }}
         >
           {payload[0].value.toFixed(2)}
         </span>
@@ -49,8 +49,8 @@ interface PulsingDotProps {
 function PulsingDot({ cx = 0, cy = 0 }: PulsingDotProps) {
   return (
     <g>
-      <circle cx={cx} cy={cy} r={5} fill="var(--gold-500)" opacity={0.9} />
-      <circle cx={cx} cy={cy} r={9} fill="none" stroke="var(--gold-500)" strokeWidth={1.5} opacity={0.4}>
+      <circle cx={cx} cy={cy} r={5} fill="var(--accent-500)" opacity={0.9} />
+      <circle cx={cx} cy={cy} r={9} fill="none" stroke="var(--accent-500)" strokeWidth={1.5} opacity={0.4}>
         <animate attributeName="r" values="5;14;5" dur="2s" repeatCount="indefinite" />
         <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite" />
       </circle>
@@ -78,7 +78,7 @@ export function HeroChart() {
         className="rounded-[var(--radius-xl)] overflow-hidden"
         style={{
           background: 'var(--bg-card)',
-          border: '1px solid var(--border-gold)',
+          border: '1px solid var(--border-accent)',
           boxShadow: 'var(--shadow-glow)',
         }}
       >
@@ -124,9 +124,9 @@ export function HeroChart() {
               margin={{ top: 8, right: 12, left: 0, bottom: 0 }}
             >
               <defs>
-                <linearGradient id="goldGradient" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#D4AF37" stopOpacity={0.35} />
-                  <stop offset="100%" stopColor="#D4AF37" stopOpacity={0.02} />
+                <linearGradient id="accentGradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#10B981" stopOpacity={0.35} />
+                  <stop offset="100%" stopColor="#10B981" stopOpacity={0.02} />
                 </linearGradient>
               </defs>
               <XAxis dataKey="index" hide />
@@ -138,11 +138,11 @@ export function HeroChart() {
               <Area
                 type="monotone"
                 dataKey="price"
-                stroke="var(--gold-500)"
+                stroke="var(--accent-500)"
                 strokeWidth={2}
-                fill="url(#goldGradient)"
+                fill="url(#accentGradient)"
                 dot={false}
-                activeDot={{ r: 4, fill: 'var(--gold-300)', stroke: 'none' }}
+                activeDot={{ r: 4, fill: 'var(--accent-300)', stroke: 'none' }}
                 isAnimationActive={true}
               />
               {/* Pulsing dot at last point */}

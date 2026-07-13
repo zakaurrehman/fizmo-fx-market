@@ -17,9 +17,9 @@ function FeatureRow({ label, value }: FeatureRowProps) {
     <div className="flex items-start gap-3 py-2" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
       <div
         className="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center"
-        style={{ background: 'rgba(212,175,55,0.15)' }}
+        style={{ background: 'rgba(16,185,129,0.15)' }}
       >
-        <Check size={10} style={{ color: 'var(--gold-500)' }} />
+        <Check size={10} style={{ color: 'var(--accent-500)' }} />
       </div>
       <div className="flex-1 flex items-center justify-between gap-2 min-w-0">
         <span
@@ -66,9 +66,9 @@ function AccountCard({ account, index }: AccountCardProps) {
           <div
             className="absolute -top-3 left-1/2 -translate-x-1/2 z-20 px-4 py-1 rounded-full font-mono text-xs font-bold tracking-wider uppercase whitespace-nowrap"
             style={{
-              background: 'var(--gradient-gold)',
+              background: 'var(--gradient-accent)',
               color: '#080B14',
-              boxShadow: '0 0 20px rgba(212,175,55,0.4)',
+              boxShadow: '0 0 20px rgba(16,185,129,0.4)',
             }}
           >
             MOST POPULAR
@@ -87,7 +87,7 @@ function AccountCard({ account, index }: AccountCardProps) {
             className="font-mono font-bold"
             style={{
               fontSize: 'clamp(2rem, 3.5vw, 2.5rem)',
-              color: 'var(--gold-500)',
+              color: 'var(--accent-500)',
               lineHeight: 1,
             }}
           >
@@ -107,11 +107,11 @@ function AccountCard({ account, index }: AccountCardProps) {
             <span
               className="font-mono text-xs font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full"
               style={{
-                color: isFeautred ? '#080B14' : 'var(--gold-500)',
+                color: isFeautred ? '#080B14' : 'var(--accent-500)',
                 background: isFeautred
-                  ? 'var(--gradient-gold)'
-                  : 'rgba(212,175,55,0.1)',
-                border: isFeautred ? 'none' : '1px solid rgba(212,175,55,0.2)',
+                  ? 'var(--gradient-accent)'
+                  : 'rgba(16,185,129,0.1)',
+                border: isFeautred ? 'none' : '1px solid rgba(16,185,129,0.2)',
               }}
             >
               {account.badge}
@@ -131,14 +131,14 @@ function AccountCard({ account, index }: AccountCardProps) {
         <div
           className="flex items-center gap-2 px-3 py-2 rounded-[var(--radius-sm)]"
           style={{
-            background: 'rgba(212,175,55,0.08)',
-            border: '1px solid rgba(212,175,55,0.18)',
+            background: 'rgba(16,185,129,0.08)',
+            border: '1px solid rgba(16,185,129,0.18)',
           }}
         >
-          <Target size={14} style={{ color: '#8A6A1E', flexShrink: 0 }} />
+          <Target size={14} style={{ color: '#047857', flexShrink: 0 }} />
           <span
             className="font-body text-xs font-medium"
-            style={{ color: '#8A6A1E' }}
+            style={{ color: '#047857' }}
           >
             Best for: {account.bestFor}
           </span>
@@ -195,7 +195,7 @@ export function AccountsPreviewSection() {
         <div className="text-center">
           <Link
             to="/accounts"
-            className="group link-gold font-body text-sm font-semibold inline-flex items-center gap-1.5"
+            className="group link-accent font-body text-sm font-semibold inline-flex items-center gap-1.5"
           >
             Compare All Account Features
             <ArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-0.5" />

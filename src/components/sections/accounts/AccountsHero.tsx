@@ -16,7 +16,7 @@ export function AccountsHero() {
       style={{
         minHeight: '50vh',
         background:
-          'radial-gradient(ellipse at 60% 50%, rgba(212,175,55,0.08) 0%, transparent 60%), #080B14',
+          'radial-gradient(ellipse at 60% 50%, rgba(16,185,129,0.08) 0%, transparent 60%), #080B14',
       }}
     >
       {/* Subtle grid overlay */}
@@ -24,7 +24,7 @@ export function AccountsHero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage:
-            'radial-gradient(circle, rgba(212,175,55,0.05) 1px, transparent 1px)',
+            'radial-gradient(circle, rgba(16,185,129,0.05) 1px, transparent 1px)',
           backgroundSize: '40px 40px',
         }}
       />
@@ -40,12 +40,12 @@ export function AccountsHero() {
         >
           <Link
             to="/"
-            className="text-[var(--text-secondary)] hover:text-[var(--text-gold)] transition-colors duration-200"
+            className="text-[var(--text-secondary)] hover:text-[var(--text-accent)] transition-colors duration-200"
           >
             Home
           </Link>
           <span className="text-[var(--text-muted)]">/</span>
-          <span className="text-[var(--text-gold)] font-medium">Accounts</span>
+          <span className="text-[var(--text-accent)] font-medium">Accounts</span>
         </motion.nav>
 
         {/* Heading */}
@@ -57,7 +57,7 @@ export function AccountsHero() {
           style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', lineHeight: 1.15 }}
         >
           Trading Accounts Built for{' '}
-          <span className="text-gradient-gold">Every Level</span>
+          <span className="text-gradient-accent">Every Level</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -83,7 +83,7 @@ export function AccountsHero() {
           </Button>
           <button
             onClick={scrollToComparison}
-            className="inline-flex items-center justify-center px-8 py-3.5 text-lg rounded-[var(--radius-md)] bg-transparent border border-[var(--border-gold)] text-[var(--text-gold)] hover:bg-[var(--gold-500)] hover:text-[#080B14] transition-all duration-[var(--transition-base)] cursor-pointer font-body font-medium"
+            className="inline-flex items-center justify-center px-8 py-3.5 text-lg rounded-[var(--radius-md)] bg-transparent border border-[var(--border-accent)] text-[var(--text-accent)] hover:bg-[var(--accent-500)] hover:text-[#080B14] transition-all duration-[var(--transition-base)] cursor-pointer font-body font-medium"
           >
             Compare Accounts
           </button>

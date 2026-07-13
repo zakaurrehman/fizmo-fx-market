@@ -107,7 +107,7 @@ export function ComparisonTable() {
           title={
             <>
               Full Feature{' '}
-              <span className="text-gradient-gold">Comparison</span>
+              <span className="text-gradient-accent">Comparison</span>
             </>
           }
           subtitle="A complete breakdown of every feature across all three account types."
@@ -119,7 +119,7 @@ export function ComparisonTable() {
               {/* Header — keep dark */}
               <thead>
                 <tr style={{ background: '#0D1120' }}>
-                  <th className="text-left px-6 py-4 font-display font-semibold text-white text-sm tracking-wide border-b border-[var(--border-gold)]">
+                  <th className="text-left px-6 py-4 font-display font-semibold text-white text-sm tracking-wide border-b border-[var(--border-accent)]">
                     Feature
                   </th>
                   <th className="px-6 py-4 font-display font-semibold text-white text-sm tracking-wide border-b border-[rgba(255,255,255,0.1)] text-center">
@@ -128,8 +128,8 @@ export function ComparisonTable() {
                   <th
                     className="px-6 py-4 font-display font-semibold text-sm tracking-wide border-b text-center"
                     style={{
-                      color: 'var(--gold-300)',
-                      borderBottomColor: 'var(--border-gold)',
+                      color: 'var(--accent-300)',
+                      borderBottomColor: 'var(--border-accent)',
                     }}
                   >
                     Pro
@@ -145,13 +145,13 @@ export function ComparisonTable() {
                 {tableRows.map((row, index) => {
                   const isOdd = index % 2 === 0
                   const oddBg = '#FFFFFF'
-                  const evenBg = '#F8F6F1'
+                  const evenBg = '#F6F9F8'
 
                   return (
                     <tr
                       key={row.feature}
                       style={{ background: isOdd ? oddBg : evenBg }}
-                      className="transition-colors duration-150 hover:bg-[rgba(212,175,55,0.04)]"
+                      className="transition-colors duration-150 hover:bg-[rgba(16,185,129,0.04)]"
                     >
                       {/* Feature label */}
                       <td className="px-6 py-3.5 text-sm font-body text-[var(--text-secondary)] border-b border-[var(--border-subtle)]">
@@ -167,9 +167,9 @@ export function ComparisonTable() {
                       <td
                         className="px-6 py-3.5 text-sm font-mono border-b text-center"
                         style={{
-                          color: 'var(--gold-300)',
-                          borderBottomColor: 'rgba(212,175,55,0.15)',
-                          background: 'rgba(212,175,55,0.06)',
+                          color: 'var(--accent-300)',
+                          borderBottomColor: 'rgba(16,185,129,0.15)',
+                          background: 'rgba(16,185,129,0.06)',
                         }}
                       >
                         {row.pro}

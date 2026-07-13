@@ -57,11 +57,11 @@ export function OurStory() {
                 <div className="flex items-center gap-1">
                   <div
                     className="h-1 rounded-full"
-                    style={{ width: '3rem', background: 'var(--gradient-gold)' }}
+                    style={{ width: '3rem', background: 'var(--gradient-accent)' }}
                   />
                   <div
                     className="h-1 rounded-full"
-                    style={{ width: '1rem', background: 'var(--border-gold)' }}
+                    style={{ width: '1rem', background: 'var(--border-accent)' }}
                   />
                 </div>
               </div>
@@ -107,7 +107,7 @@ export function OurStory() {
                 className="absolute left-[1.875rem] top-8 bottom-8 w-px"
                 style={{
                   background:
-                    'repeating-linear-gradient(to bottom, var(--border-gold) 0, var(--border-gold) 6px, transparent 6px, transparent 14px)',
+                    'repeating-linear-gradient(to bottom, var(--border-accent) 0, var(--border-accent) 6px, transparent 6px, transparent 14px)',
                 }}
               />
 
@@ -127,13 +127,13 @@ export function OurStory() {
                         className="w-[3.75rem] h-[3.75rem] rounded-full flex items-center justify-center"
                         style={{
                           background: '#FFFFFF',
-                          border: '2px solid var(--border-gold)',
-                          boxShadow: '0 0 16px rgba(212,175,55,0.15)',
+                          border: '2px solid var(--border-accent)',
+                          boxShadow: '0 0 16px rgba(16,185,129,0.15)',
                         }}
                       >
                         <span
                           className="font-mono font-bold"
-                          style={{ fontSize: '0.75rem', color: 'var(--gold-300)' }}
+                          style={{ fontSize: '0.75rem', color: 'var(--accent-300)' }}
                         >
                           {milestone.year}
                         </span>
@@ -150,7 +150,7 @@ export function OurStory() {
                     >
                       <div
                         className="font-mono font-bold mb-1"
-                        style={{ fontSize: '1.375rem', color: 'var(--gold-500)', lineHeight: 1 }}
+                        style={{ fontSize: '1.375rem', color: 'var(--accent-500)', lineHeight: 1 }}
                       >
                         {milestone.year}
                       </div>

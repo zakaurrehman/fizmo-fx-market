@@ -233,7 +233,7 @@ export function SignalsSection() {
               title={
                 <>
                   Professional Signals.{' '}
-                  <span className="text-gradient-gold">Zero Cost.</span>
+                  <span className="text-gradient-accent">Zero Cost.</span>
                 </>
               }
               subtitle="Receive institutional-quality trade signals powered by advanced technical analysis and real-time market data. Never miss a high-probability setup again."

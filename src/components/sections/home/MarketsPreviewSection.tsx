@@ -70,8 +70,8 @@ function MarketCard({ market, delay }: { market: MarketCardData; delay: number }
         <div
           className="w-12 h-12 rounded-[var(--radius-md)] flex items-center justify-center flex-shrink-0"
           style={{
-            background: 'rgba(168,134,42,0.1)',
-            color: 'var(--gold-500)',
+            background: 'rgba(5,150,105,0.1)',
+            color: 'var(--accent-500)',
           }}
           aria-hidden="true"
         >
@@ -80,9 +80,9 @@ function MarketCard({ market, delay }: { market: MarketCardData; delay: number }
         <span
           className="font-mono text-xs font-semibold tracking-[0.15em] uppercase px-2.5 py-1 rounded-full"
           style={{
-            color: 'var(--gold-500)',
-            background: 'rgba(212,175,55,0.1)',
-            border: '1px solid rgba(212,175,55,0.2)',
+            color: 'var(--accent-500)',
+            background: 'rgba(16,185,129,0.1)',
+            border: '1px solid rgba(16,185,129,0.2)',
           }}
         >
           {market.category}
@@ -136,7 +136,7 @@ function MarketCard({ market, delay }: { market: MarketCardData; delay: number }
       {/* Internal link */}
       <Link
         to={market.linkHref}
-        className="group/link link-gold font-body text-sm font-semibold inline-flex items-center gap-1"
+        className="group/link link-accent font-body text-sm font-semibold inline-flex items-center gap-1"
       >
         {market.linkLabel}
         <ArrowRight size={14} className="transition-transform duration-200 group-hover/link:translate-x-0.5" />
@@ -149,7 +149,7 @@ export function MarketsPreviewSection() {
   return (
     <section
       className="section-light-theme section-padding"
-      style={{ background: '#F8F6F1' }}
+      style={{ background: '#F6F9F8' }}
     >
       <div className="container-max">
         <SectionHeader

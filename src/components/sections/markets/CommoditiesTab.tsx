@@ -17,9 +17,9 @@ const featureList: string[] = [
 
 const categoryColors: Record<string, { bg: string; text: string; border: string }> = {
   'Precious Metal': {
-    bg: 'rgba(212,175,55,0.1)',
-    text: 'var(--gold-300)',
-    border: 'rgba(212,175,55,0.3)',
+    bg: 'rgba(16,185,129,0.1)',
+    text: 'var(--accent-300)',
+    border: 'rgba(16,185,129,0.3)',
   },
   Energy: {
     bg: 'rgba(45,212,191,0.1)',
@@ -60,7 +60,7 @@ export function CommoditiesTab() {
       >
         <h2 className="font-display font-bold text-[var(--text-primary)] text-2xl md:text-3xl mb-4 leading-tight">
           Commodities &{' '}
-          <span className="text-gradient-gold">Precious Metals</span>
+          <span className="text-gradient-accent">Precious Metals</span>
         </h2>
         <p className="font-body text-[var(--text-secondary)] text-base leading-relaxed mb-8">
           From gold and oil to agricultural products — trade real-world assets
@@ -106,8 +106,8 @@ export function CommoditiesTab() {
                   (col) => (
                     <th
                       key={col}
-                      className="px-4 py-3 text-left text-xs font-mono font-semibold tracking-wider border-b border-[var(--border-gold)]"
-                      style={{ color: 'var(--gold-300)' }}
+                      className="px-4 py-3 text-left text-xs font-mono font-semibold tracking-wider border-b border-[var(--border-accent)]"
+                      style={{ color: 'var(--accent-300)' }}
                     >
                       {col}
                     </th>
@@ -121,15 +121,15 @@ export function CommoditiesTab() {
                 return (
                   <tr
                     key={row.symbol}
-                    className="transition-colors duration-150 hover:bg-[rgba(212,175,55,0.05)]"
+                    className="transition-colors duration-150 hover:bg-[rgba(16,185,129,0.05)]"
                     style={{
-                      background: index % 2 === 0 ? '#FFFFFF' : '#F8F6F1',
+                      background: index % 2 === 0 ? '#FFFFFF' : '#F6F9F8',
                     }}
                   >
                     <td className="px-4 py-3 border-b border-[var(--border-subtle)]">
                       <span
                         className="font-mono font-bold text-sm"
-                        style={{ color: '#8A6A1E' }}
+                        style={{ color: '#047857' }}
                       >
                         {row.symbol}
                       </span>

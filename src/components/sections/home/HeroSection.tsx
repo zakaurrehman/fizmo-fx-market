@@ -42,7 +42,7 @@ export function HeroSection() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 80% 60% at 70% 50%, rgba(212,175,55,0.05) 0%, transparent 70%)',
+            'radial-gradient(ellipse 80% 60% at 70% 50%, rgba(16,185,129,0.05) 0%, transparent 70%)',
         }}
       />
 
@@ -59,9 +59,9 @@ export function HeroSection() {
             {/* Eyebrow badge */}
             <div className="inline-flex w-fit items-center gap-2 px-4 py-2 rounded-full font-mono text-xs font-medium tracking-wide"
               style={{
-                border: '1px solid var(--border-gold)',
-                background: 'rgba(212,175,55,0.07)',
-                color: 'var(--gold-300)',
+                border: '1px solid var(--border-accent)',
+                background: 'rgba(16,185,129,0.07)',
+                color: 'var(--accent-300)',
               }}
             >
               <Trophy size={14} />
@@ -80,7 +80,7 @@ export function HeroSection() {
               Trade Global Markets With
               <br />
               Unmatched{' '}
-              <span className="text-gradient-gold">Precision</span>
+              <span className="text-gradient-accent">Precision</span>
             </h1>
 
             {/* Subtitle */}
@@ -123,7 +123,7 @@ export function HeroSection() {
               className="font-body inline-flex items-center gap-1.5"
               style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}
             >
-              <Zap size={12} style={{ color: 'var(--gold-500)', flexShrink: 0 }} />
+              <Zap size={12} style={{ color: 'var(--accent-500)', flexShrink: 0 }} />
               Open account in under 2 minutes · No deposit required for demo
             </p>
 
@@ -135,7 +135,7 @@ export function HeroSection() {
               {trustItems.map((item, i) => (
                 <React.Fragment key={item.label}>
                   <div className="flex items-center gap-2 px-4 py-1 first:pl-0">
-                    <span className="inline-flex" style={{ color: 'var(--gold-500)' }}>{item.icon}</span>
+                    <span className="inline-flex" style={{ color: 'var(--accent-500)' }}>{item.icon}</span>
                     <span
                       className="font-body text-sm font-medium whitespace-nowrap"
                       style={{ color: 'var(--text-secondary)' }}

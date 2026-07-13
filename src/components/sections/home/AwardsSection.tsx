@@ -32,7 +32,7 @@ export function AwardsSection() {
               maxWidth: '32rem',
               margin: '0 auto',
               background: 'var(--bg-card)',
-              border: '1px solid var(--border-gold)',
+              border: '1px solid var(--border-accent)',
               boxShadow: 'var(--shadow-glow)',
               borderRadius: 'var(--radius-lg)',
               padding: '2.5rem',
@@ -46,14 +46,14 @@ export function AwardsSection() {
                 height: 80,
                 margin: '0 auto 1.5rem',
                 borderRadius: '50%',
-                background: 'rgba(212,175,55,0.12)',
-                border: '1px solid var(--border-gold)',
+                background: 'rgba(16,185,129,0.12)',
+                border: '1px solid var(--border-accent)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
             >
-              <Trophy size={48} color="var(--gold-500)" strokeWidth={1.5} />
+              <Trophy size={48} color="var(--accent-500)" strokeWidth={1.5} />
             </div>
 
             {/* Award name */}
@@ -72,7 +72,7 @@ export function AwardsSection() {
 
             {/* Event */}
             <p
-              className="text-gradient-gold"
+              className="text-gradient-accent"
               style={{
                 fontFamily: "'Syne', sans-serif",
                 fontWeight: 600,
@@ -94,7 +94,7 @@ export function AwardsSection() {
               aria-label="5 out of 5 stars"
             >
               {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={22} fill="var(--gold-500)" color="var(--gold-500)" />
+                <Star key={i} size={22} fill="var(--accent-500)" color="var(--accent-500)" />
               ))}
             </div>
 
@@ -142,7 +142,7 @@ export function AwardsSection() {
                       fontFamily: "'JetBrains Mono', monospace",
                       fontWeight: 700,
                       fontSize: '1.875rem',
-                      color: 'var(--gold-500)',
+                      color: 'var(--accent-500)',
                       lineHeight: 1,
                       marginBottom: '0.375rem',
                     }}

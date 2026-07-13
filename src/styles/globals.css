@@ -12,14 +12,14 @@
     --bg-elevated:    #1C2340;
 
     /* Brand Colors */
-    --gold-50:        #FDF8EC;
-    --gold-100:       #F9EEC4;
-    --gold-200:       #F2D980;
-    --gold-300:       #EDCB6A;
-    --gold-400:       #DDB84A;
-    --gold-500:       #D4AF37;
-    --gold-600:       #A8862A;
-    --gold-glow:      rgba(212, 175, 55, 0.25);
+    --accent-50:        #ECFDF5;
+    --accent-100:       #D1FAE5;
+    --accent-200:       #A7F3D0;
+    --accent-300:       #6EE7B7;
+    --accent-400:       #34D399;
+    --accent-500:       #10B981;
+    --accent-600:       #059669;
+    --accent-glow:      rgba(16, 185, 129, 0.25);
 
     /* Accent */
     --teal-400:       #2DD4BF;
@@ -31,26 +31,26 @@
     --text-primary:   #F0F4FF;
     --text-secondary: #94A3C4;
     --text-muted:     #4A5580;
-    --text-gold:      #D4AF37;
+    --text-accent:      #10B981;
 
     /* Borders */
     --border-subtle:  rgba(255, 255, 255, 0.06);
-    --border-gold:    rgba(212, 175, 55, 0.3);
-    --border-active:  rgba(212, 175, 55, 0.7);
+    --border-accent:    rgba(16, 185, 129, 0.3);
+    --border-active:  rgba(16, 185, 129, 0.7);
 
     /* Gradients */
-    --gradient-gold:     linear-gradient(135deg, #D4AF37 0%, #EDCB6A 50%, #D4AF37 100%);
-    --gradient-gold-dim: linear-gradient(135deg, #8A6A1E 0%, #D4AF37 100%);
+    --gradient-accent:     linear-gradient(135deg, #10B981 0%, #6EE7B7 50%, #10B981 100%);
+    --gradient-accent-dim: linear-gradient(135deg, #047857 0%, #10B981 100%);
     --gradient-dark:     linear-gradient(180deg, #080B14 0%, #0D1120 100%);
     --gradient-card:     linear-gradient(135deg, #131829 0%, #1C2340 100%);
-    --gradient-hero:     radial-gradient(ellipse at 60% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+    --gradient-hero:     radial-gradient(ellipse at 60% 50%, rgba(16, 185, 129, 0.08) 0%, transparent 60%),
                          radial-gradient(ellipse at 10% 80%, rgba(20, 184, 166, 0.06) 0%, transparent 50%),
                          #080B14;
 
     /* Shadows */
-    --shadow-gold:    0 0 24px rgba(212, 175, 55, 0.1);
+    --shadow-accent:    0 0 24px rgba(16, 185, 129, 0.1);
     --shadow-card:    0 4px 24px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.04) inset;
-    --shadow-glow:    0 0 0 1px var(--border-gold), 0 8px 24px rgba(0, 0, 0, 0.35), 0 4px 16px rgba(212, 175, 55, 0.08);
+    --shadow-glow:    0 0 0 1px var(--border-accent), 0 8px 24px rgba(0, 0, 0, 0.35), 0 4px 16px rgba(16, 185, 129, 0.08);
 
     /* Spacing */
     --section-py:    120px;
@@ -102,7 +102,7 @@
   }
 
   ::selection {
-    background: rgba(212, 175, 55, 0.3);
+    background: rgba(16, 185, 129, 0.3);
     color: #fff;
   }
 
@@ -115,12 +115,12 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--gold-600);
+    background: var(--accent-600);
     border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--gold-500);
+    background: var(--accent-500);
   }
 }
 
@@ -148,15 +148,15 @@
     }
   }
 
-  .text-gradient-gold {
-    background: linear-gradient(135deg, #D4AF37, #EDCB6A);
+  .text-gradient-accent {
+    background: linear-gradient(135deg, #10B981, #6EE7B7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .bg-dot-grid {
-    background-image: radial-gradient(circle, rgba(212, 175, 55, 0.08) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(16, 185, 129, 0.08) 1px, transparent 1px);
     background-size: 32px 32px;
   }
 
@@ -167,24 +167,24 @@
     border-bottom: 1px solid var(--border-subtle);
   }
 
-  .gold-border {
-    border: 1px solid var(--border-gold);
+  .accent-border {
+    border: 1px solid var(--border-accent);
   }
 
-  /* Gold text link — theme-aware color + hover, replaces per-link JS handlers */
-  .link-gold {
-    color: var(--text-gold);
+  /* Accent text link — theme-aware color + hover, replaces per-link JS handlers */
+  .link-accent {
+    color: var(--text-accent);
     transition: color var(--transition-fast);
   }
 
-  .link-gold:hover,
-  .link-gold:focus-visible {
-    color: var(--gold-300);
+  .link-accent:hover,
+  .link-accent:focus-visible {
+    color: var(--accent-300);
   }
 
-  .section-light-theme .link-gold:hover,
-  .section-light-theme .link-gold:focus-visible {
-    color: var(--gold-500);
+  .section-light-theme .link-accent:hover,
+  .section-light-theme .link-accent:focus-visible {
+    color: var(--accent-500);
   }
 
   .card-base {
@@ -195,7 +195,7 @@
   }
 
   .card-base:hover {
-    border-color: var(--border-gold);
+    border-color: var(--border-accent);
     box-shadow: var(--shadow-glow);
     transform: translateY(-4px);
   }
@@ -248,16 +248,16 @@
     --text-primary:   #0D1120;
     --text-secondary: #374151;
     --text-muted:     #9CA3AF;
-    --text-gold:      #8A6A1E;
+    --text-accent:      #047857;
     --bg-card:        #FFFFFF;
-    --bg-card-hover:  #F9F8F5;
-    --bg-elevated:    #F3F1EC;
+    --bg-card-hover:  #F7FAF9;
+    --bg-elevated:    #EFF5F2;
     --border-subtle:  rgba(0, 0, 0, 0.07);
-    --border-gold:    rgba(168, 134, 42, 0.35);
-    --border-active:  rgba(168, 134, 42, 0.65);
+    --border-accent:    rgba(5, 150, 105, 0.35);
+    --border-active:  rgba(5, 150, 105, 0.65);
     --shadow-card:    0 1px 4px rgba(0,0,0,0.06), 0 4px 20px rgba(0,0,0,0.08);
-    --shadow-glow:    0 0 0 1px rgba(168,134,42,0.25), 0 8px 24px rgba(0,0,0,0.08);
-    --gradient-card:  linear-gradient(135deg, #FFFFFF 0%, #FAFAF8 100%);
+    --shadow-glow:    0 0 0 1px rgba(5,150,105,0.25), 0 8px 24px rgba(0,0,0,0.08);
+    --gradient-card:  linear-gradient(135deg, #FFFFFF 0%, #FAFCFB 100%);
   }
 
   /* Light section dot grid uses subtle gray dots */
@@ -271,9 +271,9 @@
   }
 
   /* Instrument table rows in light sections */
-  .light-table tr:nth-child(even) { background: #F8F6F1; }
+  .light-table tr:nth-child(even) { background: #F6F9F8; }
   .light-table tr:nth-child(odd)  { background: #FFFFFF; }
-  .light-table tr:hover           { background: #FFF8E7; }
+  .light-table tr:hover           { background: #ECFDF5; }
   .light-table th {
     background: #0D1120;
     color: #FFFFFF;
@@ -283,7 +283,7 @@
     border-bottom: 1px solid rgba(0,0,0,0.06);
   }
   .light-table .symbol-cell {
-    color: #8A6A1E;
+    color: #047857;
     font-weight: 600;
   }
 }

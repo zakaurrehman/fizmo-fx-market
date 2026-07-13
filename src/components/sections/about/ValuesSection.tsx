@@ -41,7 +41,7 @@ export function ValuesSection() {
   return (
     <section
       className="section-light-theme section-padding"
-      style={{ background: '#F8F6F1' }}
+      style={{ background: '#F6F9F8' }}
     >
       <div className="container-max">
         <ScrollReveal>
@@ -59,9 +59,9 @@ export function ValuesSection() {
               <div
                 className="w-14 h-14 rounded-[var(--radius-md)] flex items-center justify-center mb-5"
                 style={{
-                  background: 'rgba(212,175,55,0.1)',
-                  border: '1px solid var(--border-gold)',
-                  color: 'var(--gold-500)',
+                  background: 'rgba(16,185,129,0.1)',
+                  border: '1px solid var(--border-accent)',
+                  color: 'var(--accent-500)',
                 }}
               >
                 {value.icon}

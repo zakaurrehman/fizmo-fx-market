@@ -77,7 +77,7 @@ export function MT5vsmt4Table() {
           title={
             <>
               Why MT5 Over{' '}
-              <span className="text-gradient-gold">MT4?</span>
+              <span className="text-gradient-accent">MT4?</span>
             </>
           }
           subtitle="MetaTrader 5 is the evolution of MT4, with significant improvements across every dimension."
@@ -89,7 +89,7 @@ export function MT5vsmt4Table() {
               {/* Header — keep dark */}
               <thead>
                 <tr style={{ background: '#0D1120' }}>
-                  <th className="text-left px-6 py-4 font-display font-semibold text-white text-sm tracking-wide border-b border-[var(--border-gold)]">
+                  <th className="text-left px-6 py-4 font-display font-semibold text-white text-sm tracking-wide border-b border-[var(--border-accent)]">
                     Feature
                   </th>
                   <th className="px-6 py-4 font-display font-semibold text-[#9CA3AF] text-sm tracking-wide border-b border-[rgba(255,255,255,0.1)] text-center">
@@ -98,8 +98,8 @@ export function MT5vsmt4Table() {
                   <th
                     className="px-6 py-4 font-display font-semibold text-sm tracking-wide border-b text-center"
                     style={{
-                      color: 'var(--gold-300)',
-                      borderBottomColor: 'var(--border-gold)',
+                      color: 'var(--accent-300)',
+                      borderBottomColor: 'var(--border-accent)',
                     }}
                   >
                     MT5
@@ -115,8 +115,8 @@ export function MT5vsmt4Table() {
                   return (
                     <tr
                       key={row.feature}
-                      style={{ background: isOdd ? '#FFFFFF' : '#F8F6F1' }}
-                      className="transition-colors duration-150 hover:bg-[rgba(212,175,55,0.03)]"
+                      style={{ background: isOdd ? '#FFFFFF' : '#F6F9F8' }}
+                      className="transition-colors duration-150 hover:bg-[rgba(16,185,129,0.03)]"
                     >
                       {/* Feature */}
                       <td className="px-6 py-3.5 text-sm font-body text-[var(--text-secondary)] border-b border-[var(--border-subtle)]">
@@ -132,8 +132,8 @@ export function MT5vsmt4Table() {
                       <td
                         className="px-6 py-3.5 border-b text-center"
                         style={{
-                          borderBottomColor: 'rgba(212,175,55,0.15)',
-                          background: 'rgba(212,175,55,0.04)',
+                          borderBottomColor: 'rgba(16,185,129,0.15)',
+                          background: 'rgba(16,185,129,0.04)',
                         }}
                       >
                         <Cell value={row.mt5} isHighlighted={true} isMuted={false} />
@@ -152,8 +152,8 @@ export function MT5vsmt4Table() {
             className="mt-12 rounded-[var(--radius-xl)] p-8 md:p-12 text-center"
             style={{
               background: '#FFFFFF',
-              border: '1px solid var(--border-gold)',
-              boxShadow: '0 4px 24px rgba(212,175,55,0.08)',
+              border: '1px solid var(--border-accent)',
+              boxShadow: '0 4px 24px rgba(16,185,129,0.08)',
             }}
           >
             <h3 className="font-display font-bold text-[var(--text-primary)] text-xl md:text-2xl mb-3">

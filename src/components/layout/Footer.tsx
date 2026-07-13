@@ -46,7 +46,7 @@ export function Footer() {
       {/* Gold gradient top border */}
       <div
         className="h-px w-full"
-        style={{ background: 'linear-gradient(90deg, transparent, var(--gold-500), transparent)' }}
+        style={{ background: 'linear-gradient(90deg, transparent, var(--accent-500), transparent)' }}
       />
 
       <div className="container-max py-16">
@@ -74,7 +74,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-9 h-9 flex items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--gold-500)] hover:border-[var(--border-gold)] hover:scale-110 transition-all duration-200"
+                  className="w-9 h-9 flex items-center justify-center rounded-[var(--radius-sm)] border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--accent-500)] hover:border-[var(--border-accent)] hover:scale-110 transition-all duration-200"
                 >
                   {icon}
                 </a>
@@ -99,7 +99,7 @@ export function Footer() {
                 <li key={item.href + item.label}>
                   <Link
                     to={item.href}
-                    className="text-sm text-[var(--text-muted)] hover:text-[var(--text-gold)] transition-colors"
+                    className="text-sm text-[var(--text-muted)] hover:text-[var(--text-accent)] transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -124,7 +124,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     to={item.href}
-                    className="text-sm text-[var(--text-muted)] hover:text-[var(--text-gold)] transition-colors"
+                    className="text-sm text-[var(--text-muted)] hover:text-[var(--text-accent)] transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -146,7 +146,7 @@ export function Footer() {
                 'Deposit & Withdrawal Policy',
               ].map(item => (
                 <li key={item}>
-                  <a href="#" className="text-sm text-[var(--text-muted)] hover:text-[var(--text-gold)] transition-colors">
+                  <a href="#" className="text-sm text-[var(--text-muted)] hover:text-[var(--text-accent)] transition-colors">
                     {item}
                   </a>
                 </li>
@@ -160,7 +160,7 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:support@fizmofxmarkets.com"
-                  className="flex items-center gap-2 text-sm text-[var(--text-muted)] hover:text-[var(--text-gold)] transition-colors"
+                  className="flex items-center gap-2 text-sm text-[var(--text-muted)] hover:text-[var(--text-accent)] transition-colors"
                 >
                   <Mail className="w-3.5 h-3.5 shrink-0" />
                   support@fizmofxmarkets.com
@@ -169,7 +169,7 @@ export function Footer() {
               <li>
                 <a
                   href="tel:+447759046727"
-                  className="flex items-center gap-2 text-sm text-[var(--text-muted)] hover:text-[var(--text-gold)] transition-colors"
+                  className="flex items-center gap-2 text-sm text-[var(--text-muted)] hover:text-[var(--text-accent)] transition-colors"
                 >
                   <Phone className="w-3.5 h-3.5 shrink-0" />
                   +44 7759 046727
@@ -180,7 +180,7 @@ export function Footer() {
                   href="https://wa.me/447759046727"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-[var(--text-muted)] hover:text-[var(--text-gold)] transition-colors"
+                  className="flex items-center gap-2 text-sm text-[var(--text-muted)] hover:text-[var(--text-accent)] transition-colors"
                 >
                   <MessageCircle className="w-3.5 h-3.5 shrink-0" />
                   WhatsApp Chat

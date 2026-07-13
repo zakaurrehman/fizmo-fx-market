@@ -20,7 +20,7 @@ const subjectOptions = [
 
 const inputBase: CSSProperties = {
   width: '100%',
-  background: '#F8F6F1',
+  background: '#F6F9F8',
   border: '1px solid rgba(0,0,0,0.1)',
   borderRadius: 'var(--radius-md)',
   padding: '0.75rem 1rem',
@@ -47,7 +47,7 @@ function FieldWrapper({ label, error, required, children }: InputFieldProps) {
       >
         {label}
         {required && (
-          <span style={{ color: 'var(--gold-500)', marginLeft: '0.25rem' }}>*</span>
+          <span style={{ color: 'var(--accent-500)', marginLeft: '0.25rem' }}>*</span>
         )}
       </label>
       {children}
@@ -104,7 +104,7 @@ function SuccessState() {
           href="https://wa.me/447759046727"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: 'var(--text-gold)' }}
+          style={{ color: 'var(--text-accent)' }}
         >
           +44 7759 046727
         </a>
@@ -211,7 +211,7 @@ export function ContactForm() {
                             onFocus={(e) => {
                               if (!errors.fullName) {
                                 ;(e.target as HTMLInputElement).style.borderColor =
-                                  'var(--border-gold)'
+                                  'var(--border-accent)'
                               }
                             }}
                             onBlur={(e) => {
@@ -243,7 +243,7 @@ export function ContactForm() {
                             onFocus={(e) => {
                               if (!errors.email) {
                                 ;(e.target as HTMLInputElement).style.borderColor =
-                                  'var(--border-gold)'
+                                  'var(--border-accent)'
                               }
                             }}
                             onBlur={(e) => {
@@ -274,7 +274,7 @@ export function ContactForm() {
                             onFocus={(e) => {
                               if (!errors.phone) {
                                 ;(e.target as HTMLInputElement).style.borderColor =
-                                  'var(--border-gold)'
+                                  'var(--border-accent)'
                               }
                             }}
                             onBlur={(e) => {
@@ -308,7 +308,7 @@ export function ContactForm() {
                             onFocus={(e) => {
                               if (!errors.subject) {
                                 ;(e.target as HTMLSelectElement).style.borderColor =
-                                  'var(--border-gold)'
+                                  'var(--border-accent)'
                               }
                             }}
                             onBlur={(e) => {
@@ -325,7 +325,7 @@ export function ContactForm() {
                               <option
                                 key={opt}
                                 value={opt}
-                                style={{ background: '#F8F6F1', color: '#0D1120' }}
+                                style={{ background: '#F6F9F8', color: '#0D1120' }}
                               >
                                 {opt}
                               </option>
@@ -354,7 +354,7 @@ export function ContactForm() {
                             onFocus={(e) => {
                               if (!errors.message) {
                                 ;(e.target as HTMLTextAreaElement).style.borderColor =
-                                  'var(--border-gold)'
+                                  'var(--border-accent)'
                               }
                             }}
                             onBlur={(e) => {

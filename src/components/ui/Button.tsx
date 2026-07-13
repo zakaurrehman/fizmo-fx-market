@@ -15,11 +15,11 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-gradient-gold text-[#080B14] font-semibold hover:shadow-gold-sm hover:-translate-y-0.5 active:translate-y-0 focus:ring-2 focus:ring-[var(--gold-500)] focus:ring-offset-2 focus:ring-offset-[var(--bg-primary)]',
+    'bg-gradient-accent text-[#080B14] font-semibold hover:shadow-accent-sm hover:-translate-y-0.5 active:translate-y-0 focus:ring-2 focus:ring-[var(--accent-500)] focus:ring-offset-2 focus:ring-offset-[var(--bg-primary)]',
   outline:
-    'bg-transparent border border-[var(--border-gold)] text-[var(--text-gold)] hover:bg-[var(--gold-500)] hover:text-[#080B14] hover:border-[var(--gold-500)] focus:ring-2 focus:ring-[var(--gold-500)] focus:ring-offset-2 focus:ring-offset-[var(--bg-primary)]',
+    'bg-transparent border border-[var(--border-accent)] text-[var(--text-accent)] hover:bg-[var(--accent-500)] hover:text-[#080B14] hover:border-[var(--accent-500)] focus:ring-2 focus:ring-[var(--accent-500)] focus:ring-offset-2 focus:ring-offset-[var(--bg-primary)]',
   ghost:
-    'bg-transparent text-[var(--text-gold)] hover:bg-[rgba(212,175,55,0.08)] focus:ring-2 focus:ring-[var(--gold-500)] focus:ring-offset-2 focus:ring-offset-[var(--bg-primary)]',
+    'bg-transparent text-[var(--text-accent)] hover:bg-[rgba(16,185,129,0.08)] focus:ring-2 focus:ring-[var(--accent-500)] focus:ring-offset-2 focus:ring-offset-[var(--bg-primary)]',
   danger:
     'bg-[var(--red-400)] text-white hover:bg-red-500 hover:-translate-y-0.5 focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-[var(--bg-primary)]',
 }

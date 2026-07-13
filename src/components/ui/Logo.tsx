@@ -12,7 +12,14 @@ export function Logo({ variant = 'dark', height = 36, className = '' }: LogoProp
     <img
       src={src}
       alt="Fizmo FX Markets"
-      style={{ height: `${height}px`, width: 'auto', display: 'block' }}
+      style={{
+        height: `${height}px`,
+        width: 'auto',
+        display: 'block',
+        // Stopgap: the logo PNGs are gold; shift them toward the emerald
+        // accent until re-exported brand assets replace the files.
+        filter: 'hue-rotate(105deg) saturate(1.15)',
+      }}
       className={className}
     />
   )

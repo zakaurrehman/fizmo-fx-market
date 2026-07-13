@@ -30,11 +30,11 @@ export function RegulatorySection() {
           <div className="text-center mb-12">
             <p
               className="font-mono text-xs font-medium tracking-[0.2em] uppercase mb-3 inline-flex items-center gap-2"
-              style={{ color: 'var(--text-gold)' }}
+              style={{ color: 'var(--text-accent)' }}
             >
-              <span className="w-6 h-px" style={{ background: 'var(--gold-500)' }} />
+              <span className="w-6 h-px" style={{ background: 'var(--accent-500)' }} />
               COMPLIANCE
-              <span className="w-6 h-px" style={{ background: 'var(--gold-500)' }} />
+              <span className="w-6 h-px" style={{ background: 'var(--accent-500)' }} />
             </p>
             <h2
               className="font-display font-bold mb-4"
@@ -68,8 +68,8 @@ export function RegulatorySection() {
               maxWidth: '48rem',
               margin: '0 auto 2rem',
               background: '#FFFFFF',
-              border: '1px solid var(--border-gold)',
-              boxShadow: '0 4px 24px rgba(212,175,55,0.08)',
+              border: '1px solid var(--border-accent)',
+              boxShadow: '0 4px 24px rgba(16,185,129,0.08)',
               borderRadius: 'var(--radius-xl)',
               padding: '2.5rem',
             }}
@@ -81,11 +81,11 @@ export function RegulatorySection() {
                 width: 80,
                 height: 80,
                 borderRadius: '50%',
-                background: 'rgba(212,175,55,0.1)',
-                border: '1px solid var(--border-gold)',
+                background: 'rgba(16,185,129,0.1)',
+                border: '1px solid var(--border-accent)',
               }}
             >
-              <ShieldCheck size={40} color="var(--gold-500)" strokeWidth={1.5} />
+              <ShieldCheck size={40} color="var(--accent-500)" strokeWidth={1.5} />
             </div>
 
             {/* Company name */}
@@ -136,20 +136,20 @@ export function RegulatorySection() {
             style={{
               maxWidth: '48rem',
               margin: '0 auto',
-              background: '#FFF8E7',
-              border: '1px solid rgba(168,134,42,0.3)',
+              background: '#ECFDF5',
+              border: '1px solid rgba(5,150,105,0.3)',
               borderRadius: 'var(--radius-lg)',
               padding: '1.5rem',
             }}
           >
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 mt-0.5">
-                <AlertTriangle size={22} color="var(--gold-500)" strokeWidth={1.5} />
+                <AlertTriangle size={22} color="var(--accent-500)" strokeWidth={1.5} />
               </div>
               <div>
                 <h4
                   className="font-display font-semibold mb-2"
-                  style={{ fontSize: '1rem', color: 'var(--text-gold)' }}
+                  style={{ fontSize: '1rem', color: 'var(--text-accent)' }}
                 >
                   Risk Warning
                 </h4>

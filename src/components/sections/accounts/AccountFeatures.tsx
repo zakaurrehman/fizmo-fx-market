@@ -57,7 +57,7 @@ export function AccountFeatures() {
   return (
     <section
       className="section-light-theme section-padding"
-      style={{ background: '#F8F6F1' }}
+      style={{ background: '#F6F9F8' }}
     >
       <div className="container-max">
         <SectionHeader
@@ -65,7 +65,7 @@ export function AccountFeatures() {
           title={
             <>
               All Accounts{' '}
-              <span className="text-gradient-gold">Include</span>
+              <span className="text-gradient-accent">Include</span>
             </>
           }
           subtitle="Every Fizmo FX account comes with these features as standard."
@@ -80,9 +80,9 @@ export function AccountFeatures() {
                 <div
                   className="inline-flex items-center justify-center w-12 h-12 rounded-[var(--radius-md)] mb-5"
                   style={{
-                    background: 'rgba(212,175,55,0.12)',
-                    border: '1px solid var(--border-gold)',
-                    color: 'var(--text-gold)',
+                    background: 'rgba(16,185,129,0.12)',
+                    border: '1px solid var(--border-accent)',
+                    color: 'var(--text-accent)',
                   }}
                 >
                   {feature.icon}
@@ -108,8 +108,8 @@ export function AccountFeatures() {
             className="rounded-[var(--radius-xl)] p-8 md:p-12 text-center"
             style={{
               background: '#FFFFFF',
-              border: '1px solid var(--border-gold)',
-              boxShadow: '0 4px 24px rgba(212,175,55,0.08)',
+              border: '1px solid var(--border-accent)',
+              boxShadow: '0 4px 24px rgba(16,185,129,0.08)',
             }}
           >
             <h3 className="font-display font-bold text-[var(--text-primary)] text-xl md:text-2xl mb-3">

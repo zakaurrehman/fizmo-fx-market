@@ -35,7 +35,7 @@ export function AffiliateSection() {
       className="section-padding"
       style={{
         background: `
-          radial-gradient(ellipse at 50% 50%, rgba(212,175,55,0.06) 0%, transparent 65%),
+          radial-gradient(ellipse at 50% 50%, rgba(16,185,129,0.06) 0%, transparent 65%),
           var(--bg-secondary)
         `,
       }}
@@ -47,7 +47,7 @@ export function AffiliateSection() {
             title={
               <>
                 Earn Up To{' '}
-                <span className="text-gradient-gold">80%</span>
+                <span className="text-gradient-accent">80%</span>
                 {' '}Revenue Share
               </>
             }
@@ -94,12 +94,12 @@ export function AffiliateSection() {
                       height: 56,
                       margin: '0 auto 0.75rem',
                       borderRadius: 'var(--radius-md)',
-                      background: 'rgba(212,175,55,0.1)',
-                      border: '1px solid var(--border-gold)',
+                      background: 'rgba(16,185,129,0.1)',
+                      border: '1px solid var(--border-accent)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      color: 'var(--gold-500)',
+                      color: 'var(--accent-500)',
                     }}
                     aria-hidden="true"
                   >

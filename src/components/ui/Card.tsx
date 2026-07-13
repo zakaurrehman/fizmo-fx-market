@@ -20,7 +20,7 @@ export function Card({ children, className, hover = true, padding = 'md' }: Card
       className={clsx(
         'bg-gradient-card border border-[var(--border-subtle)] rounded-[var(--radius-lg)]',
         'transition-all duration-[var(--transition-base)]',
-        hover && 'hover:border-[var(--border-gold)] hover:shadow-glow hover:-translate-y-1',
+        hover && 'hover:border-[var(--border-accent)] hover:shadow-glow hover:-translate-y-1',
         paddingClasses[padding],
         className
       )}

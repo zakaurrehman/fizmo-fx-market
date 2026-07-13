@@ -14,7 +14,7 @@ function StaticStat({ value, label, sublabel }: StaticStatProps) {
         className="font-mono font-bold leading-none"
         style={{
           fontSize: 'clamp(2rem, 4vw, 3rem)',
-          color: 'var(--gold-500)',
+          color: 'var(--accent-500)',
         }}
       >
         {value}
@@ -61,7 +61,7 @@ export function StatsBar() {
                 style={{
                   height: '60%',
                   background:
-                    'linear-gradient(180deg, transparent 0%, var(--border-gold) 50%, transparent 100%)',
+                    'linear-gradient(180deg, transparent 0%, var(--border-accent) 50%, transparent 100%)',
                 }}
               />
             </div>
@@ -83,7 +83,7 @@ export function StatsBar() {
                 style={{
                   height: '60%',
                   background:
-                    'linear-gradient(180deg, transparent 0%, var(--border-gold) 50%, transparent 100%)',
+                    'linear-gradient(180deg, transparent 0%, var(--border-accent) 50%, transparent 100%)',
                 }}
               />
             </div>
@@ -104,7 +104,7 @@ export function StatsBar() {
                 style={{
                   height: '60%',
                   background:
-                    'linear-gradient(180deg, transparent 0%, var(--border-gold) 50%, transparent 100%)',
+                    'linear-gradient(180deg, transparent 0%, var(--border-accent) 50%, transparent 100%)',
                 }}
               />
             </div>

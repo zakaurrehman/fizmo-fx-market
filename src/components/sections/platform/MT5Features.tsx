@@ -74,7 +74,7 @@ export function MT5Features() {
   return (
     <section
       className="section-light-theme section-padding"
-      style={{ background: '#F8F6F1' }}
+      style={{ background: '#F6F9F8' }}
     >
       <div className="container-max">
         <SectionHeader
@@ -82,7 +82,7 @@ export function MT5Features() {
           title={
             <>
               Everything You Need to{' '}
-              <span className="text-gradient-gold">Trade Like a Professional</span>
+              <span className="text-gradient-accent">Trade Like a Professional</span>
             </>
           }
           subtitle="The most feature-rich retail trading terminal available, trusted by millions worldwide."
@@ -97,9 +97,9 @@ export function MT5Features() {
                 <div
                   className="inline-flex items-center justify-center w-11 h-11 rounded-[var(--radius-md)] mb-4"
                   style={{
-                    background: 'rgba(212,175,55,0.1)',
-                    border: '1px solid var(--border-gold)',
-                    color: 'var(--text-gold)',
+                    background: 'rgba(16,185,129,0.1)',
+                    border: '1px solid var(--border-accent)',
+                    color: 'var(--text-accent)',
                   }}
                 >
                   {feature.icon}

@@ -27,7 +27,7 @@ export function CryptoTab() {
       >
         <h2 className="font-display font-bold text-[var(--text-primary)] text-2xl md:text-3xl mb-4 leading-tight">
           Cryptocurrency{' '}
-          <span className="text-gradient-gold">CFDs</span>
+          <span className="text-gradient-accent">CFDs</span>
         </h2>
         <p className="font-body text-[var(--text-secondary)] text-base leading-relaxed mb-8">
           Trade the world's leading digital assets as CFDs — no wallets, no
@@ -73,8 +73,8 @@ export function CryptoTab() {
                   (col) => (
                     <th
                       key={col}
-                      className="px-4 py-3 text-left text-xs font-mono font-semibold tracking-wider border-b border-[var(--border-gold)]"
-                      style={{ color: 'var(--gold-300)' }}
+                      className="px-4 py-3 text-left text-xs font-mono font-semibold tracking-wider border-b border-[var(--border-accent)]"
+                      style={{ color: 'var(--accent-300)' }}
                     >
                       {col}
                     </th>
@@ -86,15 +86,15 @@ export function CryptoTab() {
               {cryptoInstruments.map((row: CryptoInstrument, index: number) => (
                 <tr
                   key={row.symbol}
-                  className="transition-colors duration-150 hover:bg-[rgba(212,175,55,0.05)]"
+                  className="transition-colors duration-150 hover:bg-[rgba(16,185,129,0.05)]"
                   style={{
-                    background: index % 2 === 0 ? '#FFFFFF' : '#F8F6F1',
+                    background: index % 2 === 0 ? '#FFFFFF' : '#F6F9F8',
                   }}
                 >
                   <td className="px-4 py-3 border-b border-[var(--border-subtle)]">
                     <span
                       className="font-mono font-bold text-sm"
-                      style={{ color: '#8A6A1E' }}
+                      style={{ color: '#047857' }}
                     >
                       {row.symbol}
                     </span>

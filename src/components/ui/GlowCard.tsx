@@ -38,7 +38,7 @@ export function GlowCard({
         'bg-gradient-card',
         featured
           ? 'border-2 border-[var(--border-active)] shadow-glow'
-          : 'border border-[var(--border-subtle)] hover:border-[var(--border-gold)] hover:shadow-glow',
+          : 'border border-[var(--border-subtle)] hover:border-[var(--border-accent)] hover:shadow-glow',
         paddingClasses[padding],
         className
       )}

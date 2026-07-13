@@ -72,13 +72,13 @@ export function MarketsTabs() {
                   aria-selected={isActive}
                   aria-controls={`tabpanel-${tab.id}`}
                   onClick={() => setActiveTab(tab.id)}
-                  className="relative flex-shrink-0 px-6 py-4 text-sm font-medium font-body transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold-500)] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                  className="relative flex-shrink-0 px-6 py-4 text-sm font-medium font-body transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-500)] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   style={{
                     color: isActive
-                      ? '#8A6A1E'
+                      ? '#047857'
                       : '#6B7280',
                     borderBottom: isActive
-                      ? '2px solid var(--gold-500)'
+                      ? '2px solid var(--accent-500)'
                       : '2px solid transparent',
                     marginBottom: '-1px',
                   }}
@@ -100,7 +100,7 @@ export function MarketsTabs() {
                     <motion.div
                       layoutId="tab-indicator"
                       className="absolute bottom-[-1px] left-0 right-0 h-0.5"
-                      style={{ background: 'var(--gold-500)' }}
+                      style={{ background: 'var(--accent-500)' }}
                       transition={{ type: 'spring', stiffness: 380, damping: 32 }}
                     />
                   )}

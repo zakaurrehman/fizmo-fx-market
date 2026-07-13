@@ -44,7 +44,7 @@ export function TradingTools() {
   return (
     <section
       className="section-light-theme section-padding"
-      style={{ background: '#F8F6F1' }}
+      style={{ background: '#F6F9F8' }}
     >
       <div className="container-max">
         <SectionHeader
@@ -52,7 +52,7 @@ export function TradingTools() {
           title={
             <>
               Supercharge Your{' '}
-              <span className="text-gradient-gold">Trading</span>
+              <span className="text-gradient-accent">Trading</span>
             </>
           }
           subtitle="Professional tools to give you an edge in any market condition."
@@ -68,9 +68,9 @@ export function TradingTools() {
                   <div
                     className="inline-flex items-center justify-center w-12 h-12 rounded-[var(--radius-md)]"
                     style={{
-                      background: 'rgba(212,175,55,0.1)',
-                      border: '1px solid var(--border-gold)',
-                      color: 'var(--text-gold)',
+                      background: 'rgba(16,185,129,0.1)',
+                      border: '1px solid var(--border-accent)',
+                      color: 'var(--text-accent)',
                     }}
                   >
                     {tool.icon}

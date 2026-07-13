@@ -27,14 +27,14 @@ export function SectionHeader({
       {eyebrow && (
         <p
           className={clsx(
-            'mb-3 text-xs font-mono font-medium tracking-[0.2em] uppercase text-[var(--text-gold)]',
+            'mb-3 text-xs font-mono font-medium tracking-[0.2em] uppercase text-[var(--text-accent)]',
             align === 'center' ? 'flex justify-center' : ''
           )}
         >
           <span className="inline-flex items-center gap-2">
-            <span className="w-6 h-px bg-[var(--gold-500)]" />
+            <span className="w-6 h-px bg-[var(--accent-500)]" />
             {eyebrow}
-            <span className="w-6 h-px bg-[var(--gold-500)]" />
+            <span className="w-6 h-px bg-[var(--accent-500)]" />
           </span>
         </p>
       )}

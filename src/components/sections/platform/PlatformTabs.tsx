@@ -63,7 +63,7 @@ function DesktopContent() {
     <div>
       <h3 className="font-display font-bold text-[var(--text-primary)] text-2xl md:text-3xl mb-4">
         MetaTrader 5{' '}
-        <span className="text-gradient-gold">Desktop</span>
+        <span className="text-gradient-accent">Desktop</span>
       </h3>
       <p className="font-body text-[var(--text-secondary)] text-base leading-relaxed mb-8 max-w-2xl">
         The full-powered MetaTrader 5 desktop application delivers the complete
@@ -110,7 +110,7 @@ function MobileContent() {
     <div>
       <h3 className="font-display font-bold text-[var(--text-primary)] text-2xl md:text-3xl mb-4">
         MetaTrader 5{' '}
-        <span className="text-gradient-gold">Mobile</span>
+        <span className="text-gradient-accent">Mobile</span>
       </h3>
       <p className="font-body text-[var(--text-secondary)] text-base leading-relaxed mb-8 max-w-2xl">
         Trade confidently from your smartphone. The MT5 mobile app provides
@@ -157,7 +157,7 @@ function WebContent() {
     <div>
       <h3 className="font-display font-bold text-[var(--text-primary)] text-2xl md:text-3xl mb-4">
         Web{' '}
-        <span className="text-gradient-gold">Trading Terminal</span>
+        <span className="text-gradient-accent">Trading Terminal</span>
       </h3>
       <p className="font-body text-[var(--text-secondary)] text-base leading-relaxed mb-8 max-w-2xl">
         Trade directly from any modern web browser — no installation required.
@@ -201,7 +201,7 @@ export function PlatformTabs() {
           title={
             <>
               Trade From{' '}
-              <span className="text-gradient-gold">Any Device</span>
+              <span className="text-gradient-accent">Any Device</span>
             </>
           }
           subtitle="One account, all platforms. Seamlessly switch between desktop, mobile, and web."
@@ -227,16 +227,16 @@ export function PlatformTabs() {
                 aria-selected={isActive}
                 aria-controls={`platform-panel-${tab.id}`}
                 onClick={() => setActiveTab(tab.id)}
-                className="relative flex items-center gap-2 flex-1 sm:flex-initial px-5 py-2.5 rounded-[10px] text-sm font-medium font-body transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold-500)]"
+                className="relative flex items-center gap-2 flex-1 sm:flex-initial px-5 py-2.5 rounded-[10px] text-sm font-medium font-body transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-500)]"
                 style={{
                   background: isActive
-                    ? 'linear-gradient(135deg, rgba(212,175,55,0.18), rgba(212,175,55,0.08))'
+                    ? 'linear-gradient(135deg, rgba(16,185,129,0.18), rgba(16,185,129,0.08))'
                     : 'transparent',
-                  color: isActive ? 'var(--text-gold)' : '#6B7280',
+                  color: isActive ? 'var(--text-accent)' : '#6B7280',
                   border: isActive
-                    ? '1px solid var(--border-gold)'
+                    ? '1px solid var(--border-accent)'
                     : '1px solid transparent',
-                  borderBottom: isActive ? '2px solid var(--border-gold)' : '1px solid transparent',
+                  borderBottom: isActive ? '2px solid var(--border-accent)' : '1px solid transparent',
                 }}
               >
                 {tab.icon}

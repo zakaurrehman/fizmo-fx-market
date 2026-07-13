@@ -16,7 +16,7 @@ export function TickerBar() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--green-400)] opacity-75" />
           <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--green-400)]" />
         </span>
-        <span className="font-mono text-xs font-medium tracking-[0.15em] uppercase text-[var(--text-gold)]">
+        <span className="font-mono text-xs font-medium tracking-[0.15em] uppercase text-[var(--text-accent)]">
           Live Markets
         </span>
         <span className="w-px h-4 bg-[var(--border-subtle)]" />
@@ -38,7 +38,7 @@ export function TickerBar() {
               >
                 {item.positive ? '▲' : '▼'} {item.changePercent}
               </span>
-              <span className="text-[var(--gold-600)] opacity-40 text-[8px]">●</span>
+              <span className="text-[var(--accent-600)] opacity-40 text-[8px]">●</span>
             </span>
           ))}
         </div>

@@ -63,7 +63,7 @@ export function AwardsShowcase() {
               maxWidth: '34rem',
               margin: '0 auto 4rem',
               background: 'var(--bg-card)',
-              border: '1px solid var(--border-gold)',
+              border: '1px solid var(--border-accent)',
               boxShadow: 'var(--shadow-glow)',
               borderRadius: 'var(--radius-xl)',
               padding: '3rem 2.5rem',
@@ -77,23 +77,23 @@ export function AwardsShowcase() {
                 height: 96,
                 margin: '0 auto 2rem',
                 borderRadius: '50%',
-                background: 'rgba(212,175,55,0.1)',
-                border: '1px solid var(--border-gold)',
+                background: 'rgba(16,185,129,0.1)',
+                border: '1px solid var(--border-accent)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
             >
-              <Trophy size={52} color="var(--gold-500)" strokeWidth={1.5} />
+              <Trophy size={52} color="var(--accent-500)" strokeWidth={1.5} />
             </div>
 
             {/* Award year badge */}
             <div
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full font-mono text-xs font-medium tracking-wide mb-4"
               style={{
-                background: 'rgba(212,175,55,0.1)',
-                border: '1px solid var(--border-gold)',
-                color: 'var(--gold-300)',
+                background: 'rgba(16,185,129,0.1)',
+                border: '1px solid var(--border-accent)',
+                color: 'var(--accent-300)',
               }}
             >
               Dubai Forex Expo · 2024
@@ -123,7 +123,7 @@ export function AwardsShowcase() {
               aria-label="5 out of 5 stars"
             >
               {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={20} fill="var(--gold-500)" color="var(--gold-500)" />
+                <Star key={i} size={20} fill="var(--accent-500)" color="var(--accent-500)" />
               ))}
             </div>
 
@@ -159,7 +159,7 @@ export function AwardsShowcase() {
                       className="font-mono font-bold"
                       style={{
                         fontSize: '1.5rem',
-                        color: 'var(--gold-500)',
+                        color: 'var(--accent-500)',
                         lineHeight: 1,
                         marginBottom: '0.25rem',
                       }}
@@ -207,9 +207,9 @@ export function AwardsShowcase() {
                 <div
                   className="w-12 h-12 rounded-[var(--radius-md)] flex items-center justify-center mx-auto mb-4"
                   style={{
-                    background: 'rgba(212,175,55,0.1)',
-                    border: '1px solid var(--border-gold)',
-                    color: 'var(--gold-500)',
+                    background: 'rgba(16,185,129,0.1)',
+                    border: '1px solid var(--border-accent)',
+                    color: 'var(--accent-500)',
                   }}
                 >
                   {metric.icon}
@@ -218,7 +218,7 @@ export function AwardsShowcase() {
                 {/* Value */}
                 <div
                   className="font-mono font-bold mb-1"
-                  style={{ fontSize: '1.25rem', color: 'var(--gold-300)' }}
+                  style={{ fontSize: '1.25rem', color: 'var(--accent-300)' }}
                 >
                   {metric.value}
                 </div>

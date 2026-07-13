@@ -72,7 +72,7 @@ export function Navbar() {
                       <button
                         className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors rounded-md ${
                           isActive(link.href)
-                            ? 'text-[var(--text-gold)]'
+                            ? 'text-[var(--text-accent)]'
                             : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
                         }`}
                       >
@@ -90,7 +90,7 @@ export function Navbar() {
                                 to={item.href}
                                 className="flex flex-col px-4 py-3 hover:bg-[var(--bg-elevated)] transition-colors border-b border-[var(--border-subtle)] last:border-0 group"
                               >
-                                <span className="text-sm font-medium text-[var(--text-primary)] group-hover:text-[var(--text-gold)] transition-colors">
+                                <span className="text-sm font-medium text-[var(--text-primary)] group-hover:text-[var(--text-accent)] transition-colors">
                                   {item.label}
                                 </span>
                                 {item.description && (
@@ -107,13 +107,13 @@ export function Navbar() {
                       to={link.href}
                       className={`relative px-4 py-2 text-sm font-medium transition-colors rounded-md block ${
                         isActive(link.href)
-                          ? 'text-[var(--text-gold)]'
+                          ? 'text-[var(--text-accent)]'
                           : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
                       }`}
                     >
                       {link.label}
                       {isActive(link.href) && (
-                        <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-[var(--gold-500)] rounded-full" />
+                        <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-[var(--accent-500)] rounded-full" />
                       )}
                     </Link>
                   )}
@@ -174,7 +174,7 @@ export function Navbar() {
                             <Link
                               key={item.href}
                               to={item.href}
-                              className="block px-4 py-2 text-sm text-[var(--text-muted)] hover:text-[var(--text-gold)] rounded-[var(--radius-sm)]"
+                              className="block px-4 py-2 text-sm text-[var(--text-muted)] hover:text-[var(--text-accent)] rounded-[var(--radius-sm)]"
                             >
                               {item.label}
                             </Link>
@@ -187,7 +187,7 @@ export function Navbar() {
                       to={link.href}
                       className={`block px-4 py-3 text-sm rounded-[var(--radius-sm)] ${
                         isActive(link.href)
-                          ? 'text-[var(--text-gold)] bg-[rgba(212,175,55,0.08)]'
+                          ? 'text-[var(--text-accent)] bg-[rgba(16,185,129,0.08)]'
                           : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
                       }`}
                     >

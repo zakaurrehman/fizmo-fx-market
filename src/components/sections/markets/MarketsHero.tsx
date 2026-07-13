@@ -23,7 +23,7 @@ export function MarketsHero() {
       style={{
         minHeight: '50vh',
         background:
-          'radial-gradient(ellipse at 60% 50%, rgba(212,175,55,0.08) 0%, transparent 60%), #080B14',
+          'radial-gradient(ellipse at 60% 50%, rgba(16,185,129,0.08) 0%, transparent 60%), #080B14',
       }}
     >
       {/* Dot grid overlay */}
@@ -31,7 +31,7 @@ export function MarketsHero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage:
-            'radial-gradient(circle, rgba(212,175,55,0.05) 1px, transparent 1px)',
+            'radial-gradient(circle, rgba(16,185,129,0.05) 1px, transparent 1px)',
           backgroundSize: '40px 40px',
         }}
       />
@@ -47,12 +47,12 @@ export function MarketsHero() {
         >
           <Link
             to="/"
-            className="text-[var(--text-secondary)] hover:text-[var(--text-gold)] transition-colors duration-200"
+            className="text-[var(--text-secondary)] hover:text-[var(--text-accent)] transition-colors duration-200"
           >
             Home
           </Link>
           <span className="text-[var(--text-muted)]">/</span>
-          <span className="text-[var(--text-gold)] font-medium">Markets</span>
+          <span className="text-[var(--text-accent)] font-medium">Markets</span>
         </motion.nav>
 
         {/* Heading */}
@@ -63,7 +63,7 @@ export function MarketsHero() {
           className="font-display font-bold text-[var(--text-primary)] mb-6"
           style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', lineHeight: 1.15 }}
         >
-          <span className="text-gradient-gold">300+ Markets.</span> One
+          <span className="text-gradient-accent">300+ Markets.</span> One
           Powerful Platform.
         </motion.h1>
 
@@ -93,11 +93,11 @@ export function MarketsHero() {
               transition={{ duration: 0.4, delay: 0.35 + index * 0.07 }}
               className="flex items-center gap-2 px-4 py-2 rounded-full font-body"
               style={{
-                background: 'rgba(212,175,55,0.08)',
-                border: '1px solid var(--border-gold)',
+                background: 'rgba(16,185,129,0.08)',
+                border: '1px solid var(--border-accent)',
               }}
             >
-              <span className="font-mono font-bold text-[var(--gold-300)]">
+              <span className="font-mono font-bold text-[var(--accent-300)]">
                 {chip.number}
               </span>
               <span className="text-sm text-[var(--text-secondary)]">
