@@ -57,7 +57,7 @@ export function AccountFeatures() {
   return (
     <section
       className="section-light-theme section-padding"
-      style={{ background: '#F6F9F8' }}
+      style={{ background: '#F7F9FC' }}
     >
       <div className="container-max">
         <SectionHeader
@@ -80,7 +80,7 @@ export function AccountFeatures() {
                 <div
                   className="inline-flex items-center justify-center w-12 h-12 rounded-[var(--radius-md)] mb-5"
                   style={{
-                    background: 'rgba(16,185,129,0.12)',
+                    background: 'rgba(59,130,246,0.12)',
                     border: '1px solid var(--border-accent)',
                     color: 'var(--text-accent)',
                   }}
@@ -109,7 +109,7 @@ export function AccountFeatures() {
             style={{
               background: '#FFFFFF',
               border: '1px solid var(--border-accent)',
-              boxShadow: '0 4px 24px rgba(16,185,129,0.08)',
+              boxShadow: '0 4px 24px rgba(59,130,246,0.08)',
             }}
           >
             <h3 className="font-display font-bold text-[var(--text-primary)] text-xl md:text-2xl mb-3">

@@ -90,7 +90,7 @@ export function FAQSection() {
   return (
     <section
       className="section-light-theme section-padding"
-      style={{ background: '#F6F9F8' }}
+      style={{ background: '#F7F9FC' }}
     >
       <div className="container-max">
         <ScrollReveal>

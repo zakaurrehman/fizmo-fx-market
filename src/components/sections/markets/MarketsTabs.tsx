@@ -75,7 +75,7 @@ export function MarketsTabs() {
                   className="relative flex-shrink-0 px-6 py-4 text-sm font-medium font-body transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-500)] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                   style={{
                     color: isActive
-                      ? '#047857'
+                      ? '#1D4ED8'
                       : '#6B7280',
                     borderBottom: isActive
                       ? '2px solid var(--accent-500)'

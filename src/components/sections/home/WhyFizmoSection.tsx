@@ -84,7 +84,7 @@ function FeatureCard({ feature, delay }: FeatureCardProps) {
         <div
           className="inline-flex items-center justify-center w-14 h-14 rounded-[var(--radius-md)] flex-shrink-0 transition-colors duration-[var(--transition-base)]"
           style={{
-            background: 'rgba(16,185,129,0.1)',
+            background: 'rgba(59,130,246,0.1)',
             color: 'var(--accent-500)',
           }}
         >
@@ -115,7 +115,7 @@ export function WhyFizmoSection() {
   return (
     <section
       className="section-padding relative section-light-theme"
-      style={{ background: '#F6F9F8' }}
+      style={{ background: '#F7F9FC' }}
     >
       {/* Dot grid overlay */}
       <div

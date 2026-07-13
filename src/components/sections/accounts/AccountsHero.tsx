@@ -16,7 +16,7 @@ export function AccountsHero() {
       style={{
         minHeight: '50vh',
         background:
-          'radial-gradient(ellipse at 60% 50%, rgba(16,185,129,0.08) 0%, transparent 60%), #080B14',
+          'radial-gradient(ellipse at 60% 50%, rgba(59,130,246,0.08) 0%, transparent 60%), #080B14',
       }}
     >
       {/* Subtle grid overlay */}
@@ -24,7 +24,7 @@ export function AccountsHero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage:
-            'radial-gradient(circle, rgba(16,185,129,0.05) 1px, transparent 1px)',
+            'radial-gradient(circle, rgba(59,130,246,0.05) 1px, transparent 1px)',
           backgroundSize: '40px 40px',
         }}
       />

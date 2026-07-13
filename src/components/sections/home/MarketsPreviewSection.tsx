@@ -70,7 +70,7 @@ function MarketCard({ market, delay }: { market: MarketCardData; delay: number }
         <div
           className="w-12 h-12 rounded-[var(--radius-md)] flex items-center justify-center flex-shrink-0"
           style={{
-            background: 'rgba(5,150,105,0.1)',
+            background: 'rgba(37,99,235,0.1)',
             color: 'var(--accent-500)',
           }}
           aria-hidden="true"
@@ -81,8 +81,8 @@ function MarketCard({ market, delay }: { market: MarketCardData; delay: number }
           className="font-mono text-xs font-semibold tracking-[0.15em] uppercase px-2.5 py-1 rounded-full"
           style={{
             color: 'var(--accent-500)',
-            background: 'rgba(16,185,129,0.1)',
-            border: '1px solid rgba(16,185,129,0.2)',
+            background: 'rgba(59,130,246,0.1)',
+            border: '1px solid rgba(59,130,246,0.2)',
           }}
         >
           {market.category}
@@ -149,7 +149,7 @@ export function MarketsPreviewSection() {
   return (
     <section
       className="section-light-theme section-padding"
-      style={{ background: '#F6F9F8' }}
+      style={{ background: '#F7F9FC' }}
     >
       <div className="container-max">
         <SectionHeader

@@ -125,8 +125,8 @@ export function HeroChart() {
             >
               <defs>
                 <linearGradient id="accentGradient" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#10B981" stopOpacity={0.35} />
-                  <stop offset="100%" stopColor="#10B981" stopOpacity={0.02} />
+                  <stop offset="0%" stopColor="#3B82F6" stopOpacity={0.35} />
+                  <stop offset="100%" stopColor="#3B82F6" stopOpacity={0.02} />
                 </linearGradient>
               </defs>
               <XAxis dataKey="index" hide />

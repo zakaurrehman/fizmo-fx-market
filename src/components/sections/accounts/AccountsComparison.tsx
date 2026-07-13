@@ -67,7 +67,7 @@ function AccountCard({ account, index }: AccountCardProps) {
             <span
               className="inline-block px-4 py-1 text-xs font-mono font-bold tracking-[0.15em] uppercase rounded-full"
               style={{
-                background: 'linear-gradient(135deg, #10B981, #6EE7B7)',
+                background: 'linear-gradient(135deg, #3B82F6, #93C5FD)',
                 color: '#080B14',
               }}
             >
@@ -178,7 +178,7 @@ export function AccountsComparison() {
     <section
       id="accounts-comparison"
       className="section-light-theme section-padding"
-      style={{ background: '#F6F9F8' }}
+      style={{ background: '#F7F9FC' }}
     >
       <div className="container-max">
         <SectionHeader

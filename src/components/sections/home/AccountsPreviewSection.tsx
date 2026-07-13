@@ -17,7 +17,7 @@ function FeatureRow({ label, value }: FeatureRowProps) {
     <div className="flex items-start gap-3 py-2" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
       <div
         className="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center"
-        style={{ background: 'rgba(16,185,129,0.15)' }}
+        style={{ background: 'rgba(59,130,246,0.15)' }}
       >
         <Check size={10} style={{ color: 'var(--accent-500)' }} />
       </div>
@@ -68,7 +68,7 @@ function AccountCard({ account, index }: AccountCardProps) {
             style={{
               background: 'var(--gradient-accent)',
               color: '#080B14',
-              boxShadow: '0 0 20px rgba(16,185,129,0.4)',
+              boxShadow: '0 0 20px rgba(59,130,246,0.4)',
             }}
           >
             MOST POPULAR
@@ -110,8 +110,8 @@ function AccountCard({ account, index }: AccountCardProps) {
                 color: isFeautred ? '#080B14' : 'var(--accent-500)',
                 background: isFeautred
                   ? 'var(--gradient-accent)'
-                  : 'rgba(16,185,129,0.1)',
-                border: isFeautred ? 'none' : '1px solid rgba(16,185,129,0.2)',
+                  : 'rgba(59,130,246,0.1)',
+                border: isFeautred ? 'none' : '1px solid rgba(59,130,246,0.2)',
               }}
             >
               {account.badge}
@@ -131,14 +131,14 @@ function AccountCard({ account, index }: AccountCardProps) {
         <div
           className="flex items-center gap-2 px-3 py-2 rounded-[var(--radius-sm)]"
           style={{
-            background: 'rgba(16,185,129,0.08)',
-            border: '1px solid rgba(16,185,129,0.18)',
+            background: 'rgba(59,130,246,0.08)',
+            border: '1px solid rgba(59,130,246,0.18)',
           }}
         >
-          <Target size={14} style={{ color: '#047857', flexShrink: 0 }} />
+          <Target size={14} style={{ color: '#1D4ED8', flexShrink: 0 }} />
           <span
             className="font-body text-xs font-medium"
-            style={{ color: '#047857' }}
+            style={{ color: '#1D4ED8' }}
           >
             Best for: {account.bestFor}
           </span>

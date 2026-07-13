@@ -42,7 +42,7 @@ export function HeroSection() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 80% 60% at 70% 50%, rgba(16,185,129,0.05) 0%, transparent 70%)',
+            'radial-gradient(ellipse 80% 60% at 70% 50%, rgba(59,130,246,0.05) 0%, transparent 70%)',
         }}
       />
 
@@ -60,7 +60,7 @@ export function HeroSection() {
             <div className="inline-flex w-fit items-center gap-2 px-4 py-2 rounded-full font-mono text-xs font-medium tracking-wide"
               style={{
                 border: '1px solid var(--border-accent)',
-                background: 'rgba(16,185,129,0.07)',
+                background: 'rgba(59,130,246,0.07)',
                 color: 'var(--accent-300)',
               }}
             >

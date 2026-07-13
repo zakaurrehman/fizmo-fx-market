@@ -29,7 +29,7 @@ function StepCard({
         className="absolute top-4 right-4 font-display font-bold select-none pointer-events-none leading-none"
         style={{
           fontSize: '5rem',
-          color: 'rgba(5,150,105,0.08)',
+          color: 'rgba(37,99,235,0.08)',
           lineHeight: 1,
         }}
         aria-hidden="true"
@@ -40,7 +40,7 @@ function StepCard({
       {/* Icon */}
       <div
         className="inline-flex items-center justify-center rounded-[var(--radius-md)] w-16 h-16 flex-shrink-0"
-        style={{ background: 'rgba(5,150,105,0.1)' }}
+        style={{ background: 'rgba(37,99,235,0.1)' }}
       >
         <div style={{ color: 'var(--accent-500)', width: 32, height: 32 }}>
           {icon}
@@ -88,7 +88,7 @@ export function HowItWorksSection() {
   return (
     <section
       className="section-padding section-light-theme"
-      style={{ background: '#F6F9F8' }}
+      style={{ background: '#F7F9FC' }}
     >
       <div className="container-max">
         <SectionHeader
@@ -110,7 +110,7 @@ export function HowItWorksSection() {
             className="hidden lg:block absolute top-[3.25rem] left-[calc(16.666%+2rem)] right-[calc(16.666%+2rem)]"
             style={{
               height: '1px',
-              borderTop: '2px dashed rgba(16,185,129,0.18)',
+              borderTop: '2px dashed rgba(59,130,246,0.18)',
               zIndex: 0,
             }}
             aria-hidden="true"
@@ -149,11 +149,11 @@ export function HowItWorksSection() {
                 <div
                   className="flex items-start gap-3 rounded-[var(--radius-md)] p-4"
                   style={{
-                    background: 'rgba(5,150,105,0.08)',
-                    border: '1px solid rgba(5,150,105,0.2)',
+                    background: 'rgba(37,99,235,0.08)',
+                    border: '1px solid rgba(37,99,235,0.2)',
                   }}
                 >
-                  <Lightbulb size={16} style={{ color: '#047857', flexShrink: 0, marginTop: '2px' }} />
+                  <Lightbulb size={16} style={{ color: '#1D4ED8', flexShrink: 0, marginTop: '2px' }} />
                   <p
                     className="font-body text-xs leading-relaxed"
                     style={{ color: '#374151' }}

@@ -7,7 +7,7 @@ export function ContactHero() {
       className="relative overflow-hidden"
       style={{
         background:
-          'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(16,185,129,0.08) 0%, rgba(16,185,129,0.02) 40%, transparent 70%), var(--bg-primary)',
+          'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(59,130,246,0.08) 0%, rgba(59,130,246,0.02) 40%, transparent 70%), var(--bg-primary)',
         paddingTop: '5rem',
         paddingBottom: '5rem',
       }}

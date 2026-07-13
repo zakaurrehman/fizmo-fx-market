@@ -57,7 +57,7 @@ export function ContactCards() {
   return (
     <section
       className="section-light-theme section-padding"
-      style={{ background: '#F6F9F8' }}
+      style={{ background: '#F7F9FC' }}
     >
       <div className="container-max">
 
@@ -95,7 +95,7 @@ export function ContactCards() {
                 <div
                   className="w-16 h-16 rounded-[var(--radius-lg)] flex items-center justify-center"
                   style={{
-                    background: 'rgba(16,185,129,0.1)',
+                    background: 'rgba(59,130,246,0.1)',
                     border: '1px solid var(--border-accent)',
                     color: 'var(--accent-500)',
                   }}
@@ -158,7 +158,7 @@ export function ContactCards() {
               <div
                 className="w-11 h-11 rounded-[var(--radius-md)] flex items-center justify-center flex-shrink-0"
                 style={{
-                  background: 'rgba(16,185,129,0.1)',
+                  background: 'rgba(59,130,246,0.1)',
                   border: '1px solid var(--border-accent)',
                   color: 'var(--accent-500)',
                 }}

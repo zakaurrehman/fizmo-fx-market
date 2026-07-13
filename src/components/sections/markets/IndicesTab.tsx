@@ -86,15 +86,15 @@ export function IndicesTab() {
               {indexInstruments.map((row: IndexInstrument, index: number) => (
                 <tr
                   key={row.symbol}
-                  className="transition-colors duration-150 hover:bg-[rgba(16,185,129,0.05)]"
+                  className="transition-colors duration-150 hover:bg-[rgba(59,130,246,0.05)]"
                   style={{
-                    background: index % 2 === 0 ? '#FFFFFF' : '#F6F9F8',
+                    background: index % 2 === 0 ? '#FFFFFF' : '#F7F9FC',
                   }}
                 >
                   <td className="px-4 py-3 border-b border-[var(--border-subtle)]">
                     <span
                       className="font-mono font-bold text-sm"
-                      style={{ color: '#047857' }}
+                      style={{ color: '#1D4ED8' }}
                     >
                       {row.symbol}
                     </span>

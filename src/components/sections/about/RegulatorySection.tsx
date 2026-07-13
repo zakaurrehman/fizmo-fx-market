@@ -69,7 +69,7 @@ export function RegulatorySection() {
               margin: '0 auto 2rem',
               background: '#FFFFFF',
               border: '1px solid var(--border-accent)',
-              boxShadow: '0 4px 24px rgba(16,185,129,0.08)',
+              boxShadow: '0 4px 24px rgba(59,130,246,0.08)',
               borderRadius: 'var(--radius-xl)',
               padding: '2.5rem',
             }}
@@ -81,7 +81,7 @@ export function RegulatorySection() {
                 width: 80,
                 height: 80,
                 borderRadius: '50%',
-                background: 'rgba(16,185,129,0.1)',
+                background: 'rgba(59,130,246,0.1)',
                 border: '1px solid var(--border-accent)',
               }}
             >
@@ -136,8 +136,8 @@ export function RegulatorySection() {
             style={{
               maxWidth: '48rem',
               margin: '0 auto',
-              background: '#ECFDF5',
-              border: '1px solid rgba(5,150,105,0.3)',
+              background: '#EFF6FF',
+              border: '1px solid rgba(37,99,235,0.3)',
               borderRadius: 'var(--radius-lg)',
               padding: '1.5rem',
             }}

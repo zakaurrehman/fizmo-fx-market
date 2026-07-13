@@ -16,9 +16,9 @@ export function Logo({ variant = 'dark', height = 36, className = '' }: LogoProp
         height: `${height}px`,
         width: 'auto',
         display: 'block',
-        // Stopgap: the logo PNGs are gold; shift them toward the emerald
+        // Stopgap: the logo PNGs are gold; shift them toward the blue
         // accent until re-exported brand assets replace the files.
-        filter: 'hue-rotate(105deg) saturate(1.15)',
+        filter: 'hue-rotate(170deg) saturate(1.2)',
       }}
       className={className}
     />

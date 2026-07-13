@@ -8,7 +8,7 @@ export function BottomCTABanner() {
         overflow: 'hidden',
         padding: '5rem 0',
         background:
-          'linear-gradient(135deg, #047857 0%, #10B981 50%, #047857 100%)',
+          'linear-gradient(135deg, #1D4ED8 0%, #3B82F6 50%, #1D4ED8 100%)',
       }}
     >
       {/* Shimmer overlay */}

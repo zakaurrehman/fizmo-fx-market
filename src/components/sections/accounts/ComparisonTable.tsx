@@ -145,13 +145,13 @@ export function ComparisonTable() {
                 {tableRows.map((row, index) => {
                   const isOdd = index % 2 === 0
                   const oddBg = '#FFFFFF'
-                  const evenBg = '#F6F9F8'
+                  const evenBg = '#F7F9FC'
 
                   return (
                     <tr
                       key={row.feature}
                       style={{ background: isOdd ? oddBg : evenBg }}
-                      className="transition-colors duration-150 hover:bg-[rgba(16,185,129,0.04)]"
+                      className="transition-colors duration-150 hover:bg-[rgba(59,130,246,0.04)]"
                     >
                       {/* Feature label */}
                       <td className="px-6 py-3.5 text-sm font-body text-[var(--text-secondary)] border-b border-[var(--border-subtle)]">
@@ -168,8 +168,8 @@ export function ComparisonTable() {
                         className="px-6 py-3.5 text-sm font-mono border-b text-center"
                         style={{
                           color: 'var(--accent-300)',
-                          borderBottomColor: 'rgba(16,185,129,0.15)',
-                          background: 'rgba(16,185,129,0.06)',
+                          borderBottomColor: 'rgba(59,130,246,0.15)',
+                          background: 'rgba(59,130,246,0.06)',
                         }}
                       >
                         {row.pro}

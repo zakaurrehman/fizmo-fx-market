@@ -27,12 +27,12 @@ const categoryStyles: Record<CategoryColor, CategoryStyle> = {
     icon: <Globe size={40} color="#60A5FA" strokeWidth={1.25} />,
   },
   gold: {
-    chipBg: 'rgba(16,185,129,0.15)',
-    chipText: '#10B981',
-    chipBorder: 'rgba(16,185,129,0.3)',
-    gradientFrom: 'rgba(16,185,129,0.25)',
-    gradientTo: 'rgba(16,185,129,0.04)',
-    icon: <TrendingUp size={40} color="#10B981" strokeWidth={1.25} />,
+    chipBg: 'rgba(245,158,11,0.15)',
+    chipText: '#F59E0B',
+    chipBorder: 'rgba(245,158,11,0.3)',
+    gradientFrom: 'rgba(245,158,11,0.25)',
+    gradientTo: 'rgba(245,158,11,0.04)',
+    icon: <TrendingUp size={40} color="#F59E0B" strokeWidth={1.25} />,
   },
   orange: {
     chipBg: 'rgba(249,115,22,0.15)',
@@ -195,7 +195,7 @@ function NewsCard({
         <span
           className="inline-flex items-center gap-1"
           style={{
-            color: '#047857',
+            color: '#1D4ED8',
             fontSize: '0.875rem',
             fontWeight: 600,
             marginTop: '0.25rem',

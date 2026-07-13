@@ -19,7 +19,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   outline:
     'bg-transparent border border-[var(--border-accent)] text-[var(--text-accent)] hover:bg-[var(--accent-500)] hover:text-[#080B14] hover:border-[var(--accent-500)] focus:ring-2 focus:ring-[var(--accent-500)] focus:ring-offset-2 focus:ring-offset-[var(--bg-primary)]',
   ghost:
-    'bg-transparent text-[var(--text-accent)] hover:bg-[rgba(16,185,129,0.08)] focus:ring-2 focus:ring-[var(--accent-500)] focus:ring-offset-2 focus:ring-offset-[var(--bg-primary)]',
+    'bg-transparent text-[var(--text-accent)] hover:bg-[rgba(59,130,246,0.08)] focus:ring-2 focus:ring-[var(--accent-500)] focus:ring-offset-2 focus:ring-offset-[var(--bg-primary)]',
   danger:
     'bg-[var(--red-400)] text-white hover:bg-red-500 hover:-translate-y-0.5 focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-[var(--bg-primary)]',
 }

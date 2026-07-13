@@ -115,8 +115,8 @@ export function MT5vsmt4Table() {
                   return (
                     <tr
                       key={row.feature}
-                      style={{ background: isOdd ? '#FFFFFF' : '#F6F9F8' }}
-                      className="transition-colors duration-150 hover:bg-[rgba(16,185,129,0.03)]"
+                      style={{ background: isOdd ? '#FFFFFF' : '#F7F9FC' }}
+                      className="transition-colors duration-150 hover:bg-[rgba(59,130,246,0.03)]"
                     >
                       {/* Feature */}
                       <td className="px-6 py-3.5 text-sm font-body text-[var(--text-secondary)] border-b border-[var(--border-subtle)]">
@@ -132,8 +132,8 @@ export function MT5vsmt4Table() {
                       <td
                         className="px-6 py-3.5 border-b text-center"
                         style={{
-                          borderBottomColor: 'rgba(16,185,129,0.15)',
-                          background: 'rgba(16,185,129,0.04)',
+                          borderBottomColor: 'rgba(59,130,246,0.15)',
+                          background: 'rgba(59,130,246,0.04)',
                         }}
                       >
                         <Cell value={row.mt5} isHighlighted={true} isMuted={false} />
@@ -153,7 +153,7 @@ export function MT5vsmt4Table() {
             style={{
               background: '#FFFFFF',
               border: '1px solid var(--border-accent)',
-              boxShadow: '0 4px 24px rgba(16,185,129,0.08)',
+              boxShadow: '0 4px 24px rgba(59,130,246,0.08)',
             }}
           >
             <h3 className="font-display font-bold text-[var(--text-primary)] text-xl md:text-2xl mb-3">

@@ -26,7 +26,7 @@ function TestimonialCard({
             fontSize: '6rem',
             lineHeight: 1,
             fontFamily: 'Georgia, serif',
-            color: 'rgba(5,150,105,0.15)',
+            color: 'rgba(37,99,235,0.15)',
             pointerEvents: 'none',
             userSelect: 'none',
           }}
@@ -44,7 +44,7 @@ function TestimonialCard({
           aria-label={`${testimonial.rating} out of 5 stars`}
         >
           {Array.from({ length: testimonial.rating }).map((_, i) => (
-            <Star key={i} size={15} fill="#10B981" color="#10B981" />
+            <Star key={i} size={15} fill="#3B82F6" color="#3B82F6" />
           ))}
         </div>
 
@@ -107,7 +107,7 @@ export function TestimonialsSection() {
   return (
     <section
       className="section-padding section-light-theme"
-      style={{ background: '#F6F9F8' }}
+      style={{ background: '#F7F9FC' }}
     >
       <div className="container-max">
         <ScrollReveal direction="up">

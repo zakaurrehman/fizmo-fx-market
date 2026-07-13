@@ -20,7 +20,7 @@ const subjectOptions = [
 
 const inputBase: CSSProperties = {
   width: '100%',
-  background: '#F6F9F8',
+  background: '#F7F9FC',
   border: '1px solid rgba(0,0,0,0.1)',
   borderRadius: 'var(--radius-md)',
   padding: '0.75rem 1rem',
@@ -325,7 +325,7 @@ export function ContactForm() {
                               <option
                                 key={opt}
                                 value={opt}
-                                style={{ background: '#F6F9F8', color: '#0D1120' }}
+                                style={{ background: '#F7F9FC', color: '#0D1120' }}
                               >
                                 {opt}
                               </option>
